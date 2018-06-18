@@ -2,10 +2,20 @@
   "track_id": "ballerina",
   "language": "Ballerina",
   "active": false,
+  "blurb": "",
   "ignore_pattern": "[Ee]xample",
-  "solution_pattern": "[Ee]xample",
+  "solution_pattern": "reference",
   "test_pattern": "[Tt]est",
-  "foregone": [],
-  "exercises": null,
-  "deprecated": []
+  "exercises": [
+    {
+      "slug": "hello-world",
+      "uuid": "91441035-67fa-40e3-a4d5-39476801172a",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings"
+      ]
+    }
+  ]
 }

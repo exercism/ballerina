@@ -1,8 +1,8 @@
 language: bash
 
 script:
-  - bin/fetch-configlet
-  - bin/configlet lint --track TRACK_ID .
+#  - bin/fetch-configlet
+#  - bin/configlet lint --track TRACK_ID .
   - STRING="Downloading ballerina..."
   - BALLERINA_VERSION="ballerina-platform-0.970.0"
   - echo $STRING

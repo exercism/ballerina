@@ -16,6 +16,18 @@
       "topics": [
         "strings"
       ]
+    },
+    {
+      "slug": "hello-world-service",
+      "uuid": "fceb7721-3d30-4aac-b4dd-573b601f6e1e",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings",
+        "services",
+        "http"
+      ]
     }
   ]
 }

@@ -2,12 +2,11 @@
 
 ![build status](https://travis-ci.org/exercism/ballerina.svg?branch=master)
 
-Exercism exercises in Ballerina.
+Exercism exercises in Ballerina. [Ballerina](https://ballerina.io/) is a compiled, transactional, statically and strongly typed programming language with textual and graphical syntaxes. Ballerina incorporates fundamental concepts of distributed system integration into the language and offers a type-safe, concurrent environment to implement microservices with distributed transactions, reliable messaging, stream processing, and workflows. 
 
 ## Setup
 
-The simplest way to install Ballerina is ...
-
+You can install Ballerina by following the Ballerina [installation guide](https://ballerina.io/learn/getting-started/). 
 ## Contributing
 
 Thank you so much for contributing! :tada:
@@ -48,7 +47,7 @@ Before submitting your pull request, you'll want to verify the changes in two wa
 All the tests for Ballerina exercises can be run from the top level of the repo with
 
 ```
-# add this command
+sh run_ballerina_tests.sh
 ```
 
 For the Exercism-specific linting, please see [the documentation](https://github.com/exercism/docs/blob/master/language-tracks/configuration/linting.md).

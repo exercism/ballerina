@@ -1,0 +1,1 @@
+Ballerina [learn](https://ballerina.io/learn/#learning-ballerina) page contains multiple resource you to get up to speed with the language, master the concepts and build comprehensive real world use cases. 

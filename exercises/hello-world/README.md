@@ -13,6 +13,15 @@ The objectives are simple:
 - Submit your solution and check it at the website.
 
 If everything goes well, you will be ready to fetch your first real exercise.
+
+#Running the tests
+
+You can run all the tests for an exercise by entering 
+
+```sh
+$ ballerina test
+```
+in your terminal.
 ## Source
 
 This is an exercise to introduce users to using Exercism [http://en.wikipedia.org/wiki/%22Hello,_world!%22_program](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program)

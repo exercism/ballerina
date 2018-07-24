@@ -16,10 +16,15 @@ If everything goes well, you will be ready to fetch your first real exercise.
 
 #Running the tests
 
+Prior to running the very first test case for Ballerina, you need to initialize your environment with: 
+```sh
+[~/Exercism/ballerina]$ ballerina init
+```
+
 You can run all the tests for an exercise by entering 
 
 ```sh
-$ ballerina test
+[~/Exercism/ballerina]$ ballerina test hello-world
 ```
 in your terminal.
 ## Source

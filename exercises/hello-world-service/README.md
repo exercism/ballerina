@@ -10,11 +10,15 @@ The objectives are simple:
 
 #Running the tests
 
-You can run all the tests for an exercise by entering 
-
+Prior to running the very first test case for Ballerina, you need to initialize your environment with: 
 ```sh
-$ ballerina test
+[~/Exercism/ballerina]$ ballerina init
 ```
+You can run all the tests for an exercise by entering 
+```sh
+[~/Exercism/ballerina]$ ballerina test hello-world-service
+```
+
 in your terminal.
 
 

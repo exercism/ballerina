@@ -5,7 +5,8 @@ for dir in ./*/
 do
     dir=${dir%*/}
     test_name=${dir##*/}
-    echo $test_name
+    echo "================================"
+    echo "Executing : $test_name"
 
     if [ -d temp_test ]; then
         echo "Cleaning temp files..."
@@ -22,6 +23,8 @@ do
     ballerina test $test_name
     cd ..
     rm -r temp_test
+    echo "================================"
+
 
 
 

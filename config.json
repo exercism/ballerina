@@ -29,6 +29,18 @@
         "services",
         "strings"
       ]
+    },
+    {
+      "slug": "greeting-service",
+      "uuid": "000f851f-08ad-4e44-9ede-ccc817221076",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "http",
+        "services",
+        "strings"
+      ]
     }
   ]
 }

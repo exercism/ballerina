@@ -8,13 +8,13 @@ endpoint http:Listener listener {
 }; 
 
 @http:ServiceConfig {basePath:"/brainyquote"}
-service<http:Service> legacy_quote bind listener {
+service<http:Service> QuoteService bind listener {
 
 
     @http:ResourceConfig{
         path: "/",  methods: ["GET"]
     }
-    getQuoteRetry (endpoint caller, http:Request request) {
+    getQuote (endpoint caller, http:Request request) {
         http:Response response;
         string payload = getRandomQuote();
         _ = caller -> respond(payload);

@@ -11,7 +11,7 @@ service<http:Service> InvokerService bind { port:9090 } {
   @http:ResourceConfig {
     path: "/"
   }
-  invoke (endpoint caller, http:Request request) {
+  invokeService(endpoint caller, http:Request request) {
       // Invoke quote service and send a HTTP GET request
       // Extract and log the quote from the response message.
       // Send the responce back to the caller.

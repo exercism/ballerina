@@ -41,6 +41,19 @@
         "services",
         "strings"
       ]
+    },
+    {
+      "slug": "service-invocation",
+      "uuid": "90925a7d-e840-4e50-bb16-5ad8d55c90ee",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "http",
+        "services",
+        "strings",
+        "log"
+      ]
     }
   ]
 }

@@ -54,6 +54,18 @@
         "strings",
         "log"
       ]
+    },
+    {
+      "slug": "calculator-service",
+      "uuid": "259fa5f6-1baf-4def-90a4-c45aa321564a",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "json",
+        "services",
+        "http",
+        "types"]
     }
   ]
 }

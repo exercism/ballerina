@@ -1,4 +1,4 @@
-# Hello World Service
+# Calculator Service
 
 In this exercise, you will build a simple service calculator service which can run basic arithmetic operations. 
 You are sending the operands and operate in the form of a JSON message to the service and service also responds with the results inside a JSON. 

@@ -10,7 +10,6 @@ endpoint http:Listener listener {
 @http:ServiceConfig {basePath:"/brainyquote"}
 service<http:Service> QuoteService bind listener {
 
-
     @http:ResourceConfig{
         path: "/",  methods: ["GET"]
     }

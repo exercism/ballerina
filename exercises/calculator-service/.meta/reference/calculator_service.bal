@@ -12,8 +12,8 @@ service<http:Service> CalculatorService bind listener {
   @http:ResourceConfig {
     path: "/calc",
     methods: ["POST"],
-    consumes: "application/json"
-    produces: "application/json"
+    consumes: ["application/json"],
+    produces: ["application/json"]
   }
   calc (endpoint caller, http:Request request) {
     http:Response response; 

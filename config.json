@@ -56,6 +56,19 @@
       ]
     },
     {
+      "slug": "legacy-service-client",
+      "uuid": "8c8cafdd-7cd6-46fd-9c9e-033dc9631c80",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "http",
+        "union type",
+        "match",
+        "error-handling"
+      ]
+    },
+    {
       "slug": "calculator-service",
       "uuid": "259fa5f6-1baf-4def-90a4-c45aa321564a",
       "core": true,

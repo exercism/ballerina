@@ -86,3 +86,14 @@ Note that:
 - Each exercise should have a test suite, an example solution, a template file for the real implementation and ... (anything else that needs to go with each exercise for this track). The CI build expects files to be named using the following convention: (describe the Ballerina convention for naming the various files that make up an exercise).
 - Please do not commit any configuration files or directories inside the exercise other than ...
 - Be sure to add it to the appropriate place in the `config.json` file.
+
+
+Quick Reference: 
+
+- Create an exercise. 
+- Add all test cases and run ``.../ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
+- Add exercise to config.json. 
+- Generate an UUID using `configlet uuid` use that as the ID for the exercise.
+- Update ``config.json`` with the metadata for the new exercise. 
+- Run linter : `` configlet lint . --track-id=ballerina`` and make sure you don't have any issues. 
+- Now you are ready to commit and push the exercise. 

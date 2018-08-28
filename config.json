@@ -79,6 +79,17 @@
         "services",
         "http",
         "types"]
+    },
+    {
+      "slug": "order-management",
+      "uuid": "d28068df-bccd-4aa1-b2eb-47b16d26221d",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "HTTP",
+        "JSON",
+        "Map"]
     }
   ]
 }

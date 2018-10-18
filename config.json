@@ -87,9 +87,23 @@
       "unlocked_by": null,
       "difficulty": 3,
       "topics": [
-        "HTTP",
-        "JSON",
-        "Map"]
+        "http",
+        "json",
+        "map"]
+    },
+    {
+      "slug": "service-composition",
+      "uuid": "ef4dc26f-137c-4f76-9b4b-d25d6251c515",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 7,
+      "topics": [
+        "http",
+        "json",
+        "endpoints",
+        "match",
+        "error handling",
+        "types"]
     }
   ]
 }

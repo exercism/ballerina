@@ -90,10 +90,14 @@ Note that:
 
 Quick Reference: 
 
-- Create an exercise. 
-- Add all test cases and run ``.../ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
-- Add exercise to config.json. 
+- Create an exercise under ``` ballerina-exercism/exercsises/<exercise-name>```
+- Add the full reference implementation to ```<exercise-name>/.meta/reference ```. 
+- Add the exercise skeleton(incomplete solution) to `` <exercise-name>/``. 
+- Add all test cases under ```<exercise-name>test/ ```.
+- Run all tests using : ``.../ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
+- Add exercise to ``` ballerina-exercism/config.json ```. 
 - Generate an UUID using `configlet uuid` use that as the ID for the exercise.
 - Update ``config.json`` with the metadata for the new exercise. 
 - Run linter : `` configlet lint . --track-id=ballerina`` and make sure you don't have any issues. 
 - Now you are ready to commit and push the exercise. 
+- Once changes are pushed, create a PR. 

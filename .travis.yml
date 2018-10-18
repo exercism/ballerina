@@ -7,7 +7,7 @@ script:
   - BALLERINA_VERSION="ballerina-platform-0.982.0"
   - echo $STRING
   # Download Ballerina dist
-  - wget https://product-dist.ballerina.io/downloads/0.981.0/$BALLERINA_VERSION.zip
+  - wget https://product-dist.ballerina.io/downloads/0.982.0/$BALLERINA_VERSION.zip
 
   # Unzip the zip file
   - unzip $BALLERINA_VERSION.zip

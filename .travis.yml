@@ -1,13 +1,14 @@
 language: bash
 jdk:
   - oraclejdk8
-  
+
 script:
 #  - bin/fetch-configlet
 #  - bin/configlet lint --track TRACK_ID .
   - STRING="Downloading ballerina..."
   - BALLERINA_VERSION="ballerina-platform-0.982.0"
   - echo $STRING
+  - java -version
   # Download Ballerina dist
   - wget https://product-dist.ballerina.io/downloads/0.982.0/$BALLERINA_VERSION.zip
 

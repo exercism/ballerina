@@ -1,5 +1,7 @@
 language: bash
-
+jdk:
+  - oraclejdk8
+  
 script:
 #  - bin/fetch-configlet
 #  - bin/configlet lint --track TRACK_ID .

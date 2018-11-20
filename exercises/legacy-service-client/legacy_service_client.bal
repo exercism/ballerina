@@ -15,7 +15,7 @@ endpoint http:Client clientEP2 {
 };
 
 
-function main(string... args) {
+public function main(string... args) {
 
     // Invoke clientEP1 using HTTP GET request on "/"
     // Invocation returns an 'union type' which can either be an 'http:Response' type or an 'error' type.

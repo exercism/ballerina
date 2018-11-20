@@ -10,7 +10,7 @@ endpoint http:Client clientEP2 {
 };
 
 
-function main(string... args) {
+public function main(string... args) {
     var resp1 = clientEP1->get("/");        
     match resp1 {
         http:Response response1 => {

@@ -106,7 +106,7 @@
         "types"]
     }, 
     {
-      "slug": "echo-world-service",
+      "slug": "echo-service",
       "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",
       "core": false,
       "unlocked_by": null,

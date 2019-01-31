@@ -1,24 +1,16 @@
 import ballerina/http;
-import ballerina/io;
 
-endpoint http:Listener listener {
-  port:9090
-};
+listener http:Listener listenerEP = new(9090);
 
-@http:ServiceConfig {
-    basePath:"/greeting"
-}
-service<http:Service> greeting bind listener {
+service greeting on listenerEP {
 
-  @http:ResourceConfig{
-    path: "/",
-    methods: ["POST"]
-  }
-  greet (endpoint caller, http:Request request) {
-    http:Response response = new; 
-    string reqPayload = check request.getPayloadAsString();
-    response.setTextPayload("Hello, " + untaint reqPayload
-                  + "!\n");
-    _ = caller -> respond(response);
-  }
+    @http:ResourceConfig {
+        path: "/",
+        methods: ["POST"]
+    }
+    resource function greet(http:Caller caller, http:Request request) returns error? {
+        string reqPayload = check request.getPayloadAsString();
+        string resPayload = "Hello, " + untaint reqPayload + "!";
+        _ = caller->respond(resPayload);
+    }
 }

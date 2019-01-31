@@ -1,6 +1,5 @@
 import ballerina/io;
 
-public function main(string... args) {
-    error err = { message:"Default Message" };
-    throw err;
+public function main() {
+    io:println("Hello, World!");
 }

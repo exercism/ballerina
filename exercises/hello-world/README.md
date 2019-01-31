@@ -14,7 +14,7 @@ The objectives are simple:
 
 If everything goes well, you will be ready to fetch your first real exercise.
 
-#Running the tests
+## Running the tests
 
 Prior to running the very first test case for Ballerina, you need to initialize your environment with: 
 ```sh

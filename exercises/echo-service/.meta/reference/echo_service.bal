@@ -1,20 +1,18 @@
 import ballerina/http;
-import ballerina/log;
 
 @http:ServiceConfig {
     basePath: "/"
 }
-service<http:Service> EchoService bind { port: 9090 } {
+service EchoService on new http:Listener(9090) {
 
-    // Invoke all resources with arguments of server connector and request.
-
+    // Resource returns the same request payload back to the client.
     @http:ResourceConfig {
         methods: ["POST"]
     }
-    echo(endpoint caller, http:Request req) {
-        http:Response res; 
-        string payload = check req.getPayloadAsString(); 
-        res.setPayload(untaint payload);
-        _ = caller->respond(res); 
+    resource function echo(http:Caller caller, http:Request req) returns error? {
+        // Extract the payload from the response and return back to the client
+        // as a response.
+        string payload = check req.getPayloadAsString();
+        _ = caller->respond(untaint payload);
     }
 }

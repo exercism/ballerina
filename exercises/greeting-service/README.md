@@ -1,14 +1,14 @@
-# Hello World Service
+# Greeting Service
 
 In this exercise, you will build a simple service that is exposed over HTTP and it accepts HTTP POST request and send back a greeting message to the consumer by appending the payload of the request to the greeting message.
 
 
 The objectives are:
 
-- Write an HTTP service that accepts only POST requests on a specific path (e.g. '/greet')
+- Write an HTTP service that accepts only POST requests on a specific path (e.g. '/greeting')
 - Extract payload content and append it with the content of the greeting message. 
 
-#Running the tests
+## Running the tests
 
 If you haven't initialized the environment, please execute the following command. 
 ```sh

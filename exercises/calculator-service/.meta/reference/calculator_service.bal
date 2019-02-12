@@ -1,13 +1,9 @@
 import ballerina/http;
 
-endpoint http:Listener listener {
-  port:9090
-};
-
 @http:ServiceConfig {
   basePath: "/"
 }
-service<http:Service> CalculatorService bind listener {
+service CalculatorService on new http:Listener(9090) {
 
   @http:ResourceConfig {
     path: "/calc",
@@ -15,14 +11,14 @@ service<http:Service> CalculatorService bind listener {
     consumes: ["application/json"],
     produces: ["application/json"]
   }
-  calc (endpoint caller, http:Request request) {
-    http:Response response; 
-    json request_j = check request.getJsonPayload(); 
+  resource function calc (http:Caller caller, http:Request request) {
+    http:Response response = new; 
+    json request_j = <json> request.getJsonPayload(); 
 
-    float opr1 =  check <float> request_j.operand1; 
-    float opr2 = check <float> request_j.operand2; 
-    string operator = check <string> request_j.operator; 
-    int id = check <int> request_j.caller_id; 
+    float opr1 =  <float> float.convert(request_j.operand1); 
+    float opr2 = <float> float.convert(request_j.operand2); 
+    string operator = <string> string.convert(request_j.operator); 
+    int id = <int> int.convert(request_j.caller_id); 
 
     float result = 0.0; 
     if (operator == "+") {

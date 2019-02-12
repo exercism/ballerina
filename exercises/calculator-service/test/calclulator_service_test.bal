@@ -12,8 +12,8 @@ function startService() {
     after: "stopService"
 }
 function testFunc() {
-    endpoint http:Client httpEndpoint { url: "http://localhost:9090" };
-    http:Request req;     
+    http:Client httpEndpoint = new("http://localhost:9090");
+    http:Request req = new;     
     float opr1 = 10.1; 
     float opr2 = 4.2; 
     int id = 12345; 
@@ -22,14 +22,13 @@ function testFunc() {
     req.setPayload(req_j); 
 
     var response = httpEndpoint->post("/calc", req); 
-    match response {
-        http:Response resp => {
-            test:assertEquals(resp.statusCode, 200); 
-            json res_j = check resp.getJsonPayload(); 
-            float result = check <float> res_j.result; 
-            test:assertEquals(result, opr1 + opr2);
-        }
-        error err => test:assertFail(msg = "Failed to call the endpoint:");
+    if (response is http:Response) {
+        test:assertEquals(response.statusCode, 200);
+        json res_j = <json> response.getJsonPayload();
+        float result = <float> res_j.result; 
+        test:assertEquals(result, opr1 + opr2);  
+    } else {
+        test:assertFail(msg = "Failed to call the endpoint:");
     }
 }
 

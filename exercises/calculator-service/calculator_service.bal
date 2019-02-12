@@ -1,21 +1,17 @@
 import ballerina/http;
 
-endpoint http:Listener listener {
-    port: 9090
-};
-
 @http:ServiceConfig {
     basePath: "/"
 }
-service<http:Service> CalculatorService bind listener {
+service CalculatorService on new http:Listener(9090) {
 
     // Add HTTP reosurce configuration to accept request on path '/calc' and specify in and out content types
     // to 'application/json' using consumes and produces annotations.
     // Suppose that incoming JSON request is in the
     // form '{ "operand1": opr1, "operand2": opr2, "operator": "+", "caller_id": id }'.
 
-    calc(endpoint caller, http:Request request) {
-        http:Response response;
+    resource function calc (http:Caller caller, http:Request request) {
+        http:Response response = new;
 
         // Extract the JSON payload from the request.
 

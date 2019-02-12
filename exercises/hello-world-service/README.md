@@ -8,7 +8,7 @@ The objectives are simple:
 
 - Write a service that accepts request over HTTP and produce "Hello, World!" as the HTTP response. 
 
-#Running the tests
+## Running the tests
 
 Prior to running the very first test case for Ballerina, you need to initialize your environment with: 
 ```sh

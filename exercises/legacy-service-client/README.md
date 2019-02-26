@@ -6,7 +6,7 @@ The objectives are:
 
 - Write a simple HTTP client program(main) that invokes HTTP services.  
 - Define two endpoints and invoke them sequentially, while handling any errors that could be thrown from those service invocations. 
-- Use the 'match' clause to handle union-type returns: if the result value is an HTTP:Response - normal processing happens.
+- Use the type guard check (`is` check) to handle union-type returns: if the result value is an HTTP:Response - normal processing happens.
  If the result is an 'error' - we use error-handling logic instead.
 - Using 'check' we can explicitly check expected type or else we can pass the error back to the caller.
 

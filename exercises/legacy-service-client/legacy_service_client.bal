@@ -5,17 +5,13 @@ import ballerina/io;
 // Use the following endpoints to send HTTP GET request to get quotes
 
 // This is an existing endpoint (which will be automatically spawned by the test framework)
-endpoint http:Client clientEP1 {
-    url:"http://localhost:9095/brainyquote"
-};
+http:Client clientEP1 = new("http://localhost:9095/brainyquote");
 
 // This is a non-existing endpoint.
-endpoint http:Client clientEP2 {
-    url:"http://localhost:6060/legacyquote"
-};
+http:Client clientEP2 = new("http://localhost:6060/legacyquote");
 
 
-public function main(string... args) {
+public function main() {
 
     // Invoke clientEP1 using HTTP GET request on "/"
     // Invocation returns an 'union type' which can either be an 'http:Response' type or an 'error' type.

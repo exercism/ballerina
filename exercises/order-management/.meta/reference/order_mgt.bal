@@ -1,54 +1,49 @@
 import ballerina/http;
 
-// Map and JSON 
-endpoint http:Listener listener {
-    port: 9090
-};
-
-map<json> ordersMap;
+map<json> ordersMap = {};
 
 @http:ServiceConfig { basePath: "/ordermgt" }
-service<http:Service> OrderMgtService bind listener {
+service OrderMgtService on new http:Listener(9090) {
 
     @http:ResourceConfig {
         methods: ["GET"],
         path: "/order/{orderId}"
     }
-    findOrder(endpoint client, http:Request req, string orderId) {
+    resource function findOrder(http:Caller caller, http:Request req, string orderId) {
         json? payload = ordersMap[orderId];
-        http:Response response;
+        http:Response response = new;
         if (payload == null) {
             payload = "Order : " + orderId + " cannot be found.";
         }
         response.setJsonPayload(untaint payload);
-        _ = client->respond(response);
+        _ = caller->respond(response);
     }
 
     @http:ResourceConfig {
         methods: ["POST"],
         path: "/order"
     }
-    addOrder(endpoint client, http:Request req) {
-        json orderReq = check req.getJsonPayload();
+    resource function addOrder(http:Caller caller, http:Request req) returns error? {
+        var orderReq = check req.getJsonPayload();
         string orderId = orderReq.Order.ID.toString();
         ordersMap[orderId] = orderReq;
 
         json payload = { status: "Order Created.", orderId: orderId };
-        http:Response response;
+        http:Response response = new;
         response.setJsonPayload(untaint payload);
 
         response.statusCode = 201;
         response.setHeader("Location", "http://localhost:9090/ordermgt/order/" +
                 orderId);
 
-        _ = client->respond(response);
+        _ = caller->respond(response);
     }
 
     @http:ResourceConfig {
         methods: ["PUT"],
         path: "/order/{orderId}"
     }
-    updateOrder(endpoint client, http:Request req, string orderId) {
+    resource function updateOrder(http:Caller caller, http:Request req, string orderId) returns error? {
         json updatedOrder = check req.getJsonPayload();
         json existingOrder = ordersMap[orderId];
 
@@ -60,21 +55,21 @@ service<http:Service> OrderMgtService bind listener {
             existingOrder = "Order : " + orderId + " cannot be found.";
         }
 
-        http:Response response;
+        http:Response response = new;
         // Set the JSON payload to the outgoing response message to the client.
         response.setJsonPayload(untaint existingOrder);
         // Send response to the client.
-        _ = client->respond(response);
+        _ = caller->respond(response);
     }
 
-    // Resource that handles the HTTP DELETE requests, which are directed to the path
+    // Resource function that handles the HTTP DELETE requests, which are directed to the path
     // '/orders/<orderId>' to delete an existing Order.
     @http:ResourceConfig {
         methods: ["DELETE"],
         path: "/order/{orderId}"
     }
-    cancelOrder(endpoint client, http:Request req, string orderId) {
-        http:Response response;
+    resource function cancelOrder(http:Caller caller, http:Request req, string orderId) {
+        http:Response response = new;
         // Remove the requested order from the map.
         _ = ordersMap.remove(orderId);
 
@@ -83,6 +78,6 @@ service<http:Service> OrderMgtService bind listener {
         response.setJsonPayload(untaint payload);
 
         // Send response to the client.
-        _ = client->respond(response);
+        _ = caller->respond(response);
     }
 }

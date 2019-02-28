@@ -2,19 +2,10 @@ import ballerina/test;
 import ballerina/io;
 import ballerina/http;
 
-boolean serviceStarted;
-
-
-function startService() {
-}
-
-@test:Config {
-    before: "startService",
-    after: "stopService"
-}
-function testFunc() {
-    endpoint http:Client orderMgtEp { url: "http://localhost:9090/ordermgt" };
-    http:Request req;    
+@test:Config
+function testFunc() returns error? {
+    http:Client orderMgtEp = new("http://localhost:9090/ordermgt");
+    http:Request req = new;
     string order_id = "100500"; 
     string order_name = "XYZ"; 
     string order_desc = "Sample order."; 
@@ -48,7 +39,4 @@ function testFunc() {
     test:assertEquals(res.statusCode, 200);
     res = check orderMgtEp->get("/order/" + order_id);
     test:assertEquals(res_j.Order.ID, null);
-}
-
-function stopService() {
 }

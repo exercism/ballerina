@@ -3,25 +3,21 @@ import ballerina/io;
 import ballerina/runtime;
 import ballerina/math; 
 
-endpoint http:Listener listener {
-    port:9095
-}; 
 
 @http:ServiceConfig {basePath:"/brainyquote"}
-service<http:Service> QuoteService bind listener {
+service QuoteService on new http:Listener(9095) {
 
     @http:ResourceConfig{
         path: "/",  methods: ["GET"]
     }
-    getQuote (endpoint caller, http:Request request) {
-        http:Response response;
+    resource function getQuote (http:Caller caller, http:Request request) {
         string payload = getRandomQuote();
-        _ = caller -> respond(payload);
+        _ = caller->respond(payload);
     } 
 }
 
 
-function getRandomQuote () returns (string) {
+function getRandomQuote () returns string {
     string[] quotes = [ "Many of life’s failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison\n",
                         "Believe you can and you’re halfway there. — Theodore Roosevelt\n",
                         "Be sure you put your feet in the right place, then stand firm. - Abraham Lincoln\n",
@@ -30,7 +26,7 @@ function getRandomQuote () returns (string) {
                         "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light. — Plato\n"
                         ];
 
-    int index = math:randomInRange(0, lengthof quotes); 
+    int index = math:randomInRange(0, quotes.length());
     string quote = quotes[index]; 
     return quote; 
 }

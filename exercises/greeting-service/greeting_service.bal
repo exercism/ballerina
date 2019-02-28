@@ -9,8 +9,8 @@ service greeting on listenerEP {
         methods: ["POST"]
     }
     resource function greet(http:Caller caller, http:Request request) returns error? {
-        string reqPayload = check request.getPayloadAsString();
-        string resPayload = "Hello, " + untaint reqPayload + "!";
-        _ = caller->respond(resPayload);
+        // Extract payload content and append it with the content of the greeting message.
+        // Send the response back to the caller.
+
     }
 }

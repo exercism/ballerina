@@ -27,7 +27,6 @@ service OrderMgtService on new http:Listener(9090) {
         // Send the response back to the caller.
     }
 
-
     // HTTP PUT resource
     // path -> "/order/{orderId}"
 

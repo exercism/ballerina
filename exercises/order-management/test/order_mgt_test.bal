@@ -2,9 +2,6 @@ import ballerina/test;
 import ballerina/io;
 import ballerina/http;
 
-boolean serviceStarted;
-
-
 @test:Config
 function testFunc() returns error? {
     http:Client orderMgtEp = new("http://localhost:9090/ordermgt");

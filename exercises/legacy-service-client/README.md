@@ -18,7 +18,7 @@ If you haven't initialized the environment, please execute the following command
 ```
 You can run all the tests for an exercise by entering 
 ```sh
-[~/Exercism/ballerina]$ ballerina test calculator-service
+[~/Exercism/ballerina]$ ballerina test legacy-service-client
 ```
 in your terminal.
 

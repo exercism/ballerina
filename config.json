@@ -50,9 +50,9 @@
       "difficulty": 1,
       "topics": [
         "http",
+        "log",
         "services",
-        "strings",
-        "log"
+        "strings"
       ]
     },
     {
@@ -62,10 +62,10 @@
       "unlocked_by": null,
       "difficulty": 2,
       "topics": [
+        "error_handling",
         "http",
-        "union type",
         "match",
-        "error-handling"
+        "union_type"
       ]
     },
     {
@@ -75,10 +75,11 @@
       "unlocked_by": null,
       "difficulty": 2,
       "topics": [
+        "http",
         "json",
         "services",
-        "http",
-        "types"]
+        "types"
+      ]
     },
     {
       "slug": "order-management",
@@ -89,7 +90,8 @@
       "topics": [
         "http",
         "json",
-        "map"]
+        "map"
+      ]
     },
     {
       "slug": "service-composition",
@@ -98,13 +100,14 @@
       "unlocked_by": null,
       "difficulty": 7,
       "topics": [
+        "endpoints",
+        "error_handling",
         "http",
         "json",
-        "endpoints",
         "match",
-        "error-handling",
-        "types"]
-    }, 
+        "types"
+      ]
+    },
     {
       "slug": "echo-service",
       "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",

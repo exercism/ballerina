@@ -10,66 +10,66 @@
       "link_url": null,
       "avatar_url": null,
       "bio": null
-    }, 
-    {
-        "github_username": "lafernando",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
-    }, 
-    {
-        "github_username": "vinok88",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
-    }, 
-    {
-        "github_username": "ldclakmal",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
-    }, 
-    {
-        "github_username": "Manuri",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
-    }, 
-    {
-        "github_username": "MaryamZi",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
     },
     {
-        "github_username": "keizer619",
-        "alumnus": true,
-        "show_on_website": false,
-        "name": null,
-        "link_text": null,
-        "link_url": null,
-        "avatar_url": null,
-        "bio": null
-    } 
+      "github_username": "lafernando",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "vinok88",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "ldclakmal",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "Manuri",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "MaryamZi",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "keizer619",
+      "alumnus": true,
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    }
   ]
 }

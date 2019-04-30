@@ -38,5 +38,5 @@ function testFunc() returns error? {
     res_j = check res.getJsonPayload(); 
     test:assertEquals(res.statusCode, 200);
     res = check orderMgtEp->get("/order/" + order_id);
-    test:assertEquals(res_j.Order.ID, null);
+    test:assertEquals(res_j.Order.ID, ());
 }

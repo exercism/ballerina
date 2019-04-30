@@ -15,6 +15,7 @@
 // under the License.
 
 import ballerina/http;
+import ballerina/log;
 //import ballerinax/docker;
 //import ballerinax/kubernetes;
 
@@ -75,7 +76,10 @@ service travelAgencyService on travelAgencyEP {
             // NOT a valid JSON payload
             outResponse.statusCode = 400;
             outResponse.setJsonPayload({"Message":"Invalid payload - Not a valid JSON payload"});
-            _ = caller->respond(outResponse);
+            var responseResult = caller->respond(outResponse);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
@@ -86,18 +90,20 @@ service travelAgencyService on travelAgencyEP {
         json? airlinePreference;
         json? hotelPreference;
         json? carPreference;
-        if (preference is json) {
-            airlinePreference = preference["Airline"];
-            hotelPreference =  preference["Accommodation"];
-            carPreference = preference["Car"];
-        }
+
+        airlinePreference = preference["Airline"];
+        hotelPreference =  preference["Accommodation"];
+        carPreference = preference["Car"];
 
         // If payload parsing fails, send a "Bad Request" message as the response
         if (name is () || arrivalDate is () || departureDate is () ||
             airlinePreference is () || hotelPreference is () || carPreference is ()) {
             outResponse.statusCode = 400;
             outResponse.setJsonPayload({"Message":"Bad Request - Invalid Payload"});
-            _ = caller->respond(outResponse);
+            var responseResult = caller->respond(outResponse);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
         outReqPayload.Name = name;
@@ -120,7 +126,10 @@ service travelAgencyService on travelAgencyEP {
         if (airlineStatus.equalsIgnoreCase("Failed")) {
             outResponse.setJsonPayload({"Message":"Failed to reserve airline! " +
                     "Provide a valid 'Preference' for 'Airline' and try again"});
-            _ = caller->respond(outResponse);
+            var responseResult = caller->respond(outResponse);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
@@ -140,7 +149,10 @@ service travelAgencyService on travelAgencyEP {
         if (hotelStatus.equalsIgnoreCase("Failed")) {
             outResponse.setJsonPayload({"Message":"Failed to reserve hotel! " +
                     "Provide a valid 'Preference' for 'Accommodation' and try again"});
-            _ = caller->respond(outResponse);
+            var responseResult = caller->respond(outResponse);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
@@ -160,13 +172,19 @@ service travelAgencyService on travelAgencyEP {
         if (carRentalStatus.equalsIgnoreCase("Failed")) {
             outResponse.setJsonPayload({"Message":"Failed to rent car! " +
                     "Provide a valid 'Preference' for 'Car' and try again"});
-            _ = caller->respond(outResponse);
+            var responseResult = caller->respond(outResponse);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
 
         // If all three services response positive status, send a successful message to the user
         outResponse.setJsonPayload({"Message":"Congratulations! Your journey is ready!!"});
-        _ = caller->respond(outResponse);
+        var responseResult = caller->respond(outResponse);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 }

@@ -1,4 +1,5 @@
 import ballerina/http;
+import ballerina/log;
 
 @http:ServiceConfig {
     basePath: "/"
@@ -10,7 +11,7 @@ service CalculatorService on new http:Listener(9090) {
     // Suppose that incoming JSON request is in the
     // form '{ "operand1": opr1, "operand2": opr2, "operator": "+", "caller_id": id }'.
 
-    resource function calc (http:Caller caller, http:Request request) {
+    resource function calc(http:Caller caller, http:Request request) {
         http:Response response = new;
 
         // Extract the JSON payload from the request.
@@ -29,6 +30,9 @@ service CalculatorService on new http:Listener(9090) {
 
         // Set the JSON payload to the request as an untaint value
 
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 }

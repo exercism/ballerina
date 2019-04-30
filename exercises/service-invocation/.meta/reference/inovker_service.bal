@@ -2,7 +2,6 @@ import ballerina/http;
 import ballerina/io;
 import ballerina/log;
 
-
 http:Client quoteEp = new("http://localhost:9095/");
 
 @http:ServiceConfig {
@@ -18,6 +17,9 @@ service InvokerService on new http:Listener(9090) {
         string payload = untaint check quote.getTextPayload();
         response.setTextPayload(payload);
         log:printInfo("Quote :" + payload);
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 }

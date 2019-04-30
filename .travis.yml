@@ -14,7 +14,7 @@ script:
   - wget https://product-dist.ballerina.io/downloads/0.991.0/$BALLERINA_VERSION.zip
 
   # Unzip the zip file
-  - unzip $BALLERINA_VERSION.zip
+  - unzip -q $BALLERINA_VERSION.zip
 
   # Add Ballerina to the path variable
   - export PATH=$PATH:$(pwd)/$BALLERINA_VERSION/bin

@@ -1,4 +1,5 @@
 import ballerina/http;
+import ballerina/log;
 
 map<json> ordersMap = {};
 
@@ -16,7 +17,10 @@ service OrderMgtService on new http:Listener(9090) {
             payload = "Order : " + orderId + " cannot be found.";
         }
         response.setJsonPayload(untaint payload);
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 
     @http:ResourceConfig {
@@ -36,7 +40,10 @@ service OrderMgtService on new http:Listener(9090) {
         response.setHeader("Location", "http://localhost:9090/ordermgt/order/" +
                 orderId);
 
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 
     @http:ResourceConfig {
@@ -59,7 +66,10 @@ service OrderMgtService on new http:Listener(9090) {
         // Set the JSON payload to the outgoing response message to the client.
         response.setJsonPayload(untaint existingOrder);
         // Send response to the client.
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 
     // Resource function that handles the HTTP DELETE requests, which are directed to the path
@@ -78,6 +88,9 @@ service OrderMgtService on new http:Listener(9090) {
         response.setJsonPayload(untaint payload);
 
         // Send response to the client.
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 }

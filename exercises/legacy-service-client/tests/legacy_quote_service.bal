@@ -13,7 +13,10 @@ service QuoteService on new http:Listener(9095) {
     resource function getQuote (http:Caller caller, http:Request request) {
         http:Response response;
         string payload = getDefaultQuote();
-        _ = caller -> respond(payload);
+        var responseResult = caller->respond(payload);
+        if (responseResult is error) {
+            io:println("error responding back to client.");
+        }
     }
 }
 

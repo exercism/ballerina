@@ -15,6 +15,7 @@
 // under the License.
 
 import ballerina/http;
+import ballerina/log;
 //import ballerinax/docker;
 //import ballerinax/kubernetes;
 
@@ -65,7 +66,10 @@ service carRentalService on new http:Listener(9093) {
             // NOT a valid JSON payload
             response.statusCode = 400;
             response.setJsonPayload({"Message":"Invalid payload - Not a valid JSON payload"});
-            _ = caller->respond(response);
+            var responseResult = caller->respond(response);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
@@ -78,7 +82,10 @@ service carRentalService on new http:Listener(9093) {
         if (name is () || arrivalDate is () || departDate is () || preferredType is ()) {
             response.statusCode = 400;
             response.setJsonPayload({"Message":"Bad Request - Invalid Payload"});
-            _ = caller->respond(response);
+            var responseResult = caller->respond(response);
+            if (responseResult is error) {
+                log:printError("error responding back to client.", err = responseResult);
+            }
             return;
         }
 
@@ -93,6 +100,9 @@ service carRentalService on new http:Listener(9093) {
             response.setJsonPayload({"Status":"Failed"});
         }
         // Send the response
-        _ = caller->respond(response);
+        var responseResult = caller->respond(response);
+        if (responseResult is error) {
+            log:printError("error responding back to client.", err = responseResult);
+        }
     }
 }

@@ -63,6 +63,15 @@
       "link_url": null,
       "avatar_url": null,
       "bio": null
+    },
+    {
+      "github_username": "hemikak",
+      "show_on_website": false,
+      "name": "Hemika Kodikara",
+      "link_text": "https://medium.com/@hemika.kodikara",
+      "link_url": "https://medium.com/@hemika.kodikara",
+      "avatar_url": null,
+      "bio": "I am an Engineer at WSO2 working for the cloud native capabilities of Ballerina. "
     }
   ]
 }

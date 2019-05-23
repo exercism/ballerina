@@ -11,11 +11,11 @@ function testFunc() {
         var payload = response.getTextPayload();
         if (payload is string) {
             boolean quoteFound = false;
-            foreach string quote in quotes {
+            quotes.foreach(function(string quote) {
                 if (quote == payload) {
                     quoteFound = true;
                 }
-            }
+            });
             test:assertEquals(quoteFound, true , msg = "Invalid quote received.");
         } else {
             test:assertFail(msg = "Invalid response payload received.");

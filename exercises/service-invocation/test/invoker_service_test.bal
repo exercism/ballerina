@@ -8,6 +8,18 @@ function testFunc() {
     var response = httpEndpoint->get("/quote");
     if (response is http:Response) {
         test:assertEquals(response.statusCode, 200);
+        var payload = response.getTextPayload();
+        if (payload is string) {
+            boolean quoteFound = false;
+            foreach string quote in quotes {
+                if (quote == payload) {
+                    quoteFound = true;
+                }
+            }
+            test:assertEquals(quoteFound, true , msg = "Invalid quote received.");
+        } else {
+            test:assertFail(msg = "Invalid response payload received.");
+        }
     } else {
         test:assertFail(msg = "Failed to call the endpoint:");
     }

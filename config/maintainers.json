@@ -2,7 +2,16 @@
   "docs_url": "https://github.com/exercism/docs/blob/master/maintaining-a-track/maintainer-configuration.md",
   "maintainers": [
     {
-      "github_username": "kasun04",
+      "github_username": "vinok88",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "Manuri",
       "alumnus": true,
       "show_on_website": false,
       "name": null,
@@ -12,7 +21,8 @@
       "bio": null
     },
     {
-      "github_username": "vinok88",
+      "github_username": "kasun04",
+      "alumnus": true,
       "show_on_website": false,
       "name": null,
       "link_text": null,
@@ -30,7 +40,7 @@
       "bio": null
     },
     {
-      "github_username": "Manuri",
+      "github_username": "MaryamZi",
       "show_on_website": false,
       "name": null,
       "link_text": null,
@@ -39,7 +49,52 @@
       "bio": null
     },
     {
-      "github_username": "MaryamZi",
+      "github_username": "praneesha",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "bhashinee",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "pubudu91",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "daneshk",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "irshadnilam",
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
+    },
+    {
+      "github_username": "chamil321",
       "show_on_website": false,
       "name": null,
       "link_text": null,

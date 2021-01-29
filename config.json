@@ -1,6 +1,7 @@
 {
   "track_id": "ballerina",
   "language": "Ballerina",
+  "slug": "ballerina",
   "active": false,
   "status": {
     "concept_exercises": false,

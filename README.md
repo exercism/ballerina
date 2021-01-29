@@ -94,7 +94,7 @@ Quick Reference:
 - Add the full reference implementation to ```<exercise-name>/.meta/reference ```. 
 - Add the exercise skeleton(incomplete solution) to `` <exercise-name>/``. 
 - Add all test cases under ```<exercise-name>test/ ```.
-- Run all tests using : ``.../ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
+- Run all tests using : ``.https://github.com/exercism/v3/blob/main/ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
 - Add exercise to ``` ballerina-exercism/config.json ```. 
 - Generate an UUID using `configlet uuid` use that as the ID for the exercise.
 - Update ``config.json`` with the metadata for the new exercise. 

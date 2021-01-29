@@ -11,6 +11,10 @@
   },
   "blurb": "Ballerina is a cloud-native programming language that incorporates fundamental concepts of distributed system integration into the language and offers a type safe, concurrent environment to implement microservices with distributed transactions, reliable messaging, stream processing, and workflows.",
   "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
   "ignore_pattern": "[Ee]xample",
   "solution_pattern": "reference",
   "test_pattern": "[Tt]est",

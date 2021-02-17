@@ -18,6 +18,20 @@
   "ignore_pattern": "[Ee]xample",
   "solution_pattern": "reference",
   "test_pattern": "[Tt]est",
+  "files": {
+    "solution": [
+      "%{snake_slug}.bal"
+    ],
+    "test": [
+      "tests/%{snake_slug}_test.bal"
+    ],
+    "example": [
+      ".meta/reference/%{snake_slug}.bal"
+    ],
+    "exemplar": [
+      ".meta/reference/%{snake_slug}.bal"
+    ]
+  },
   "exercises": {
     "concept": [],
     "practice": [

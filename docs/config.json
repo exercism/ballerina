@@ -1,0 +1,25 @@
+{
+  "docs": [
+    {
+      "uuid": "55046ce5-631c-4647-a517-0d74a55fef99",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing Ballerina locally",
+      "blurb": "Learn how to install Ballerina locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "d1319abb-3751-408b-b831-88fcf6b36aee",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn Ballerina",
+      "blurb": "An overview of how to get started from scratch with Ballerina"
+    },
+    {
+      "uuid": "4a9cc496-ff82-4eb6-bd80-fe6b926ca802",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the Ballerina track",
+      "blurb": "Learn how to test your Ballerina exercises on Exercism"
+    }
+  ]
+}

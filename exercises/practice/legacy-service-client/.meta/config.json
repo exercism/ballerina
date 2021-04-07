@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "legacy_service_client.bal"
+    ],
+    "test": [
+      "tests/legacy_service_client_test.bal"
+    ],
+    "example": [
+      ".meta/reference/legacy_service_client.bal"
+    ]
   }
 }

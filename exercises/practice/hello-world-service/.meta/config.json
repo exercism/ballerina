@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "hello_world_service.bal"
+    ],
+    "test": [
+      "tests/hello_world_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/hello_world_service.bal"
+    ]
   }
 }

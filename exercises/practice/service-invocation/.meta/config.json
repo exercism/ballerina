@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "service_invocation.bal"
+    ],
+    "test": [
+      "tests/service_invocation_test.bal"
+    ],
+    "example": [
+      ".meta/reference/service_invocation.bal"
+    ]
   }
 }

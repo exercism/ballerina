@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "order_management.bal"
+    ],
+    "test": [
+      "tests/order_management_test.bal"
+    ],
+    "example": [
+      ".meta/reference/order_management.bal"
+    ]
   }
 }

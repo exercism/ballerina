@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "service_composition.bal"
+    ],
+    "test": [
+      "tests/service_composition_test.bal"
+    ],
+    "example": [
+      ".meta/reference/service_composition.bal"
+    ]
   }
 }

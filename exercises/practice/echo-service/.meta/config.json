@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "echo_service.bal"
+    ],
+    "test": [
+      "tests/echo_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/echo_service.bal"
+    ]
   }
 }

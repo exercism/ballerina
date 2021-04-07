@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "greeting_service.bal"
+    ],
+    "test": [
+      "tests/greeting_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/greeting_service.bal"
+    ]
   }
 }

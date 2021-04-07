@@ -1,8 +1,14 @@
 {
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "calculator_service.bal"
+    ],
+    "test": [
+      "tests/calculator_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/calculator_service.bal"
+    ]
   }
 }

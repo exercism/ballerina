@@ -2,13 +2,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "service_composition.bal"
+      "travel_agency_service.bal"
     ],
     "test": [
-      "tests/service_composition_test.bal"
+      "tests/travel_agency_service_test.bal"
     ],
     "example": [
-      ".meta/reference/service_composition.bal"
+      ".meta/reference/travel_agency_service.bal"
     ]
   }
 }

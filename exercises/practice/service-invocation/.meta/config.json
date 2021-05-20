@@ -2,13 +2,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "service_invocation.bal"
+      "invoker_service.bal"
     ],
     "test": [
-      "tests/service_invocation_test.bal"
+      "tests/invoker_service_test.bal"
     ],
     "example": [
-      ".meta/reference/service_invocation.bal"
+      ".meta/reference/invoker_service.bal"
     ]
   }
 }

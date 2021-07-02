@@ -1,5 +1,11 @@
 {
   "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "Manuri",
+    "vinok88"
+  ],
   "files": {
     "solution": [
       "order_mgt.bal"

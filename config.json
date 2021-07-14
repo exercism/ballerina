@@ -16,9 +16,6 @@
     "indent_size": 4,
     "highlightjs_language": "text"
   },
-  "ignore_pattern": "[Ee]xample",
-  "solution_pattern": "reference",
-  "test_pattern": "[Tt]est",
   "files": {
     "solution": [
       "%{snake_slug}.bal"

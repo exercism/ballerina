@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest]
-        java-version: [8]
+        java-version: [11]
         ballerina-version: [0.991.0]
 
     steps:

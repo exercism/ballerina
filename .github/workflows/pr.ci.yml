@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest]
-        java-version: [11]
-        ballerina-version: [2201.2.2]
+        java-version: [8]
+        ballerina-version: [0.991.0]
 
     steps:
       - uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
       - name: Install project dependencies
         shell: bash
         env:
-          BALLERINA_VERSION: ballerina-${{ matrix.ballerina-version }}-swan-lake
+          BALLERINA_VERSION: ballerina-${{ matrix.ballerina-version }}
         run: |
           # Download Ballerina dist
           curl -fsSL https://dist.ballerina.io/downloads/${{ matrix.ballerina-version }}/$BALLERINA_VERSION.zip --output $BALLERINA_VERSION.zip
@@ -38,5 +38,5 @@ jobs:
 
       - name: Run exercism/ballerina ci (runs tests) for all exercises
         run: |
-          cd exercises/practice
+          cd exercises
           bash -xe run_ballerina_tests.sh

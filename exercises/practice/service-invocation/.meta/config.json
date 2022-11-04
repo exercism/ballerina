@@ -1,0 +1,20 @@
+{
+  "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "Manuri",
+    "vinok88"
+  ],
+  "files": {
+    "solution": [
+      "invoker_service.bal"
+    ],
+    "test": [
+      "tests/invoker_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/invoker_service.bal"
+    ]
+  }
+}

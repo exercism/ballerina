@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 for dir in ./*/
 do
     dir=${dir%*/}
@@ -16,12 +17,17 @@ do
     cp -r $test_name ./temp_test
     rm -r ./temp_test/$test_name/.meta
     cp -r $test_name/.meta/reference/* ./temp_test/$test_name
-    # cp -r ./.ballerina ./temp_test
+    cp -r ./.ballerina ./temp_test
     cd ./temp_test
-    bal init
-    bal test
+    ballerina init
+    ballerina test $test_name
     cd ..
     rm -r temp_test
     echo "================================"
 
+
+
+
+
 done
+

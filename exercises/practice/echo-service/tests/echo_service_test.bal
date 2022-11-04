@@ -3,13 +3,9 @@ import ballerina/test;
 
 @test:Config
 function testFunc() {
-    // Invoking the main function
     http:Client httpEndpoint = new("http://localhost:9090");
-
     string payload = "Hello, World!";
-
-    // Send a GET request to the specified endpoint
-    var response = httpEndpoint->get("/hello/sayHello");
+    var response = httpEndpoint->post("/echo", payload);
     if (response is http:Response) {
         var res = response.getTextPayload();
         if (res is string) {

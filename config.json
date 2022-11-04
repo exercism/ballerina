@@ -17,10 +17,18 @@
     "highlightjs_language": "text"
   },
   "files": {
-    "solution": ["%{snake_slug}.bal"],
-    "test": ["tests/%{snake_slug}_test.bal"],
-    "example": [".meta/reference/%{snake_slug}.bal"],
-    "exemplar": [".meta/reference/%{snake_slug}.bal"]
+    "solution": [
+      "%{snake_slug}.bal"
+    ],
+    "test": [
+      "tests/%{snake_slug}_test.bal"
+    ],
+    "example": [
+      ".meta/reference/%{snake_slug}.bal"
+    ],
+    "exemplar": [
+      ".meta/reference/%{snake_slug}.bal"
+    ]
   },
   "exercises": {
     "concept": [],
@@ -32,7 +40,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings"]
+        "topics": [
+          "strings"
+        ]
       },
       {
         "slug": "hello-world-service",
@@ -41,25 +51,112 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "services", "strings"]
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
+      },
+      {
+        "slug": "greeting-service",
+        "name": "Greeting Service",
+        "uuid": "000f851f-08ad-4e44-9ede-ccc817221076",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
+      },
+      {
+        "slug": "service-invocation",
+        "name": "Service Invocation",
+        "uuid": "90925a7d-e840-4e50-bb16-5ad8d55c90ee",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
+      },
+      {
+        "slug": "legacy-service-client",
+        "name": "Legacy Service Client",
+        "uuid": "8c8cafdd-7cd6-46fd-9c9e-033dc9631c80",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "error_handling",
+          "http",
+          "match",
+          "union_type"
+        ]
+      },
+      {
+        "slug": "calculator-service",
+        "name": "Calculator Service",
+        "uuid": "259fa5f6-1baf-4def-90a4-c45aa321564a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "http",
+          "json",
+          "services",
+          "types"
+        ]
+      },
+      {
+        "slug": "order-management",
+        "name": "Order Management",
+        "uuid": "d28068df-bccd-4aa1-b2eb-47b16d26221d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "http",
+          "json",
+          "map"
+        ]
+      },
+      {
+        "slug": "service-composition",
+        "name": "Service Composition",
+        "uuid": "ef4dc26f-137c-4f76-9b4b-d25d6251c515",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7,
+        "topics": [
+          "endpoints",
+          "error_handling",
+          "http",
+          "json",
+          "match",
+          "types"
+        ]
+      },
+      {
+        "slug": "echo-service",
+        "name": "Echo Service",
+        "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
       }
     ]
   },
   "concepts": [],
   "key_features": [],
-  "tags": [
-    "paradigm/procedural",
-    "paradigm/imperative",
-    "paradigm/object_oriented",
-    "typing/static",
-    "typing/strong",
-    "execution_mode/compiled",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
-    "runtime/jvm",
-    "used_for/backends",
-    "used_for/web_development",
-    "used_for/cross_platform_development"
-  ]
+  "tags": []
 }

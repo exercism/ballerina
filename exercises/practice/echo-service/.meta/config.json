@@ -1,19 +1,21 @@
 {
   "authors": [],
   "contributors": [
+    "hemikak",
     "kasun04",
+    "lafernando",
     "ldclakmal",
-    "Manuri"
+    "vinok88"
   ],
   "files": {
     "solution": [
-      "hello_world_service.bal"
+      "echo_service.bal"
     ],
     "test": [
-      "tests/hello_world_service_test.bal"
+      "tests/echo_service_test.bal"
     ],
     "example": [
-      ".meta/reference/hello_world_service.bal"
+      ".meta/reference/echo_service.bal"
     ]
   }
 }

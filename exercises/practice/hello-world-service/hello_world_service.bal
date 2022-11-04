@@ -1,10 +1,12 @@
 import ballerina/http;
+import ballerina/log;
 
-// Implement a general http service listener on port 9090
-service {
+// By default, Ballerina exposes a service via HTTP/1.1.
+service hello on new http:Listener(9090) {
 
-    // add a GET resource called "greeting" that returns the "Hello, World!" message
-    resource {
+    // Invoke `sayHello` resource with caller and request.
+    resource function sayHello(http:Caller caller, http:Request req) {
+        // Send the response back to the caller.
 
     }
-} 
+}

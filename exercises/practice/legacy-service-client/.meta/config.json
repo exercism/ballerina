@@ -1,0 +1,20 @@
+{
+  "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "Manuri",
+    "vinok88"
+  ],
+  "files": {
+    "solution": [
+      "legacy_service_client.bal"
+    ],
+    "test": [
+      "tests/legacy_service_client_test.bal"
+    ],
+    "example": [
+      ".meta/reference/legacy_service_client.bal"
+    ]
+  }
+}

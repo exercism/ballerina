@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "vinok88"
+  ],
+  "files": {
+    "solution": [
+      "calculator_service.bal"
+    ],
+    "test": [
+      "tests/calculator_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/calculator_service.bal"
+    ]
+  }
+}

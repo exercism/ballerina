@@ -1,0 +1,24 @@
+{
+  "blurb": "Creating a service in ballerina is easy. Now you can add a query parameter and a relative path.",
+  "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "lafernando",
+    "ldclakmal",
+    "vinok88"
+  ],
+  "files": {
+    "solution": [
+      "echo_service.bal"
+    ],
+    "test": [
+      "tests/echo_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/echo_service.bal"
+    ]
+  },
+  "source": "This is an exercise to introduce users to using Ballerina Network interactions",
+  "source_url": "https://ballerina.io/learn/by-example/#network-interaction"
+}

@@ -26,6 +26,15 @@
     "concept": [],
     "practice": [
       {
+        "slug": "echo-service",
+        "name": "Echo Service",
+        "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": ["http", "services", "strings"]
+      },
+      {
         "slug": "hello-world",
         "name": "Hello World",
         "uuid": "91441035-67fa-40e3-a4d5-39476801172a",

@@ -7,19 +7,6 @@
 dependencies-toml-version = "2"
 
 [[package]]
-org = "andrewd"
-name = "hello_world"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "test"},
-	{org = "ballerinai", name = "observe"}
-]
-modules = [
-	{org = "andrewd", packageName = "hello_world", moduleName = "hello_world"}
-]
-
-[[package]]
 org = "ballerina"
 name = "io"
 version = "1.2.2"
@@ -62,6 +49,19 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerina", packageName = "test", moduleName = "test"}
+]
+
+[[package]]
+org = "ballerina_exercism"
+name = "hello_world"
+version = "0.1.0"
+dependencies = [
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "test"},
+	{org = "ballerinai", name = "observe"}
+]
+modules = [
+	{org = "ballerina_exercism", packageName = "hello_world", moduleName = "hello_world"}
 ]
 
 [[package]]

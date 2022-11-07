@@ -26,6 +26,20 @@
     "concept": [],
     "practice": [
       {
+        "slug": "calculator-service",
+        "name": "Calculator Service",
+        "uuid": "259fa5f6-1baf-4def-90a4-c45aa321564a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "http",
+          "json",
+          "services",
+          "types"
+        ]
+      },
+      {
         "slug": "echo-service",
         "name": "Echo Service",
         "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",

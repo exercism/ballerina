@@ -1,10 +1,23 @@
 {
+  "blurb": "The classical introductory exercise. Just create a service to say \"Hello, World!\".",
   "authors": [],
-  "blurb": "fun",
-  "contributors": ["kasun04", "ldclakmal", "Manuri"],
+  "contributors": [
+    "vordimous",
+    "kasun04",
+    "ldclakmal",
+    "Manuri"
+  ],
   "files": {
-    "solution": ["hello_world_service.bal"],
-    "test": ["tests/hello_world_service_test.bal"],
-    "example": [".meta/reference/hello_world_service.bal"]
-  }
+    "solution": [
+      "hello_world_service.bal"
+    ],
+    "test": [
+      "tests/hello_world_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/hello_world_service.bal"
+    ]
+  },
+  "source": "This is an exercise to introduce users to using Ballerina Services",
+  "source_url": "https://ballerina.io/learn/by-example/hello-world-service/"
 }

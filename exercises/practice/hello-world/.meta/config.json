@@ -2,12 +2,12 @@
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
   "authors": [],
   "contributors": [
+    "vordimous",
     "kasun04",
     "ldclakmal",
     "Manuri",
     "son1112",
-    "vinok88",
-    "vordimous"
+    "vinok88"
   ],
   "files": {
     "solution": [
@@ -20,6 +20,6 @@
       ".meta/reference/hello_world.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Exercism",
-  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
+  "source": "This is an exercise to introduce users to using Ballerina",
+  "source_url": "https://ballerina.io/learn/by-example/hello-world/"
 }

@@ -1,0 +1,10 @@
+{
+  "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
+  "authors": [],
+  "contributors": ["hemikak", "kasun04", "lafernando", "ldclakmal", "vinok88"],
+  "files": {
+    "solution": ["greeting_service.bal"],
+    "test": ["tests/greeting_service_test.bal"],
+    "example": [".meta/reference/greeting_service.bal"]
+  }
+}

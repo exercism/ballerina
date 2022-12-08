@@ -7,19 +7,6 @@
 dependencies-toml-version = "2"
 
 [[package]]
-org = "ballerina_exercism"
-name = "echo_service"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "test"},
-	{org = "ballerinai", name = "observe"}
-]
-modules = [
-	{org = "ballerina_exercism", packageName = "echo_service", moduleName = "echo_service"}
-]
-
-[[package]]
 org = "ballerina"
 name = "auth"
 version = "2.4.0"
@@ -75,7 +62,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "http"
-version = "2.4.4"
+version = "2.4.3"
 dependencies = [
 	{org = "ballerina", name = "auth"},
 	{org = "ballerina", name = "cache"},
@@ -289,6 +276,19 @@ name = "url"
 version = "2.2.2"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"}
+]
+
+[[package]]
+org = "ballerina_exercism"
+name = "echo_service"
+version = "0.1.0"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "test"},
+	{org = "ballerinai", name = "observe"}
+]
+modules = [
+	{org = "ballerina_exercism", packageName = "echo_service", moduleName = "echo_service"}
 ]
 
 [[package]]

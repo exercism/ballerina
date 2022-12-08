@@ -8,15 +8,15 @@ string[] outputs = [];
     moduleName: "ballerina/io",
     functionName: "println"
 }
-test:MockFunction mock_printLn = new ();
+test:MockFunction printlnMockFn = new;
 
 public function mockPrint(any... val) {
-    outputs.push(val.reduce(function(any a, any b) returns string => a.toString() + b.toString(), "").toString());
+    outputs.push(val.reduce(function (string a, any b) returns string => a + b.toString(), ""));
 }
 
 @test:Config
 function testFunc() {
-    test:when(mock_printLn).call("mockPrint");
+    test:when(printlnMockFn).call("mockPrint");
     // Invoking the main function
     main();
     test:assertEquals(outputs[0], "Hello, World!");

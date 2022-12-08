@@ -8,8 +8,8 @@ string[] outputs = [];
 }
 test:MockFunction printlnMockFn = new();
 
-public function mockPrint(string... val) {
-    outputs.push(...val);
+public function mockPrint(any... val) {
+    outputs.push(val.reduce(function (string a, any b) returns string => a + b.toString(), ""));
 }
 
 @test:Config

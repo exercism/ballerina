@@ -1,10 +1,26 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
   "authors": [],
-  "contributors": ["hemikak", "kasun04", "Manuri", "vinok88", "ThisaruGuruge"],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "Manuri",
+    "vinok88",
+    "vordimous",
+    "ThisaruGuruge"
+  ],
   "files": {
-    "solution": ["travel_agency_service.bal"],
-    "test": ["tests/travel_agency_service_test.bal"],
-    "example": [".meta/reference/travel_agency_service.bal"]
-  }
+    "solution": [
+      "travel_agency_service.bal"
+    ],
+    "test": [
+      "tests/travel_agency_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/travel_agency_service.bal"
+    ]
+  },
+  "source": "This is an exercise to introduce users to the Ballerina HTTP client ",
+  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/",
+  "icon": "object-relational-mapping"
 }

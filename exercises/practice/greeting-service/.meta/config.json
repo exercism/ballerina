@@ -1,10 +1,27 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
   "authors": [],
-  "contributors": ["hemikak", "kasun04", "lafernando", "ldclakmal", "vinok88", "ThisaruGuruge"],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "lafernando",
+    "ldclakmal",
+    "vinok88",
+    "vordimous",
+    "ThisaruGuruge"
+  ],
   "files": {
-    "solution": ["greeting_service.bal"],
-    "test": ["tests/greeting_service_test.bal"],
-    "example": [".meta/reference/greeting_service.bal"]
-  }
+    "solution": [
+      "greeting_service.bal"
+    ],
+    "test": [
+      "tests/greeting_service_test.bal"
+    ],
+    "example": [
+      ".meta/reference/greeting_service.bal"
+    ]
+  },
+  "source": "This is an exercise to introduce user to Ballerina REST services",
+  "source_url": "https://ballerina.io/learn/by-example/http-basic-rest-service/",
+  "icon": "say"
 }

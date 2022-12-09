@@ -1,3 +1,3 @@
 # Tests
 
-To run the tests run the command `bal test` from within the exercise directory.
+To run the tests, run the command `bal test --offline` from within the exercise directory.

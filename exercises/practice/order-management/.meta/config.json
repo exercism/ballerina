@@ -1,0 +1,22 @@
+{
+  "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
+  "authors": [],
+  "contributors": [
+    "hemikak",
+    "kasun04",
+    "Manuri",
+    "vordimous",
+    "vinok88"
+  ],
+  "files": {
+    "solution": [
+      "order_mgt.bal"
+    ],
+    "test": [
+      "tests/order_mgt_test.bal"
+    ],
+    "example": [
+      ".meta/reference/order_mgt.bal"
+    ]
+  }
+}

@@ -20,6 +20,6 @@
       ".meta/reference/hello_world.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina",
+  "source": "This is an exercise to introduce user to the Ballerina",
   "source_url": "https://ballerina.io/learn/by-example/hello-world/"
 }

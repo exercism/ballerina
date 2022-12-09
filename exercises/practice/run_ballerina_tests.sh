@@ -18,7 +18,7 @@ do
     cp -r $test_name/.meta/reference/* ./temp_test/$test_name
     cd ./temp_test
     bal init
-    bal test
+    bal test --offline
     cd ..
     rm -r temp_test
     echo "================================"

@@ -7,6 +7,7 @@
     "lafernando",
     "ldclakmal",
     "vinok88",
+    "vordimous",
     "ThisaruGuruge"
   ],
   "files": {
@@ -20,6 +21,7 @@
       ".meta/reference/echo_service.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina Network interactions",
-  "source_url": "https://ballerina.io/learn/by-example/#network-interaction"
+  "source": "This is an exercise to introduce users to the Ballerina Network interactions interface",
+  "source_url": "https://ballerina.io/learn/by-example/#network-interaction",
+  "icon": "anagram"
 }

@@ -7,7 +7,7 @@ HTTP endpoints are better with type checking. Adding a Record type to a POST req
 - Modify the provided code.
 - Add the necessary attributes to this record to accept two operands and an operator.
 - Add an HTTP resource function to accept a POST request on path '/calc'
-- The function should accept the Calculation record type as the payload and return a generic json object
+- The function should accept the Calculation record type as the payload and return a generic JSON object
 
 ### Accepts
 

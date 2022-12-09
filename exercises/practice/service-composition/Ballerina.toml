@@ -1,8 +1,8 @@
 [package]
 org = "ballerina_exercism"
-name = "legacy_service_client"
+name = "service_composition"
 version = "0.1.0"
-distribution = "2201.2.3"
+distribution = "2201.1.2"
 
 [build-options]
 observabilityIncluded = true

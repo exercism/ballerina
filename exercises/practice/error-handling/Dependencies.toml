@@ -98,6 +98,9 @@ dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
 ]
+modules = [
+	{org = "ballerina", packageName = "io", moduleName = "io"}
+]
 
 [[package]]
 org = "ballerina"
@@ -280,15 +283,16 @@ dependencies = [
 
 [[package]]
 org = "ballerina_exercism"
-name = "hello_world_service"
+name = "error_handling"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "test"},
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "ballerina_exercism", packageName = "hello_world_service", moduleName = "hello_world_service"}
+	{org = "ballerina_exercism", packageName = "error_handling", moduleName = "error_handling"}
 ]
 
 [[package]]

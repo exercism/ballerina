@@ -1,36 +1,25 @@
 import ballerina/http;
-import ballerina/io;
-import ballerina/runtime;
-import ballerina/math; 
+import ballerina/random;
 
-string[] quotes = [ "Many of life’s failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison\n",
-                    "Believe you can and you’re halfway there. — Theodore Roosevelt\n",
-                    "Be sure you put your feet in the right place, then stand firm. - Abraham Lincoln\n",
-                    "Strive not to be a success, but rather to be of value. — Albert Einstein\n",
-                    "A person who never made a mistake never tried anything new.—— Albert Einstein\n",
-                    "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light. — Plato\n"
-                    ];
+string[] quotes = [
+    "Many of life's failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison",
+    "Believe you can and you're halfway there. — Theodore Roosevelt",
+    "Be sure you put your feet in the right place, then stand firm. - Abraham Lincoln",
+    "Strive not to be a success, but rather to be of value. — Albert Einstein",
+    "A person who never made a mistake never tried anything new.—— Albert Einstein",
+    "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light. — Plato"
+];
 
-@http:ServiceConfig {
-    basePath: "/brainyquote"
-}
-service QuoteService on new http:Listener(9095) {
-
-    @http:ResourceConfig {
-        path: "/",
-        methods: ["GET"]
+service /brainyquote on new http:Listener(9095) {
+    resource function get .() returns string {
+        return getRandomQuote();
     }
-    resource function getQuote (http:Caller caller, http:Request request) {
-        string payload = getRandomQuote();
-        var responseResult = caller->respond(payload);
-        if (responseResult is error) {
-            io:println("error responding back to client.");
-        }
-    } 
 }
 
-function getRandomQuote () returns string {
-    int index = math:randomInRange(0, quotes.length());
-    string quote = quotes[index]; 
-    return quote; 
+function getRandomQuote() returns string {
+    int|error index = random:createIntInRange(0, quotes.length());
+    if index is error {
+        return quotes[0];
+    }
+    return quotes[index];
 }

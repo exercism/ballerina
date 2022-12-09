@@ -1,6 +1,6 @@
 [package]
 org = "ballerina_exercism"
-name = "order_management"
+name = "error_handling"
 version = "0.1.0"
 distribution = "2201.2.3"
 

@@ -1,0 +1,10 @@
+{
+  "blurb": "There are a few ways to handle errors in Ballerina.",
+  "authors": [],
+  "contributors": ["hemikak", "kasun04", "Manuri", "vinok88", "ThisaruGuruge"],
+  "files": {
+    "solution": ["error_handling.bal"],
+    "test": ["tests/error_handling_test.bal"],
+    "example": [".meta/reference/error_handling.bal"]
+  }
+}

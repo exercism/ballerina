@@ -280,7 +280,7 @@ dependencies = [
 
 [[package]]
 org = "ballerina_exercism"
-name = "hello_world_service"
+name = "greeting_service"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
@@ -288,7 +288,7 @@ dependencies = [
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "ballerina_exercism", packageName = "hello_world_service", moduleName = "hello_world_service"}
+	{org = "ballerina_exercism", packageName = "greeting_service", moduleName = "greeting_service"}
 ]
 
 [[package]]

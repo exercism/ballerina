@@ -1,10 +1,10 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
   "authors": [],
-  "contributors": ["hemikak", "kasun04", "Manuri", "vinok88"],
+  "contributors": ["hemikak", "kasun04", "Manuri", "vinok88", "ThisaruGuruge"],
   "files": {
-    "solution": ["invoker_service.bal"],
-    "test": ["tests/invoker_service_test.bal"],
-    "example": [".meta/reference/invoker_service.bal"]
+    "solution": ["service_invocation.bal"],
+    "test": ["tests/service_invocation_test.bal"],
+    "example": [".meta/reference/service_invocation.bal"]
   }
 }

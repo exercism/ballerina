@@ -1,0 +1,13 @@
+[package]
+org = "ballerina_exercism"
+name = "database_payment_batches"
+version = "0.1.0"
+distribution = "2201.2.3"
+
+[build-options]
+observabilityIncluded = true
+
+[[platform.java11.dependency]]
+artifactId = "h2"
+version = "2.0.206"
+groupId = "com.h2database"

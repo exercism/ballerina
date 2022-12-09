@@ -1,0 +1,20 @@
+[
+    {
+        "employee_id": 4,
+        "amount": 12500.50,
+        "reason": "Fuel for the month January",
+        "date": "2022-02-03"
+    },
+    {
+        "employee_id": 1,
+        "amount": 10500.50,
+        "reason": "Medical Expenses for the month January",
+        "date": "2022-02-04"
+    },
+    {
+        "employee_id": 4,
+        "amount": 500.50,
+        "reason": "Fuel for the month February",
+        "date": "2022-03-03"
+    }
+]

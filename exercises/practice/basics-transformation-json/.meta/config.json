@@ -1,0 +1,22 @@
+{
+  "blurb": "",
+  "authors": [
+    "vordimous"
+  ],
+  "contributors": [
+    "vordimous"
+  ],
+  "files": {
+    "solution": [
+      "main.bal"
+    ],
+    "test": [
+      "tests/tests.bal"
+    ],
+    "example": [
+      ".meta/reference/main.bal"
+    ]
+  },
+  "source": "This is an exercise to introduce users to using Ballerina",
+  "source_url": "https://ballerina.io/learn/by-example/"
+}

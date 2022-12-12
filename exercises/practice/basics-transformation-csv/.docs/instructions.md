@@ -2,15 +2,15 @@
 
 ## Problem statement
 
-Every employee of "Go Figure" receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records get appended to the same CSV file and are processed at the end of the month.
+Every employee of "Go Figure" receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records are appended to the same CSV file and processed at the month's end.
 
 As a member of the digital operations team, your task is to read this CSV file and write the results to another CSV file. The output file should contain an entry for each employee with the following details:
 
 - Employee number
 - Number of gas fill-ups
 - Total fuel cost
-- Total gallons 
-- Total miles accrued 
+- Total gallons
+- Total miles accrued
 
 You are given two `string` arguments.
 
@@ -42,15 +42,6 @@ The output file should contain an entry for each employee, sorted in ascending o
 - Number of employees in the company: 97
 - Gas price is per gallon
 - No missing fill-up records
-
-## Definition
-
-- You have to write your code inside the following function.
-```ballerina
-function processFuelRecords(string inputFilePath, string outputFilePath) returns error? {
-    // Write your code here
-}
-```
 
 ## Example 1
 

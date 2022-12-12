@@ -2,7 +2,15 @@
 
 ## Problem statement
 
-This problem is the same as problem 1.2. Only the input and output requirements have changed.
+Every employee of "Go Figure" receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records are appended to the same JSON file and processed at the month's end.
+
+As a member of the digital operations team, your task is to read this JSON file and write the results to another JSON file. The output file should contain an entry for each employee with the following details:
+
+- Employee number
+- Number of gas fill-ups
+- Total fuel cost
+- Total gallons
+- Total miles accrued
 
 You are given two `string` arguments.
 
@@ -14,30 +22,31 @@ Input JSON file contains an array of JSON objects. Each JSON object takes the fo
 
 ```json
 {
-   "type": "array",
-   "items": {
-       "type": "object",
-       "properties": {
-           "employeeId": {
-               "type": "integer"
-           },
-           "odometerReading": {
-               "type": "integer"
-           },
-           "gallons": {
-               "type": "number"
-           },
-           "gasPrice": {
-               "type": "number"
-           }
-       },
-       "required": [
-           "employeeId",
-           "odometerReading",
-           "gallons",
-           "gasPrice"
-       ]
-   }
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "employeeId": {
+                "type": "integer"
+            },
+            "odometerReading": {
+                "type": "integer"
+            },
+            "gallons": {
+                "type": "number"
+            },
+            "gasPrice": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "employeeId",
+            "odometerReading",
+            "gallons",
+            "gasPrice"
+        ]
+    }
+}
 ```
 
 ```ballerina
@@ -84,6 +93,7 @@ Your task is to transform the JSON input to the following JSON format and write 
     }
  }
 ```
+
 ```ballerina
 // Ballerina record type definition
 type EmployeeFillUpSummary record {|
@@ -101,15 +111,6 @@ type EmployeeFillUpSummary record {|
 - Number of employees in the company: 97
 - Gas price is per gallon
 - No missing fill-up records
-
-## Definition
-
-- You have to write your code inside the following function.
-```ballerina
-function processFuelRecords(string inputFilePath, string outputFilePath) returns error? {
-    // Write your code here
-}
-```
 
 ## Example 1
 
@@ -217,6 +218,7 @@ function processFuelRecords(string inputFilePath, string outputFilePath) returns
 
 - Use [`ballerina/io` module](https://lib.ballerina.io/ballerina/io/latest) to read/write JSON files.
 - Convert the JSON values to application-specific types to work with data in a type-safe manner. Refer to [Converting to user defined type example](https://ballerina.io/learn/by-example/converting-to-user-defined-type) in Ballerina By Examples (BBE) for information.
+
 ```ballerina
    json jsonPayload = {id: "2", title: "Jeru", artist: "Gerry Mulligan", price: 17.99};
 
@@ -228,14 +230,19 @@ function processFuelRecords(string inputFilePath, string outputFilePath) returns
    Album album2 = check jsonPayload.fromJsonWithType();
    io:println(album2);
 ```
+
 - [Destructuring records](https://ballerina.io/learn/by-example/destructuring-records) can be useful in reducing the verbosity of the code.
+
 ```ballerina
    Album {id, title, artist, price} = album1;
    io:println(id);
    io:println(title);
 ```
+
 - Use expression-bodied functions for functions with a single expression. E.g., functions that have only the return statement.
+
 ```ballerina
    function cfr(int deaths, int cases) returns decimal => <decimal>deaths / <decimal>cases * 100;
 ```
+
 - [Ballerina table syntax](https://ballerina.io/learn/by-example/table-syntax)

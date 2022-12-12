@@ -1,5 +1,5 @@
 {
-  "blurb": "",
+  "blurb": "Every employee wants to work in the new office because each cubicle has state-of-the-art monitors. The HR department is overwhelmed with such requests and came up with a cubicle allocation system with the help of its digital operations team.",
   "authors": [
     "vordimous"
   ],
@@ -18,5 +18,6 @@
     ]
   },
   "source": "This is an exercise to introduce users to using Ballerina",
-  "source_url": "https://ballerina.io/learn/by-example/"
+  "source_url": "https://ballerina.io/learn/by-example/",
+  "icon": "city-office"
 }

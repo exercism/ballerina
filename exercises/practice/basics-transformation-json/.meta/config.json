@@ -1,5 +1,5 @@
 {
-  "blurb": "",
+  "blurb": "As a member of the digital operations team, your task is to read this JSON file and write the results to another JSON file.",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +17,7 @@
       ".meta/reference/main.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina",
-  "source_url": "https://ballerina.io/learn/by-example/"
+  "source": "This is an exercise to introduce users to converting the JSON values to application-specific types to work with data in a type-safe manner using Ballerina.",
+  "source_url": "https://ballerina.io/learn/by-example/destructuring-records",
+  "icon": "car-purchase"
 }

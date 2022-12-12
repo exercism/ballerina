@@ -2,14 +2,16 @@
 
 ## Problem statement
 
-This problem is the same as problem 1.2. Only the input and output requirements have changed.
+Every employee of "Go Figure" receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records are appended to the same XML file and processed at the month's end.
+
+As a member of the digital operations team, your task is to read this XML file and write the results to another XML file. The output file should contain an entry for each employee with the following details:
 
 You are given two `string` arguments.
 
 1. Input XML file path.
 1. Output XML file path.
 
-Input XML file content is based on the following XML schema.
+Input XML file content will have the following XML schema.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -73,15 +75,6 @@ Your task is to transform the XML input to the following XML format and write th
 - Gas price is per gallon
 - No missing fill-up records
 
-## Definition
-
-- You have to write your code inside the following function.
-```ballerina
-function processFuelRecords(string inputFilePath, string outputFilePath) returns error? {
-    // Write your code here
-}
-```
-
 ## Example 1
 
 - Input: `example01_input.xml`
@@ -104,7 +97,14 @@ function processFuelRecords(string inputFilePath, string outputFilePath) returns
 - Output: `example01_output.xml`
 
 ```xml
-<s:employeeFuelRecords xmlns:s="http://www.so2w.org"><s:employeeFuelRecord employeeId="2312"><s:gasFillUpCount>2</s:gasFillUpCount><s:totalFuelCost>179.23521</s:totalFuelCost><s:totalGallons>37.906</s:totalGallons><s:totalMilesAccrued>270</s:totalMilesAccrued></s:employeeFuelRecord></s:employeeFuelRecords>
+<s:employeeFuelRecords xmlns:s="http://www.so2w.org">
+    <s:employeeFuelRecord employeeId="2312">
+        <s:gasFillUpCount>2</s:gasFillUpCount>
+        <s:totalFuelCost>179.23521</s:totalFuelCost>
+        <s:totalGallons>37.906</s:totalGallons>
+        <s:totalMilesAccrued>270</s:totalMilesAccrued>
+    </s:employeeFuelRecord>
+</s:employeeFuelRecords>
 ```
 
 ## Example 2
@@ -149,13 +149,26 @@ function processFuelRecords(string inputFilePath, string outputFilePath) returns
 - Output: `example02_output.xml`
 
 ```xml
-<s:employeeFuelRecords xmlns:s="http://www.so2w.org"><s:employeeFuelRecord employeeId="2413"><s:gasFillUpCount>4</s:gasFillUpCount><s:totalFuelCost>161.92962</s:totalFuelCost><s:totalGallons>46.292</s:totalGallons><s:totalMilesAccrued>458</s:totalMilesAccrued></s:employeeFuelRecord><s:employeeFuelRecord employeeId="3423"><s:gasFillUpCount>2</s:gasFillUpCount><s:totalFuelCost>98.57552</s:totalFuelCost><s:totalGallons>23.944</s:totalGallons><s:totalMilesAccrued>185</s:totalMilesAccrued></s:employeeFuelRecord></s:employeeFuelRecords>
+<s:employeeFuelRecords xmlns:s="http://www.so2w.org">
+    <s:employeeFuelRecord employeeId="2413">
+        <s:gasFillUpCount>4</s:gasFillUpCount>
+        <s:totalFuelCost>161.92962</s:totalFuelCost>
+        <s:totalGallons>46.292</s:totalGallons>
+        <s:totalMilesAccrued>458</s:totalMilesAccrued>
+    </s:employeeFuelRecord>
+    <s:employeeFuelRecord employeeId="3423">
+        <s:gasFillUpCount>2</s:gasFillUpCount>
+        <s:totalFuelCost>98.57552</s:totalFuelCost>
+        <s:totalGallons>23.944</s:totalGallons>
+        <s:totalMilesAccrued>185</s:totalMilesAccrued>
+    </s:employeeFuelRecord>
+</s:employeeFuelRecords>
 ```
 
 ## Hints
 
-- Use [`ballerina/io` module](https://lib.ballerina.io/ballerina/io/latest) to read/write XML files.
-- [XML templates](https://ballerina.io/learn/by-example/xml-templates) can be used to create XML values.
+- Use the [`ballerina/io` module](https://lib.ballerina.io/ballerina/io/latest) to read/write XML files.
+- These [XML templates](https://ballerina.io/learn/by-example/xml-templates) can be used to create XML values.
 - The [XML data model](https://ballerina.io/learn/by-example/xml-data-model)
 - [XML operations](https://ballerina.io/learn/by-example/xml-operations)
 - [XML subtypes](https://ballerina.io/learn/by-example/xml-subtyping)

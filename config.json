@@ -139,17 +139,44 @@
         ]
       },
       {
-        "slug": "basics-fuel-allowance",
-        "name": "Fuel Allowance",
+        "slug": "basics-transformation-csv",
+        "name": "CSV Fuel Allowance",
         "uuid": "2db20b1d-b4b2-49eb-b6e1-0d914636df7b",
         "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
           "log",
-          "services",
+          "csv",
+          "strings"
+        ]
+      },
+      {
+        "slug": "basics-transformation-json",
+        "name": "JSON Fuel Allowance",
+        "uuid": "5f380070-ed12-4edf-8df5-d60d5c17919e",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "json",
+          "strings"
+        ]
+      },
+      {
+        "slug": "basics-transformation-xml",
+        "name": "XML Fuel Allowance",
+        "uuid": "40416c8c-cbc7-4a9d-96e3-ba0f7b02199b",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "xml",
           "strings"
         ]
       },
@@ -162,39 +189,7 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
           "log",
-          "services",
-          "strings"
-        ]
-      },
-      {
-        "slug": "basics-transformation-json",
-        "name": "JSON Transformation",
-        "uuid": "5f380070-ed12-4edf-8df5-d60d5c17919e",
-        "status": "wip",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4,
-        "topics": [
-          "http",
-          "log",
-          "services",
-          "strings"
-        ]
-      },
-      {
-        "slug": "basics-transformation-xml",
-        "name": "XML Transformation",
-        "uuid": "40416c8c-cbc7-4a9d-96e3-ba0f7b02199b",
-        "status": "wip",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4,
-        "topics": [
-          "http",
-          "log",
-          "services",
           "strings"
         ]
       },

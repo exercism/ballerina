@@ -6,6 +6,6 @@ type PaymentData record {
 
 
 function getHighPaymentEmployees(string dbFilePath, decimal amount) returns string[]|error {
-    //Add your logic here
+    // Write your code here
     return [];
 }

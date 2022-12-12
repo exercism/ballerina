@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-**CakeStation**, a popular bakery that bakes a variety of cakes, has asked you to set up an online order management system for them.
+**CakeStation**, a popular bakery that bakes various cakes, has asked you to set up an online order management system for them.
 
 The details of items on the menu are as follows.
 
@@ -115,7 +115,8 @@ The following is expected to be possible.
         - 404 Not Found if there is no order with the specified `orderId`
         - 200 OK
             - content-type - `application/json`
-            - a JSON object with two string fields `order_id` and `status` representing the order ID and the status (one of `pending`, `in progress`, or `completed`) respectively
+            - a JSON object with two string fields `order_id` and `status`, representing the order ID and the status (one of `pending`, `in progress`, or `completed`) respectively
+
                 ```json
                 {
                     "type": "object",
@@ -140,6 +141,7 @@ The following is expected to be possible.
     - Request
         - the request payload will be a JSON object with a single field `order_items`.
             - `order_items` - an array of JSON objects representing the order items. Each JSON object will contain exactly two fields: a string `item` field indicating the name of the item and an integer `quantity` field indicating the order quantity for the particular item.
+
             ```json
             {
                 "type": "object",
@@ -178,6 +180,7 @@ The following is expected to be possible.
             - a JSON object with two fields
                 - an `order_id` containing the same order ID string as the original order
                 - a `total` field containing the total value of the order (i.e. the sum of price x quantity for each kind of cake)
+
                 ```json
                 {
                     "type": "object",
@@ -212,8 +215,8 @@ The following is expected to be possible.
 
 - Use a `configurable` variable `port` with the default value of `8080` to specify the port the service listens on.
 - Use a module-level `orderStatus` map to maintain the status of the orders, in which the value is either `"pending"`, `"in progress"`, or `"completed"` against the randomly generated order ID string.
-    - key - randomly generated order ID string
-    - value - status of the order (`"pending"`, `"in progress"`, or `"completed"`)
+  - key - randomly generated order ID string
+  - value - status of the order (`"pending"`, `"in progress"`, or `"completed"`)
 - Update the `orderStatus` map with the value `"pending"` for each new order.
 
 ## Example 1
@@ -222,6 +225,7 @@ Retrieving the menu.
 
 ```cmd
 $ curl -v http://localhost:8080/menu
+
 < HTTP/1.1 200 OK
 < content-type: application/json
 {"Butter Cake":15, "Chocolate Cake":20, "Tres Leches":25}
@@ -233,6 +237,7 @@ Attempting to place the order with a valid payload.
 
 ```cmd
 $ curl -v http://localhost:8080/order -d '{"username": "mary", "order_items": [{"item": "Tres Leches", "quantity": 1}, {"item": "Chocolate Cake", "quantity": 2}]}' -H 'Content-Type: application/json'
+
 < HTTP/1.1 201 Created
 < content-type: application/json
 {"order_id":"7", "total":65}
@@ -246,6 +251,7 @@ Attempting to place the order with payload does not match the expected format.
 
 ```cmd
 $ curl -v http://localhost:8080/order -d '{"username": "mary", "order_items": [{"Tres Leches": 1}, {"Chocolate Cake": 2}]}' -H 'Content-Type: application/json'
+
 < HTTP/1.1 400 Bad Request
 ```
 

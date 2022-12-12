@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-You have been asked to find the top `x` billionaires by net worth in a given set of countries (number of countries = `N`). To implement that, you have been given access to an API which returns the details of the billionaires by country.
+You have been asked to find the top `x` billionaires by net worth in a given set of countries (number of countries = `N`). To implement that, you have been given access to an API that returns the details of the billionaires by country.
 
 To simplify accessing the API, you can use the [`ims/billionairehub` client](https://lib.ballerina.io/ims/billionairehub/1.0.0/clients/Client) connector to connect to the API which returns details of the billionaires by country.
 
@@ -30,14 +30,14 @@ public function getTopXBillionaires(string[] countries, int x) returns string[]|
 
 ## Example 1
 
-#### Input:
+Input
 
 ```
 Countries: ["United States"]
 Limit: 3
 ```
 
-#### Output:
+Output
 
 ```
 ["Elon Musk", "Jeff Bezos", "Bill Gates"]
@@ -45,14 +45,15 @@ Limit: 3
 
 ## Example 2
 
-#### Input:
+Input
 
 ```
 Countries: ["China", "India"]
 Limit: 5
 ```
 
-#### Output:
+Output
+
 ```
 ["Mukesh Ambani", "Gautam Adani & family", "Zhong Shanshan", "Zhang Yiming", "Ma Huateng"]
 ```

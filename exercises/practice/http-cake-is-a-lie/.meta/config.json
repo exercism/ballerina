@@ -1,5 +1,5 @@
 {
-  "blurb": "",
+  "blurb": "A popular bakery that bakes various cakes, has asked you to set up an online order management system for them.",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +17,7 @@
       ".meta/reference/main.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina",
-  "source_url": "https://ballerina.io/learn/by-example/"
+  "source": "This is an exercise to introduce users to using Ballerina HTTP service data binding",
+  "source_url": "https://ballerina.io/learn/by-example/http-data-binding",
+  "icon": "connect"
 }

@@ -7,6 +7,6 @@ type Payment record {
 };
 
 function addPayments(string dbFilePath, string paymentFilePath) returns error|int[] {
-    //Add your logich here
+    // Write your code here
     return [];
 }

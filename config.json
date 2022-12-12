@@ -202,9 +202,9 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
+          "jdbc",
           "log",
-          "services",
+          "database",
           "strings"
         ]
       },
@@ -217,9 +217,9 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
+          "jdbc",
           "log",
-          "services",
+          "database",
           "strings"
         ]
       },
@@ -232,9 +232,9 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
+          "jdbc",
           "log",
-          "services",
+          "database",
           "strings"
         ]
       },
@@ -247,9 +247,9 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "http",
+          "jdbc",
           "log",
-          "services",
+          "database",
           "strings"
         ]
       },

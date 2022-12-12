@@ -1,5 +1,5 @@
 {
-  "blurb": "",
+  "blurb": "Your task is to read the payment data from the given input JSON file and use the batchExecute operation of the JDBC Client to insert the payment data into the Payment table.",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +17,7 @@
       ".meta/reference/main.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina",
-  "source_url": "https://ballerina.io/learn/by-example/"
+  "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
+  "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation",
+  "icon": "sieve"
 }

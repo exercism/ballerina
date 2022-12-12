@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Go Figure needs you to load all the data from the SQL database into a [Ballerina table](https://ballerina.io/learn/by-example/table-syntax/) for further processing. Then you need to find the names of employees who have payment entries greater than a given amount (e.g., 3000.00) by querying the loaded Ballerina table.
+ABC Corp needs you to load all the data from the SQL database into a [Ballerina table](https://ballerina.io/learn/by-example/table-syntax/) for further processing. Then you need to find the names of employees who have payment entries greater than a given amount (e.g., 3000.00) by querying the loaded Ballerina table.
 
 **Step 1:**
 
@@ -60,16 +60,6 @@ The following tables are already in the sample H2 database with some sample data
 
 * Use the H2 database file provided in the `db` folder to validate queries and the Ballerina sample
 * Use the maven dependency params approach to add the H2 database driver as a platform dependency in your Ballerina.toml
-
-## Definition
-
-You have to write your code inside the following function.
-
-```ballerina
-function getHighPaymentEmployees(string dbFilePath, decimal amount) returns string[]|error {
-    // TODO: Write your code here
-}
-```
 
 ## Test Environment
 

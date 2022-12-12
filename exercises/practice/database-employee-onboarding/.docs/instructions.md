@@ -1,7 +1,8 @@
 # Database Employee Onboarding
 
 ## Problem Statement
-Go Figure is planning to maintain all petty cash payment information to employees in a database. You are helping the finance department of Go Figure to implement these functionalities. Since Go Figure is expanding its operations, adding new employees to the system is a common requirement due to new hires.
+
+ABC Corp is planning to maintain all petty cash payment information to employees in a database. You are helping the finance department of ABC Corp implement it. Since ABC Corp is expanding its operations, adding new employees to the system is a common requirement due to new hires.
 
 Your task is to add the provided new employee details to the `Employee` table of the database and return the value of the auto-generated `employee_id` column without issuing another query to the database to find it. If an error occurs during the execution, `-1` should be returned.
 
@@ -43,15 +44,6 @@ The following tables are already in the sample H2 database with some sample data
 * Use the maven dependency params approach to add the H2 database driver as a platform dependency in your Ballerina.toml
 * Do not issue another query to the database to find the auto-generated id
 
-## Definition
-
-You have to write your code inside the following function.
-
-```ballerina
-function addEmployee(string dbFilePath, string name, string city, string department, int age) returns int {
-    // TODO: Write your code here
-}
-```
 
 ## Test Environment
 

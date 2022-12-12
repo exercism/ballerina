@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Go Figure needs you to find the name and department of employees with payment entries greater than a  given amount (e.g., `3000.00`).
+ABC Corp needs you to find the name and department of employees with payment entries greater than a  given amount (e.g., `3000.00`).
 
 Create a record named `HighPayment` to return the required data. The definition of the record is as follows.
 
@@ -55,16 +55,6 @@ The following tables are already in the sample H2 database with some sample data
 
 * Use the H2 database file provided in the `db` folder to validate queries and the Ballerina sample
 * Use the maven dependency params approach to add the H2 database driver as a platform dependency in your Ballerina.toml
-
-## Definition
-
-You have to write your code inside the following function.
-
-```ballerina
-function getHighPaymentDetails(string dbFilePath, decimal  amount) returns HighPayment[]|error {
-    // TODO: Write your code here
-}
-```
 
 ## Test Environment
 

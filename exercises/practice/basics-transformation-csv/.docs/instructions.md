@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Every employee of "Go Figure" receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records are appended to the same CSV file and processed at the month's end.
+Every employee of ABC Corp receives an unlimited fuel allowance. Employees are required to send a record every time they fill up their vehicles. These records are appended to the same CSV file and processed at the month's end.
 
 As a member of the digital operations team, your task is to read this CSV file and write the results to another CSV file. The output file should contain an entry for each employee with the following details:
 

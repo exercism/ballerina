@@ -80,16 +80,6 @@ The following tables are already in the sample H2 database with some sample data
 * Use the maven dependency params approach to add the H2 database driver as a platform dependency in your Ballerina.toml
 * You need to find the auto-generated payment IDs without issuing another query to the database.
 
-## Definition
-
-You have to write your code inside the following function.
-
-```ballerina
-function addPayments(string dbFilePath, string paymentFilePath) returns error|int[] {
-    // TODO: Write your code here
-}
-```
-
 ## Test Environment
 
 * You can run the tests with `bal test`, and it will run tests against the given sample DB.

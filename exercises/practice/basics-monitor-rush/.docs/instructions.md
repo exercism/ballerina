@@ -1,10 +1,10 @@
-# Go Figure Monitor Rush
+# Monitor Rush
 
-## Problem Statement
-
-You are an employee of a software company called "Go Figure" with 97 employees. A newly rented office space, however, only has 65 cubicles. Every employee wants to work in the new office because each cubicle has state-of-the-art monitors. The HR department is overwhelmed with such requests and came up with a cubicle allocation system with the help of its digital operations team.
+You are an employee of a software company called ABC Corp with 97 employees. A newly rented office space, however, only has 65 cubicles. Every employee wants to work in the new office because each cubicle has state-of-the-art monitors. The HR department is overwhelmed with such requests and came up with a cubicle allocation system with the help of its digital operations team.
 
 They assigned a number to each cubicle from 1 to 65. Employees who want to work in the new office must send allocation requests for cubicles by 7:30 AM every weekday. An employee can only send one allocation request. Each such request can contain only one cubicle number.
+
+## Problem Statement
 
 The HR department takes the following actions for each cubicle allocation request:
 

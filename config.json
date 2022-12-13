@@ -139,6 +139,151 @@
         ]
       },
       {
+        "slug": "basics-transformation-csv",
+        "name": "CSV Fuel Allowance",
+        "uuid": "2db20b1d-b4b2-49eb-b6e1-0d914636df7b",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "csv",
+          "strings"
+        ]
+      },
+      {
+        "slug": "basics-transformation-json",
+        "name": "JSON Fuel Allowance",
+        "uuid": "5f380070-ed12-4edf-8df5-d60d5c17919e",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "json",
+          "strings"
+        ]
+      },
+      {
+        "slug": "basics-transformation-xml",
+        "name": "XML Fuel Allowance",
+        "uuid": "40416c8c-cbc7-4a9d-96e3-ba0f7b02199b",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "xml",
+          "strings"
+        ]
+      },
+      {
+        "slug": "basics-monitor-rush",
+        "name": "Monitor Rush",
+        "uuid": "a8bafdf1-0f51-4f5d-b653-4c42a1dacd29",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "log",
+          "strings"
+        ]
+      },
+      {
+        "slug": "database-employee-onboarding",
+        "name": "Employee Onboarding",
+        "uuid": "08022f6c-322e-4a23-a7c2-02c88910a531",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
+      },
+      {
+        "slug": "database-large-expenses",
+        "name": "Large Expenses",
+        "uuid": "f7af3266-87e8-44e1-9073-6531bb23e9ff",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
+      },
+      {
+        "slug": "database-payment-audit",
+        "name": "Payment Audit",
+        "uuid": "fbbea444-b1ea-4a5f-9353-ea725561efad",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
+      },
+      {
+        "slug": "database-payment-batches",
+        "name": "Payment Batches",
+        "uuid": "0286c998-0ce2-438b-91eb-5535ce91d99d",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
+      },
+      {
+        "slug": "http-billion-dollar-question",
+        "name": "Billion Dollar Question",
+        "uuid": "b04ddc58-04e3-49d5-a4c0-59728af04503",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
+      },
+      {
+        "slug": "http-cake-is-a-lie",
+        "name": "The Cake is a Lie",
+        "uuid": "69b12315-8e75-4933-a6a1-fd9ac6b18688",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
+      },
+      {
         "slug": "order-management",
         "name": "Order Management",
         "uuid": "d28068df-bccd-4aa1-b2eb-47b16d26221d",

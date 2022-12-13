@@ -17,7 +17,7 @@
     "highlightjs_language": "text"
   },
   "test_runner": {
-    "average_run_time": 15.0
+    "average_run_time": 60.0
   },
   "files": {
     "solution": ["%{snake_slug}.bal"],

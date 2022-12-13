@@ -18,6 +18,7 @@
       ".meta/reference/hello_world_service.bal"
     ]
   },
-  "source": "This is an exercise to introduce users to using Ballerina Services",
-  "source_url": "https://ballerina.io/learn/by-example/hello-world-service/"
+  "source": "This is an exercise to introduce users to the Ballerina Service interface",
+  "source_url": "https://ballerina.io/learn/by-example/hello-world-service/",
+  "icon": "rest-api"
 }

@@ -5,7 +5,8 @@
     "vordimous",
     "hemikak",
     "kasun04",
-    "vinok88"
+    "vinok88",
+    "ThisaruGuruge"
   ],
   "files": {
     "solution": [
@@ -19,5 +20,6 @@
     ]
   },
   "source": "This is an exercise to introduce the Ballerina Record type in Network interactions",
-  "source_url": "https://ballerina.io/learn/by-example/#records"
+  "source_url": "https://ballerina.io/learn/by-example/#records",
+  "icon": "simple-calculator"
 }

@@ -1,5 +1,4 @@
 {
-  "blurb": "As a member of the digital operations team, your task is to read this XML file and write the results to another XML file.",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +16,7 @@
       ".meta/reference/main.bal"
     ]
   },
+  "blurb": "As a member of the digital operations team, your task is to read this XML file and write the results to another XML file.",
   "source": "This is an exercise to introduce users to converting the XML values to application-specific types to work with data in a type-safe manner using Ballerina.",
   "source_url": "https://ballerina.io/learn/by-example/xml-templates",
   "icon": "car-purchase"

@@ -1,5 +1,4 @@
 {
-  "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
   "authors": [],
   "contributors": [
     "hemikak",
@@ -21,6 +20,7 @@
       ".meta/reference/greeting_service.bal"
     ]
   },
+  "blurb": "Make and HTTP service to say \"Hello\".",
   "source": "This is an exercise to introduce user to Ballerina REST services",
   "source_url": "https://ballerina.io/learn/by-example/http-basic-rest-service/",
   "icon": "say"

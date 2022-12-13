@@ -1,5 +1,4 @@
 {
-  "blurb": "ABC Corp needs you to load all the data from the SQL database into a Ballerina Table for further processing.",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +16,7 @@
       ".meta/reference/main.bal"
     ]
   },
+  "blurb": "ABC Corp needs you to load all the data from the SQL database into a Ballerina Table for further processing.",
   "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
   "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation",
   "icon": "census"

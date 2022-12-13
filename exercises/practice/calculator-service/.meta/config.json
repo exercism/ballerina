@@ -1,5 +1,4 @@
 {
-  "blurb": "HTTP endpoints are better with type checking. Adding a Record type to a POST request will ensure the correct data is sent every time.",
   "authors": [],
   "contributors": [
     "vordimous",
@@ -19,6 +18,7 @@
       ".meta/reference/calculator_service.bal"
     ]
   },
+  "blurb": "HTTP endpoints are better with type checking. Adding a Record type to a POST request will ensure the correct data is sent every time.",
   "source": "This is an exercise to introduce the Ballerina Record type in Network interactions",
   "source_url": "https://ballerina.io/learn/by-example/#records",
   "icon": "simple-calculator"

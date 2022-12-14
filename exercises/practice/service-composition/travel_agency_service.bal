@@ -65,3 +65,22 @@ type Preference record {|
     string accomodation;
     string car;
 |};
+
+// Define a record type to send requests to the reservation services.
+type Reservation record {|
+    string name;
+    string arrivalDate;
+    string departureDate;
+    string preference;
+|};
+
+// The response type received from the reservation services
+type ServiceResponse record {|
+    Status status;
+|};
+
+// Possible statuses of the reservation service responses
+enum Status {
+    SUCCESS = "Success",
+    FAILED = "Failed"
+}

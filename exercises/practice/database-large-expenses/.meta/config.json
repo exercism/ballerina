@@ -1,5 +1,4 @@
 {
-  "blurb": "ABC Corp needs you to find the name and department of employees with payment entries greater than a  given amount",
   "authors": [
     "vordimous"
   ],
@@ -17,6 +16,7 @@
       ".meta/reference/main.bal"
     ]
   },
+  "blurb": "ABC Corp needs you to find the name and department of employees with payment entries greater than a given amount",
   "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
   "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation",
   "icon": "hyperinflation-hits-hyperia"

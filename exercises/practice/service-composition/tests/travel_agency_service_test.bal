@@ -20,10 +20,6 @@ function testTravelAgencyService() returns error? {
 
     // Send a 'post' request and obtain the response
     record {|string message;|} response = check clientEP->post("/arrangeTour", arrangement);
-    // // Expected response code is 200
-    // test:assertEquals(response.statusCode, 201, msg = "Travel agency service did not respond with 201 Created response!");
-    // // Check whether the response is as expected
-    // record {|string message;|} payload = check response.getJsonPayload().ensureType();
     string expectedMessage = "Congratulations! Your journey is ready!!";
     test:assertEquals(response.message, expectedMessage, msg = "Response mismatch!");
 }
@@ -89,13 +85,4 @@ function testInvalidCarRentalRequest() returns error? {
     record {|string message;|} responseBody = check (check response.getJsonPayload()).cloneWithType();
     string expectedStatus = "Failed to rent car! Provide a valid 'preference' for 'car' and try again";
     test:assertEquals(responseBody.message, expectedStatus, msg = "Response mismatch!");
-}
-
-type Response record {|
-    Status status;
-|};
-
-enum  Status {
-    SUCCESS = "Success",
-    FAILED = "Failed"
 }

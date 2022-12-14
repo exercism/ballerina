@@ -4,7 +4,7 @@ import ballerina/http;
 service /airline on new http:Listener(9091) {
 
     // Resource to reserve a ticket
-    resource function post reserve(@http:Payload AirTicketReservation reservation) returns Response {
+    resource function post reserve(@http:Payload AirTicketReservation reservation) returns ServiceResponse {
         string preference = reservation.preference;
         // Mock logic
         if preference !is Class {

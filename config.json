@@ -17,7 +17,7 @@
     "highlightjs_language": "text"
   },
   "test_runner": {
-    "average_run_time": 60.0
+    "average_run_time": 10.0
   },
   "files": {
     "solution": ["%{snake_slug}.bal"],
@@ -94,7 +94,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings"]
+        "topics": [
+          "strings"
+        ]
       },
       {
         "slug": "hello-world-service",
@@ -104,7 +106,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "services", "strings"]
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "service-composition",
@@ -126,8 +132,8 @@
       {
         "slug": "service-invocation",
         "name": "Service Invocation",
-        "uuid": "8f7df81e-a7fe-4f99-838e-891c1e90b51a",
         "status": "wip",
+        "uuid": "90925a7d-e840-4e50-bb16-5ad8d55c90ee",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,

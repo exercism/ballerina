@@ -17,8 +17,8 @@
       ".meta/reference/hello_world_service.bal"
     ]
   },
+  "icon": "rest-api",
   "blurb": "The classical introductory exercise. Just create an HTTP service to say \"Hello, World!\".",
   "source": "This is an exercise to introduce users to the Ballerina Service interface",
-  "source_url": "https://ballerina.io/learn/by-example/hello-world-service/",
-  "icon": "rest-api"
+  "source_url": "https://ballerina.io/learn/by-example/hello-world-service/"
 }

@@ -16,8 +16,8 @@
       ".meta/reference/main.bal"
     ]
   },
+  "icon": "hyperinflation-hits-hyperia",
   "blurb": "ABC Corp is planning to maintain all petty cash payment information to employees in a database. You are helping the finance department of ABC Corp implement it.",
   "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
-  "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation",
-  "icon": "hyperinflation-hits-hyperia"
+  "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation"
 }

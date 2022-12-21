@@ -19,8 +19,8 @@
       ".meta/reference/travel_agency_service.bal"
     ]
   },
+  "icon": "object-relational-mapping",
   "blurb": "In this exercise, you will use Ballerina Records to organize the request payloads and ensure successful communication with external reservation endpoints.",
   "source": "This is an exercise to introduce users to the Ballerina HTTP client ",
-  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/",
-  "icon": "object-relational-mapping"
+  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/"
 }

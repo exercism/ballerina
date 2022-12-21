@@ -16,8 +16,8 @@
       ".meta/reference/main.bal"
     ]
   },
+  "icon": "elons-toys",
   "blurb": "Can you find the top billionaires by net worth in a given set of countries?",
   "source": "This is an exercise to introduce users to using Ballerina HTTP service data binding",
-  "source_url": "https://ballerina.io/learn/by-example/http-data-binding",
-  "icon": "elons-toys"
+  "source_url": "https://ballerina.io/learn/by-example/http-data-binding"
 }

@@ -19,8 +19,8 @@
       ".meta/reference/service_invocation.bal"
     ]
   },
+  "icon": "forth",
   "blurb": "Calling APIs is an important part of writing code on the internet.",
   "source": "This is an exercise to introduce users to the Ballerina HTTP client ",
-  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/",
-  "icon": "forth"
+  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/"
 }

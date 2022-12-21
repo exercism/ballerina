@@ -2,24 +2,34 @@ import ballerina/test;
 import ballerina/sql;
 import ballerinax/java.jdbc;
 
+
+function callAddEmployee(string dbFilePath, string name, string city, string department, int age) returns int {
+    int|error id = addEmployee(dbFilePath, name, city, department, age);
+    if id is error {
+        test:assertFail("addEmployee() should not return error");
+    }
+    return id;
+}
+
 @test:Config {
     dataProvider: validInsertionTestData
 }
 function addEmployeeTest(string dbFilePath, string name, string city, string department, int age, int expected) returns error? {
-    test:assertTrue(addEmployee(dbFilePath, name, city, department, age) > expected);
+    int id = callAddEmployee(dbFilePath, name, city, department, age);
+    test:assertTrue(id > expected);
 }
 
 @test:Config {
     dataProvider: invalidInsertionTestData
 }
 function addEmployeeTestInvalid(string dbFilePath, string name, string city, string department, int age, int expected) returns error? {
-    test:assertEquals(addEmployee(dbFilePath, name, city, department, age), expected);
+    test:assertEquals(callAddEmployee(dbFilePath, name, city, department, age), expected);
 }
 
 @test:Config {
 }
 function checkExactInsertValue() returns error? {
-    int employeeIDActual = addEmployee("./db/gofigure", "PeterTest125", "Kandy", "Sales", 54);
+    int employeeIDActual = callAddEmployee("./db/gofigure", "PeterTest125", "Kandy", "Sales", 54);
     string employeeNameInDB = "";
     jdbc:Client|sql:Error dbClient = new ("jdbc:h2:file:" + "./db/gofigure", "root", "root");
     if (dbClient is jdbc:Client) {

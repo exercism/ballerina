@@ -1,3 +1,4 @@
+
 # Returns the prime numbers less than or equal to the given limit.
 #
 # + 'limit - as an int
@@ -5,26 +6,30 @@
 public function primes(int 'limit) returns int[] {
     boolean[] candidates = [];
 
-    foreach int _ in int:range(0, 'limit + 1, 1) {
+    candidates.push(false);
+    candidates.push(false);
+    foreach int _ in 2 ... 'limit {
         candidates.push(true);
     }
-    candidates[0] = false;
-    candidates[1] = false;
 
     var markMultiples = function(int prime) {
         int step = prime == 2 ? prime : prime * 2;
-        foreach int i in int:range(prime * prime, 'limit + 1, step) {
+        int i = prime * prime;
+        while i <= 'limit {
             candidates[i] = false;
+            i += step;
         }
     };
 
     markMultiples(2);
 
     int 'sqrt = <int>((<float>'limit).sqrt().floor());
-    foreach int n in int:range(3, 'sqrt + 1, 2) {
+    int n = 3;
+    while n <= 'sqrt {
         if candidates[n] {
             markMultiples(n);
         }
+        n += 2;
     }
 
     int[] primes = [];

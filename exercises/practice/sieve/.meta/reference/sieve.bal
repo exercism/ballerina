@@ -1,4 +1,3 @@
-
 # Returns the prime numbers less than or equal to the given limit.
 #
 # + 'limit - as an int

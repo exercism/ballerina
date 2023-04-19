@@ -317,6 +317,15 @@
           "match",
           "union_type"
         ]
+      },
+      {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "6f7841e3-1602-40e5-bf53-e89e05a6493d",
+        "status": "beta",
+        "difficulty": 4,
+        "practices": [],
+        "prerequisites": []
       }
     ]
   },

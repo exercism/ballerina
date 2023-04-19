@@ -18,9 +18,9 @@ test_exercise() {
     mkdir -p temp_test
     find temp_test -type f -delete
 
-    cp -t temp_test $exercise/*.{bal,toml}
+    cp $exercise/*.{bal,toml} temp_test
     (cd "$exercise" && tar cf - ./tests) | (cd temp_test && tar xf -)
-    cp -rt temp_test $exercise/.meta/reference/*
+    cp -r $exercise/.meta/reference/* temp_test
 
     cd ./temp_test
     bal test --offline || ((++exit_status))

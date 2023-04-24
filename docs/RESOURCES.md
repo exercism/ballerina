@@ -14,7 +14,7 @@ To get help if you're having trouble, you can use one of the following resources
 
 [getting-started]: https://ballerina.io/learn/get-started-with-ballerina/
 [ballerina-examples]: https://ballerina.io/learn/by-example/
-[join-discord]: https://ballerina.io/community/#ballerina-discord-community
+[join-discord]: https://discord.gg/ballerinalang
 [stackoverflow]: http://stackoverflow.com/questions/tagged/ballerina
 [exercism-forum]: https://forum.exercism.org/
 [exercism-discord]: https://exercism.org/r/discord

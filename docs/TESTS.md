@@ -18,13 +18,13 @@
 3. Initialize the project prior to executing tests:
 
      ```sh
-     ballerina init
+     bal init
      ```
      
 4. Run the tests:
 
      ```sh
-     ballerina test --offline
+     bal test --offline
      ```
    *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
 

@@ -1,16 +1,9 @@
 import ballerina/http;
 
-listener http:Listener listenerEP = new(9090);
-
-service greeting on listenerEP {
-
-    @http:ResourceConfig {
-        path: "/",
-        methods: ["POST"]
-    }
-    resource function greet(http:Caller caller, http:Request request) returns error? {
+service on new http:Listener(9090) {
+    resource function post greeting() returns string|error {
         // Extract payload content and append it with the content of the greeting message.
-        // Send the response back to the caller.
-
+        // The greeting message should be in the following format:
+        // "Hello, <payload>!"
     }
 }

@@ -5,7 +5,9 @@
     "kasun04",
     "lafernando",
     "ldclakmal",
-    "vinok88"
+    "vinok88",
+    "vordimous",
+    "ThisaruGuruge"
   ],
   "files": {
     "solution": [
@@ -17,5 +19,9 @@
     "example": [
       ".meta/reference/greeting_service.bal"
     ]
-  }
+  },
+  "icon": "say",
+  "blurb": "Make an HTTP service to say \"Hello\".",
+  "source": "This is an exercise to introduce user to Ballerina REST services",
+  "source_url": "https://ballerina.io/learn/by-example/http-basic-rest-service/"
 }

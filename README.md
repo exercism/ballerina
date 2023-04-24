@@ -24,28 +24,30 @@ At the most basic level, Exercism is all about the tests. You can read more abou
 
 Test files should use the following format:
 
-```
-import ballerina/test;
-import ballerina/io;
+``` ballerina
 
-any[] outputs = [];
-int counter = 0;
+import ballerina/test;
+
+// This is the mock function which will replace the real function
+string[] outputs = [];
 
 // This is the mock function which will replace the real function
 @test:Mock {
-    moduleName: "ballerina.io",
+    moduleName: "ballerina/io",
     functionName: "println"
 }
-public function mockPrint(any... s) {
-    outputs[counter] = s[0];
-    counter += 1;
+test:MockFunction mock_printLn = new ();
+
+public function mockPrint(any... val) {
+    outputs.push(val.reduce(function(any a, any b) returns string => a.toString() + b.toString(), "").toString());
 }
 
 @test:Config
 function testFunc() {
+    test:when(mock_printLn).call("mockPrint");
     // Invoking the main function
     main();
-    test:assertEquals("Hello, World!", outputs[0]);
+    test:assertEquals(outputs[0], "Hello, World!");
 }
 
 ```

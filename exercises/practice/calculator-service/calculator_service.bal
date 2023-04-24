@@ -1,38 +1,30 @@
 import ballerina/http;
-import ballerina/log;
 
-@http:ServiceConfig {
-    basePath: "/"
-}
-service CalculatorService on new http:Listener(9090) {
+# Add the necessary attributes to this record to accept two operands and an operator.
+#
+# + operand1 - Is a float used as the first operand in an equation
+# + operand2 - Is a float used as the second operand in an equation
+# + operator - Is a string that represents the operator
+public type Calculation record {|
+|};
 
-    // Add HTTP reosurce configuration to accept request on path '/calc' and specify in and out content types
-    // to 'application/json' using consumes and produces annotations.
-    // Suppose that incoming JSON request is in the
-    // form '{ "operand1": opr1, "operand2": opr2, "operator": "+", "caller_id": id }'.
+# Add the necessary attributes to this record to include the result value and the expression.
+#
+# + result - The result of the operation
+# + expression - The evaluated expression that used to calculate the result
+public type Response record {|
+|};
 
-    resource function calc(http:Caller caller, http:Request request) {
-        http:Response response = new;
+service / on new http:Listener(9090) {
 
-        // Extract the JSON payload from the request.
-
-        // Extract operand1, operand2, operator, caller_id from the incoming JSON request and convert them
-        // to required type.
-
-
-        // result are stored here.
-        float result = 0.0;
+    // Add HTTP resource function to accept a POST request on path '/calc'
+    // The function should accept the above Calculation record as the payload and return a generic json object
+    resource {
 
         // Check for each operator '+', '-', 'x' or '*' and '/'. and do the calculation
 
+        // Convert the two operands and the expression into a string representation with no whitespace.
 
-        // Create the response with the form e.g. { result: 0.0, callerId: 111 };
-
-        // Set the JSON payload to the request as an untaint value
-
-        var responseResult = caller->respond(response);
-        if (responseResult is error) {
-            log:printError("error responding back to client.", err = responseResult);
-        }
+        // Return the result as a Response with the calculation expressed as a string e.g. { result: 0.0, expression: "0+0" };
     }
 }

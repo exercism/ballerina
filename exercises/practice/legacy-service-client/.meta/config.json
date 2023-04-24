@@ -1,9 +1,11 @@
 {
+  "blurb": "Deprecated",
   "authors": [],
   "contributors": [
     "hemikak",
     "kasun04",
     "Manuri",
+    "vordimous",
     "vinok88"
   ],
   "files": {
@@ -11,7 +13,7 @@
       "legacy_service_client.bal"
     ],
     "test": [
-      "tests/legacy_service_client_test.bal"
+      "tests/legacy_invoker_test.bal"
     ],
     "example": [
       ".meta/reference/legacy_service_client.bal"

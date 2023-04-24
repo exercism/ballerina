@@ -4,17 +4,23 @@
     "hemikak",
     "kasun04",
     "Manuri",
-    "vinok88"
+    "vinok88",
+    "vordimous",
+    "ThisaruGuruge"
   ],
   "files": {
     "solution": [
-      "invoker_service.bal"
+      "service_invocation.bal"
     ],
     "test": [
-      "tests/invoker_service_test.bal"
+      "tests/service_invocation_test.bal"
     ],
     "example": [
-      ".meta/reference/invoker_service.bal"
+      ".meta/reference/service_invocation.bal"
     ]
-  }
+  },
+  "icon": "forth",
+  "blurb": "Calling APIs is an important part of writing code on the internet.",
+  "source": "This is an exercise to introduce users to the Ballerina HTTP client ",
+  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/"
 }

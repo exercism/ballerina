@@ -1,44 +1,58 @@
 import ballerina/http;
-import ballerina/log;
 
-@http:ServiceConfig {
-    basePath: "/"
-}
-service CalculatorService on new http:Listener(9090) {
+# Add the necessary attributes to this record to accept two operands and an operator
+#
+# + operand1 - Is a float used as the first operand in an equation
+# + operand2 - Is a float used as the second operand in an equation
+# + operator - Is a string that represents the operator
+public type Calculation record {|
+    float operand1;
+    float operand2;
+    string operator;
+|};
 
-    @http:ResourceConfig {
-        path: "/calc",
-        methods: ["POST"],
-        consumes: ["application/json"],
-        produces: ["application/json"]
-    }
-    resource function calc(http:Caller caller, http:Request request) {
-        http:Response response = new;
-        json request_j = <json> request.getJsonPayload();
+# Add the necessary attributes to this record to include the result value and the expression.
+#
+# + result - The result of the operation
+# + expression - The evaluated expression that used to calculate the result
+public type Response record {|
+    float result;
+    string expression;
+|};
 
-        float opr1 =  <float> float.convert(request_j.operand1);
-        float opr2 = <float> float.convert(request_j.operand2);
-        string operator = <string> string.convert(request_j.operator);
-        int id = <int> int.convert(request_j.caller_id);
+service / on new http:Listener(9090) {
+    // The HTTP method POST is used under the path "/calc" by the function name.
+    // The @http:Payload will map any incoming json to the specified record type.
+    // a generic type `json` can be returned or a return record type could be created.
+    resource function post calc(@http:Payload Calculation calculation) returns Response {
 
-        float result = 0.0;
-        if (operator == "+") {
-            result = opr1 + opr2;
-        } else if (operator == "-") {
-            result = opr1 - opr2;
-        } else if (operator == "*" || operator == "x") {
-            result = opr1 * opr2;
-        } else if (operator == "/") {
-            result = opr1 / opr2;
+        string operator = calculation.operator;
+        float operand1 = calculation.operand1;
+        float operand2 = calculation.operand2;
+        float result = 0f;
+
+        // The `match` operator can be used to check a value against a set of possible values.
+        // This is equalent to switch-case in some other languages
+        match operator {
+            "+" => {
+                result = operand1 + operand2;
+            }
+            "-" => {
+                result = operand1 - operand2;
+            }
+            "*"|"x" => {
+                result = operand1 * operand2;
+            }
+            "/" => {
+                result = operand1 / operand2;
+            }
         }
 
-        json result_j = {
+        // The result is returned as a `Response` record
+        return {
             result: result,
-            callerId: id
+            // A Ballerina string template is used to build the expression
+            expression: string `${operand1}${operator}${operand2}`
         };
-        var responseResult = caller->respond(untaint result_j);
-        if (responseResult is error) {
-            log:printError("error responding back to client.", err = responseResult);
-        }
     }
 }

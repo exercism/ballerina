@@ -1,17 +1,14 @@
 import ballerina/http;
 
-@http:ServiceConfig {
-    basePath: "/"
-}
-service EchoService on new http:Listener(9090) {
+service / on new http:Listener(8080) {
 
-    // Resource returns the same request payload back to the client.
-    @http:ResourceConfig {
-        methods: ["POST"]
+    // This resource should accept a GET request at the path `/echo` and have a query param `sound`
+    resource {
+        return sound;
     }
-    resource function echo(http:Caller caller, http:Request req) returns error? {
-        // Extract the payload from the response and return back to the client
-        // as a response.
 
+    // This resource should accept a GET request at the path `/echo/definition`
+    resource {
+         return "A sound or series of sounds caused by the reflection of sound waves from a surface back to the listener.";
     }
 }

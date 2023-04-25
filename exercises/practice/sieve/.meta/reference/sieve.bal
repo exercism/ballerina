@@ -32,12 +32,7 @@ public function primes(int 'limit) returns int[] {
         n += 2;
     }
 
-    int[] primes = [];
-    foreach [int, boolean] [i, isPrime] in candidates.enumerate() {
-        if isPrime {
-            primes.push(i);
-        }
-    }
-
-    return primes;
+    return from [int, boolean] [i, isPrime] in candidates.enumerate()
+                    where isPrime
+                    select i;
 }

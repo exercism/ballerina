@@ -325,6 +325,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "66395af4-a55a-4ac9-93bc-45f09e5ea531",
+        "status": "wip",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

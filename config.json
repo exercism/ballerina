@@ -317,6 +317,14 @@
           "match",
           "union_type"
         ]
+      },
+      {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "916d951e-ae11-476c-88e9-6731c3c05310",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

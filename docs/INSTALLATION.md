@@ -1,3 +1,3 @@
 # Installation
 
-You can install Ballerina by following the Ballerina [installation guide](https://ballerina.io/learn/installing-ballerina/). 
+Instructions to install Ballerina can be found on the [Set up Ballerina page](https://ballerina.io/learn/install-ballerina/set-up-ballerina/).

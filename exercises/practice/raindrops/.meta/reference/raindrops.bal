@@ -1,5 +1,4 @@
 public function convert(int n) returns string {
-
     string drops = "";
 
     if n % 3 == 0 { 

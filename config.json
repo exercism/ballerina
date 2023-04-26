@@ -320,6 +320,7 @@
       },
       {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "916d951e-ae11-476c-88e9-6731c3c05310",
@@ -328,6 +329,8 @@
         "difficulty": 2
       },
       {
+=======
+>>>>>>> 760b5a7 (raindrops: add exercise (#169))
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "14e73462-432f-4af2-a77b-fcb036639573",

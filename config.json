@@ -317,6 +317,14 @@
           "match",
           "union_type"
         ]
+      },
+      {
+        "slug": "raindrops",
+        "name": "Raindrops",
+        "uuid": "14e73462-432f-4af2-a77b-fcb036639573",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

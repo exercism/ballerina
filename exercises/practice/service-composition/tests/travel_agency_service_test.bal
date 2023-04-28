@@ -2,7 +2,7 @@ import ballerina/test;
 import ballerina/http;
 
 // Client endpoint
-http:Client clientEP = check new("http://localhost:9090/travel");
+http:Client clientEP = check new ("http://localhost:9090/travel");
 
 // Function to test Travel agency service
 @test:Config

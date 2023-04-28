@@ -6,10 +6,10 @@ string[] outputs = [];
     moduleName: "ballerina/io",
     functionName: "println"
 }
-test:MockFunction printlnMockFn = new();
+test:MockFunction printlnMockFn = new ();
 
 public function mockPrint(any... val) {
-    outputs.push(val.reduce(function (string a, any b) returns string => a + b.toString(), ""));
+    outputs.push(val.reduce(function(string a, any b) returns string => a + b.toString(), ""));
 }
 
 @test:Config

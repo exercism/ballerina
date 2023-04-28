@@ -6,7 +6,7 @@ service /brainyquote on new http:Listener(9095) {
     }
 }
 
-function getDefaultQuote () returns (string) {
-    string[] quotes = [ "Many of life's failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison\n"];
+function getDefaultQuote() returns (string) {
+    string[] quotes = ["Many of life's failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison\n"];
     return quotes[0];
 }

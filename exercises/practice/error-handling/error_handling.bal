@@ -3,10 +3,10 @@ import ballerina/http;
 // Use the following endpoints to send HTTP GET request to get quotes
 
 // This is an existing endpoint (which will be automatically spawned by the test framework)
-final http:Client brainyQuoteClient = check new("http://localhost:9095/brainyquote");
+final http:Client brainyQuoteClient = check new ("http://localhost:9095/brainyquote");
 
 // This is a non-existing endpoint.
-final http:Client legacyClient = check new("http://localhost:6060/legacyquote");
+final http:Client legacyClient = check new ("http://localhost:6060/legacyquote");
 
 public function main() returns error? {
 

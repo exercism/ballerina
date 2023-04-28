@@ -4,7 +4,7 @@ import ballerina/http;
 service {
 
     // add a GET resource called "greeting" that returns the "Hello, World!" message
-    resource {
+resource {
 
     }
 }

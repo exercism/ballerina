@@ -18,7 +18,6 @@ service /hotel on new http:Listener(9092) {
     }
 }
 
-
 type HotelReservation record {|
     string name;
     string arrivalDate;

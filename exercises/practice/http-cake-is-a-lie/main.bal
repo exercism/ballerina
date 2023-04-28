@@ -11,9 +11,9 @@ enum CakeKind {
 }
 
 const map<int> MENU = {
-    "Butter Cake" : 15,
-    "Chocolate Cake" : 20,
-    "Tres Leches" : 25
+    "Butter Cake": 15,
+    "Chocolate Cake": 20,
+    "Tres Leches": 25
 };
 
 enum OrderStatus {
@@ -70,7 +70,7 @@ function generateOrderId() returns string|error {
     lock {
         while true {
             string orderId = (check random:createIntInRange(1, 100)).toString();
-        
+
             if !orders.hasKey(orderId) {
                 return orderId;
             }

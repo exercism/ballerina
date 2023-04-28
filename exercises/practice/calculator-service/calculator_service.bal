@@ -19,7 +19,7 @@ service / on new http:Listener(9090) {
 
     // Add HTTP resource function to accept a POST request on path '/calc'
     // The function should accept the above Calculation record as the payload and return a generic json object
-    resource {
+resource {
 
         // Check for each operator '+', '-', 'x' or '*' and '/'. and do the calculation
 

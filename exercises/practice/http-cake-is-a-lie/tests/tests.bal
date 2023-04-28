@@ -514,7 +514,7 @@ function testOrderUpdateFailureForPayloadOfInvalidContentType() returns error? {
 }
 function testOrderUpdateFailureForPayloadOfInvalidContentType2() returns error? {
     http:Response res = check cl->put(string `/order/${check orderId2.ensureType(string)}`,
-                                      xml `<order_items><TresLeches>2</TresLeches></order_items>`);
+                                    xml `<order_items><TresLeches>2</TresLeches></order_items>`);
     test:assertEquals(res.statusCode, http:STATUS_BAD_REQUEST);
 }
 

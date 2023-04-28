@@ -11,14 +11,7 @@ distribution-version = "2201.5.0"
 org = "ballerina"
 name = "jballerina.java"
 version = "0.0.0"
-
-[[package]]
-org = "ballerina"
-name = "observe"
-version = "1.0.7"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
-]
+scope = "testOnly"
 
 [[package]]
 org = "ballerina"
@@ -37,22 +30,9 @@ org = "ballerina_exercism"
 name = "hello_world"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "test"},
-	{org = "ballerinai", name = "observe"}
+	{org = "ballerina", name = "test"}
 ]
 modules = [
 	{org = "ballerina_exercism", packageName = "hello_world", moduleName = "hello_world"}
-]
-
-[[package]]
-org = "ballerinai"
-name = "observe"
-version = "0.0.0"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "observe"}
-]
-modules = [
-	{org = "ballerinai", packageName = "observe", moduleName = "observe"}
 ]
 

@@ -2,10 +2,7 @@
 org = "ballerina_exercism"
 name = "database_payment_audit"
 version = "0.1.0"
-distribution = "2201.2.3"
-
-[build-options]
-observabilityIncluded = true
+distribution = "2201.5.0"
 
 [[platform.java11.dependency]]
 artifactId = "h2"

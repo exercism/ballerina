@@ -2,7 +2,4 @@
 org = "ballerina_exercism"
 name = "basics_fuel_allowance"
 version = "0.1.0"
-distribution = "2201.2.3"
-
-[build-options]
-observabilityIncluded = true
+distribution = "2201.5.0"

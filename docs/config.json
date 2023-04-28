@@ -20,6 +20,13 @@
       "path": "docs/TESTS.md",
       "title": "Testing on the Ballerina track",
       "blurb": "Learn how to test your Ballerina exercises on Exercism"
+    },
+    {
+      "uuid": "c1a5d5b3-58d3-4797-8064-728ffeb58361",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful Ballerina resources",
+      "blurb": "A collection of useful resources to help you master Ballerina"
     }
   ]
 }

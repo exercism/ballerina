@@ -14,7 +14,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, macOS-latest]
         java-version: [11]
-        ballerina-version: [2201.2.2]
+        ballerina-version: [2201.5.0]
 
     steps:
       - uses: actions/checkout@v3
@@ -28,6 +28,16 @@ jobs:
         env:
           BALLERINA_VERSION: ballerina-${{ matrix.ballerina-version }}-swan-lake
         run: |
+          # Download jq
+          mkdir -p ./bin
+          case ${{ matrix.os }} in
+            "ubuntu-latest") jq_bin="jq-linux64" ;;
+            "macOS-latest")  jq_bin="jq-osx-amd64" ;;
+          esac
+          curl -fsSL https://github.com/stedolan/jq/releases/download/jq-1.6/"$jq_bin" --output ./bin/jq
+          chmod u+x ./bin/jq
+          echo "$PWD/bin" >> $GITHUB_PATH
+            
           # Download Ballerina dist
           curl -fsSL https://dist.ballerina.io/downloads/${{ matrix.ballerina-version }}/$BALLERINA_VERSION.zip --output $BALLERINA_VERSION.zip
 
@@ -35,9 +45,20 @@ jobs:
           unzip -q $BALLERINA_VERSION.zip
 
           # Add Ballerina to system path
-          echo "$(pwd)/$BALLERINA_VERSION/bin" >> $GITHUB_PATH
+          echo "$PWD/$BALLERINA_VERSION/bin" >> $GITHUB_PATH
 
-      - name: Run exercism/ballerina ci (runs tests) for all exercises
+      - name: Run exercism/ballerina ci (runs tests) for new or updated exercises
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd exercises/practice
-          bash -xe run_ballerina_tests.sh
+          pr_endpoint=$(jq -r '"repos/\(.repository.full_name)/pulls/\(.pull_request.number)"' "$GITHUB_EVENT_PATH")
+          gh api "$pr_endpoint/files" --paginate --jq '
+            [ .[]
+              | select(.status | IN("added", "modified", "renamed"))
+              | select(.filename | test("\\.(bal|toml)$"))
+              | .filename
+              | split("/")
+              | .[2]
+            ]
+            | unique | .[]
+          ' | xargs -r bin/verify-exercises

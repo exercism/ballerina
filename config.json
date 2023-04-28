@@ -333,6 +333,22 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "9d3658dc-d533-41fb-abaf-dcbe03608a6f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "66395af4-a55a-4ac9-93bc-45f09e5ea531",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

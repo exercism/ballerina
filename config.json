@@ -327,6 +327,14 @@
         "difficulty": 2
       },
       {
+        "slug": "roman-numerals",
+        "name": "Roman Numerals",
+        "uuid": "0b20878f-43fa-43af-b01e-c2ad8b7fc040",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "space-age",
         "name": "Space Age",
         "uuid": "9d3658dc-d533-41fb-abaf-dcbe03608a6f",

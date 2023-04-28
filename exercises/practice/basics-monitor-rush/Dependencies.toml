@@ -5,6 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
+distribution-version = "2201.5.0"
 
 [[package]]
 org = "ballerina"
@@ -13,11 +14,29 @@ version = "0.0.0"
 
 [[package]]
 org = "ballerina"
-name = "observe"
-version = "1.0.5"
+name = "lang.__internal"
+version = "0.0.0"
 dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.object"}
 ]
+
+[[package]]
+org = "ballerina"
+name = "lang.array"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.__internal"}
+]
+modules = [
+	{org = "ballerina", packageName = "lang.array", moduleName = "lang.array"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.object"
+version = "0.0.0"
 
 [[package]]
 org = "ballerina"
@@ -36,23 +55,10 @@ org = "ballerina_exercism"
 name = "basics_monitor_rush"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "test"},
-	{org = "ballerinai", name = "observe"}
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "test"}
 ]
 modules = [
 	{org = "ballerina_exercism", packageName = "basics_monitor_rush", moduleName = "basics_monitor_rush"}
 ]
-
-[[package]]
-org = "ballerinai"
-name = "observe"
-version = "0.0.0"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "observe"}
-]
-modules = [
-	{org = "ballerinai", packageName = "observe", moduleName = "observe"}
-]
-
 

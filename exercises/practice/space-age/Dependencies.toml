@@ -5,6 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
+distribution-version = "2201.5.0"
 
 [[package]]
 org = "ballerina"
@@ -34,5 +35,4 @@ dependencies = [
 modules = [
 	{org = "ballerina_exercism", packageName = "space_age", moduleName = "space_age"}
 ]
-
 

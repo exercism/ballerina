@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "glennj"
+  ],
+  "contributors": [
+    "MaryamZi"
+  ],
+  "files": {
+    "solution": [
+      "sieve.bal"
+    ],
+    "test": [
+      "tests/sieve_test.bal"
+    ],
+    "example": [
+      ".meta/reference/sieve.bal"
+    ]
+  },
+  "blurb": "Use the Sieve of Eratosthenes to find all the primes from 2 up to a given number.",
+  "source": "Sieve of Eratosthenes at Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes"
+}

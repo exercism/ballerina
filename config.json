@@ -327,6 +327,14 @@
         "difficulty": 2
       },
       {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "66395af4-a55a-4ac9-93bc-45f09e5ea531",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "sieve",
         "name": "Sieve",
         "uuid": "6f7841e3-1602-40e5-bf53-e89e05a6493d",

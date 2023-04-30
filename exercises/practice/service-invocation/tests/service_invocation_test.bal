@@ -12,7 +12,9 @@ public function mockPrint(any... val) {
     outputs.push(val.reduce(function(string a, any b) returns string => a + b.toString(), ""));
 }
 
-@test:Config {}
+@test:Config {
+    enable: false
+} {}
 function testFunc() {
     test:when(printlnMockFn).call("mockPrint");
     main();

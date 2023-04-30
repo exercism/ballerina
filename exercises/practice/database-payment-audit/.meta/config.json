@@ -1,23 +1,15 @@
 {
-  "authors": [
-    "vordimous"
-  ],
-  "contributors": [
-    "vordimous"
-  ],
+  "authors": [],
   "files": {
     "solution": [
-      "main.bal"
+      "database_payment_audit.bal"
     ],
     "test": [
-      "tests/tests.bal"
+      "tests/database_payment_audit_test.bal"
     ],
     "example": [
-      ".meta/reference/main.bal"
+      ".meta/reference/database_payment_audit.bal"
     ]
   },
-  "icon": "census",
-  "blurb": "ABC Corp needs you to load all the data from the SQL database into a Ballerina Table for further processing.",
-  "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
-  "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation"
+  "blurb": ""
 }

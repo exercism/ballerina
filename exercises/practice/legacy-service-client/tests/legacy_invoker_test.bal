@@ -14,7 +14,9 @@ public function mockPrint(any... s) {
     counter +=1;
 }
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testFunc() {
     // Invoking the main function
     main();

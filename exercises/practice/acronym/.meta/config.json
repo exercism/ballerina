@@ -1,9 +1,15 @@
 {
-  "authors": ["glennj"],
+  "authors": [],
   "files": {
-    "solution": ["acronym.bal"],
-    "test": ["tests/acronym_test.bal"],
-    "example": [".meta/reference/acronym.bal"]
+    "solution": [
+      "acronym.bal"
+    ],
+    "test": [
+      "tests/acronym_test.bal"
+    ],
+    "example": [
+      ".meta/reference/acronym.bal"
+    ]
   },
   "blurb": "Convert a long phrase to its acronym.",
   "source": "Julien Vanier",

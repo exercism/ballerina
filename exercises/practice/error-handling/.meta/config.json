@@ -1,13 +1,5 @@
 {
   "authors": [],
-  "contributors": [
-    "hemikak",
-    "kasun04",
-    "Manuri",
-    "vinok88",
-    "vordimous",
-    "ThisaruGuruge"
-  ],
   "files": {
     "solution": [
       "error_handling.bal"
@@ -19,7 +11,5 @@
       ".meta/reference/error_handling.bal"
     ]
   },
-  "blurb": "There are a few ways to handle errors in Ballerina.",
-  "source": "This is an exercise to introduce user to Ballerina service error handling",
-  "source_url": "https://ballerina.io/learn/by-example/http-client-send-request-receive-response/"
+  "blurb": "Implement various kinds of error handling and resource management."
 }

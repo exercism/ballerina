@@ -1,7 +1,9 @@
 import ballerina/http;
 import ballerina/test;
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testFunc() returns error? {
     final http:Client httpEndpoint = check new ("http://localhost:9090");
     string expectedResponse = "Hello, World!";

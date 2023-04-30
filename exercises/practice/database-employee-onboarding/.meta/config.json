@@ -1,23 +1,15 @@
 {
-  "authors": [
-    "vordimous"
-  ],
-  "contributors": [
-    "vordimous"
-  ],
+  "authors": [],
   "files": {
     "solution": [
-      "main.bal"
+      "database_employee_onboarding.bal"
     ],
     "test": [
-      "tests/tests.bal"
+      "tests/database_employee_onboarding_test.bal"
     ],
     "example": [
-      ".meta/reference/main.bal"
+      ".meta/reference/database_employee_onboarding.bal"
     ]
   },
-  "icon": "hyperinflation-hits-hyperia",
-  "blurb": "ABC Corp is planning to maintain all petty cash payment information to employees in a database. You are helping the finance department of ABC Corp implement it.",
-  "source": "This is an exercise to introduce users to using Ballerina for JDBC operations",
-  "source_url": "https://ballerina.io/learn/by-example/jdbc-query-operation"
+  "blurb": ""
 }

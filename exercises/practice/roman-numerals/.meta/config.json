@@ -1,7 +1,5 @@
 {
-  "authors": [
-    "glennj"
-  ],
+  "authors": [],
   "files": {
     "solution": [
       "roman_numerals.bal"

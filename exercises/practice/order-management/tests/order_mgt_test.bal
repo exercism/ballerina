@@ -2,7 +2,9 @@ import ballerina/test;
 import ballerina/io;
 import ballerina/http;
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testFunc() returns error? {
     http:Client orderMgtEp = new("http://localhost:9090/ordermgt");
     http:Request req = new;

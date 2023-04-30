@@ -1,10 +1,5 @@
 {
-  "authors": [
-    "glennj"
-  ],
-  "contributors": [
-    "MaryamZi"
-  ],
+  "authors": [],
   "files": {
     "solution": [
       "sieve.bal"

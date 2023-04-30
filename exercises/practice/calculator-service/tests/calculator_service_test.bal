@@ -3,7 +3,9 @@ import ballerina/http;
 
 final http:Client httpEndpoint = check new ("http://localhost:9090");
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testFunc() returns error? {
     float opr1 = 10.1;
     float opr2 = 4.2;

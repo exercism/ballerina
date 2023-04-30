@@ -1,0 +1,5 @@
+[package]
+org = "ballerina_exercism"
+name = "food_chain"
+version = "0.1.0"
+distribution = "2201.1.2"

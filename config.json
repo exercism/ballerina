@@ -20,10 +20,18 @@
     "average_run_time": 10.0
   },
   "files": {
-    "solution": ["%{snake_slug}.bal"],
-    "test": ["tests/%{snake_slug}_test.bal"],
-    "example": [".meta/reference/%{snake_slug}.bal"],
-    "exemplar": [".meta/reference/%{snake_slug}.bal"]
+    "solution": [
+      "%{snake_slug}.bal"
+    ],
+    "test": [
+      "tests/%{snake_slug}_test.bal"
+    ],
+    "example": [
+      ".meta/reference/%{snake_slug}.bal"
+    ],
+    "exemplar": [
+      ".meta/reference/%{snake_slug}.bal"
+    ]
   },
   "exercises": {
     "concept": [],
@@ -365,6 +373,14 @@
         "difficulty": 4,
         "practices": [],
         "prerequisites": []
+      },
+      {
+        "slug": "bob",
+        "name": "Bob",
+        "uuid": "2f3a0251-f856-4fa3-a2d2-d31b4d6a447d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       },
       {
         "slug": "collatz-conjecture",

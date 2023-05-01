@@ -20,10 +20,18 @@
     "average_run_time": 10.0
   },
   "files": {
-    "solution": ["%{snake_slug}.bal"],
-    "test": ["tests/%{snake_slug}_test.bal"],
-    "example": [".meta/reference/%{snake_slug}.bal"],
-    "exemplar": [".meta/reference/%{snake_slug}.bal"]
+    "solution": [
+      "%{snake_slug}.bal"
+    ],
+    "test": [
+      "tests/%{snake_slug}_test.bal"
+    ],
+    "example": [
+      ".meta/reference/%{snake_slug}.bal"
+    ],
+    "exemplar": [
+      ".meta/reference/%{snake_slug}.bal"
+    ]
   },
   "exercises": {
     "concept": [],
@@ -36,7 +44,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["http", "json", "services", "types"]
+        "topics": [
+          "http",
+          "json",
+          "services",
+          "types"
+        ]
       },
       {
         "slug": "echo-service",
@@ -46,7 +59,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "services", "strings"]
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "error-handling",
@@ -56,7 +73,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["error_handling", "http", "match", "union_type"]
+        "topics": [
+          "error_handling",
+          "http",
+          "match",
+          "union_type"
+        ]
       },
       {
         "slug": "greeting-service",
@@ -66,7 +88,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "services", "strings"]
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "hello-world",
@@ -76,7 +102,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings"]
+        "topics": [
+          "strings"
+        ]
       },
       {
         "slug": "hello-world-service",
@@ -86,7 +114,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "services", "strings"]
+        "topics": [
+          "http",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "service-composition",
@@ -113,7 +145,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["http", "log", "services", "strings"]
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "basics-transformation-csv",
@@ -123,7 +160,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["log", "csv", "strings"]
+        "topics": [
+          "log",
+          "csv",
+          "strings"
+        ]
       },
       {
         "slug": "basics-transformation-json",
@@ -133,7 +174,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["log", "json", "strings"]
+        "topics": [
+          "log",
+          "json",
+          "strings"
+        ]
       },
       {
         "slug": "basics-transformation-xml",
@@ -143,7 +188,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["log", "xml", "strings"]
+        "topics": [
+          "log",
+          "xml",
+          "strings"
+        ]
       },
       {
         "slug": "basics-monitor-rush",
@@ -153,7 +202,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["log", "strings"]
+        "topics": [
+          "log",
+          "strings"
+        ]
       },
       {
         "slug": "database-employee-onboarding",
@@ -163,7 +215,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["jdbc", "log", "database", "strings"]
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
       },
       {
         "slug": "database-large-expenses",
@@ -173,7 +230,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["jdbc", "log", "database", "strings"]
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
       },
       {
         "slug": "database-payment-audit",
@@ -183,7 +245,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["jdbc", "log", "database", "strings"]
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
       },
       {
         "slug": "database-payment-batches",
@@ -193,7 +260,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["jdbc", "log", "database", "strings"]
+        "topics": [
+          "jdbc",
+          "log",
+          "database",
+          "strings"
+        ]
       },
       {
         "slug": "http-billion-dollar-question",
@@ -203,7 +275,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["http", "log", "services", "strings"]
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "http-cake-is-a-lie",
@@ -213,7 +290,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
-        "topics": ["http", "log", "services", "strings"]
+        "topics": [
+          "http",
+          "log",
+          "services",
+          "strings"
+        ]
       },
       {
         "slug": "order-management",
@@ -223,7 +305,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
-        "topics": ["http", "json", "map"]
+        "topics": [
+          "http",
+          "json",
+          "map"
+        ]
       },
       {
         "slug": "legacy-service-client",
@@ -233,7 +319,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["error_handling", "http", "match", "union_type"]
+        "topics": [
+          "error_handling",
+          "http",
+          "match",
+          "union_type"
+        ]
       },
       {
         "slug": "isogram",
@@ -308,14 +399,6 @@
         "difficulty": 1
       },
       {
-        "slug": "pangram",
-        "name": "Pangram",
-        "uuid": "6a9a869d-0205-4dbd-99fc-e7d4e4fee349",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
-      },
-      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "d7e4e426-6426-4edc-8ef3-9a03165b7b7c",
@@ -330,6 +413,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "6a9a869d-0205-4dbd-99fc-e7d4e4fee349",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

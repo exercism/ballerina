@@ -1,8 +1,7 @@
 import ballerina/test;
 
 @test:Config
-function test1() {
-    // Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one
+function testMeasureUsingBucketOneOfSize3AndBucketTwoOfSize5StartWithBucketOne() {
     TwoBucketResult result = measure(
         bucketOne = 3,
         bucketTwo = 5,
@@ -16,8 +15,7 @@ function test1() {
 @test:Config {
     enable: false
 }
-function test2() {
-    // Measure using bucket one of size 3 and bucket two of size 5 - start with bucket two
+function testMeasureUsingBucketOneOfSize3AndBucketTwoOfSize5StartWithBucketTwo() {
     TwoBucketResult result = measure(
         bucketOne = 3,
         bucketTwo = 5,
@@ -31,8 +29,7 @@ function test2() {
 @test:Config {
     enable: false
 }
-function test3() {
-    // Measure using bucket one of size 7 and bucket two of size 11 - start with bucket one
+function testMeasureUsingBucketOneOfSize7AndBucketTwoOfSize11StartWithBucketOne() {
     TwoBucketResult result = measure(
         bucketOne = 7,
         bucketTwo = 11,
@@ -46,8 +43,7 @@ function test3() {
 @test:Config {
     enable: false
 }
-function test4() {
-    // Measure using bucket one of size 7 and bucket two of size 11 - start with bucket two
+function testMeasureUsingBucketOneOfSize7AndBucketTwoOfSize11StartWithBucketTwo() {
     TwoBucketResult result = measure(
         bucketOne = 7,
         bucketTwo = 11,
@@ -61,8 +57,7 @@ function test4() {
 @test:Config {
     enable: false
 }
-function test5() {
-    // Measure one step using bucket one of size 1 and bucket two of size 3 - start with bucket two
+function testMeasureOneStepUsingBucketOneOfSize1AndBucketTwoOfSize3StartWithBucketTwo() {
     TwoBucketResult result = measure(
         bucketOne = 1,
         bucketTwo = 3,
@@ -76,8 +71,7 @@ function test5() {
 @test:Config {
     enable: false
 }
-function test6() {
-    // Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two
+function testMeasureUsingBucketOneOfSize2AndBucketTwoOfSize3StartWithBucketOneAndEndWithBucketTwo() {
     TwoBucketResult result = measure(
         bucketOne = 2,
         bucketTwo = 3,
@@ -91,8 +85,7 @@ function test6() {
 @test:Config {
     enable: false
 }
-function test7() {
-    // Not possible to reach the goal
+function testNotPossibleToReachTheGoal() {
     TwoBucketResult result = measure(
         bucketOne = 6,
         bucketTwo = 15,
@@ -110,8 +103,7 @@ function test7() {
 @test:Config {
     enable: false
 }
-function test8() {
-    // With the same buckets but a different goal, then it is possible
+function testWithTheSameBucketsButADifferentGoalThenItIsPossible() {
     TwoBucketResult result = measure(
         bucketOne = 6,
         bucketTwo = 15,
@@ -125,8 +117,7 @@ function test8() {
 @test:Config {
     enable: false
 }
-function test9() {
-    // Goal larger than both buckets is impossible
+function testGoalLargerThanBothBucketsIsImpossible() {
     TwoBucketResult result = measure(
         bucketOne = 5,
         bucketTwo = 7,

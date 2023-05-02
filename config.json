@@ -391,6 +391,14 @@
         "difficulty": 2
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "ae7db3bb-d407-4d95-a4d4-6fd19fb94cb1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "knapsack",
         "name": "Knapsack",
         "uuid": "df56b3d4-6660-4f6e-99e8-a16810a445f7",

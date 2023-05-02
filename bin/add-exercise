@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [ $# -ne 1 ]; then
+    echo >&2 "Populates a new directory for a practice exercise."
+    echo >&2 "Usage: bin/add-exercise <exercise-slug>"
+    exit 1
+fi
+
+command -v jq >/dev/null 2>&1 || {
+    echo >&2 "jq is required but not installed. Please install it and make sure it's in your PATH."
+    exit 1
+}
+command -v curl >/dev/null 2>&1 || {
+    echo >&2 "curl is required but not installed. Please install it and make sure it's in your PATH."
+    exit 1
+}
+
+[[ -f bin/fetch-configlet ]] || {
+    echo >&2 "run this script from the repo's root directory."
+    exit 1
+}
+
+balver=$(bal version)
+supported=$(jq -r '.ballerina_version' config.json)
+if [[ "$balver" != *"$supported"* ]]; then
+    echo >&2 "Please develop using the supported Ballerina version $supported"
+    echo >&2 " => bal dist pull $supported"
+    exit 1
+fi
+
+slug="${1}"
+name=$(echo "${slug}" | sed 's/\b\w/\u&/g; s/-/ /g')
+snake_name="${slug//-/_}"
+
+# Add entry for exercise in config.json
+bin/fetch-configlet
+
+uuid=$(bin/configlet uuid)
+jq --arg slug "${slug}" --arg uuid "${uuid}" --arg name "${name}" \
+    '.exercises.practice += [{slug: $slug, name: $name, uuid: $uuid, practices: [], prerequisites: [], difficulty: 1}]' \
+    config.json \
+| sed 's/"average_run_time": 10/&.0/' > config.json.tmp \
+&& mv config.json.tmp config.json
+
+pushd exercises/practice
+
+bal new -t lib "${slug}"
+rm -r ${slug}/{.devcontainer.json,.gitignore,Module.md,Package.md,resources}
+mv "${slug}/tests/lib_test.bal" "${slug}/tests/${snake_name}_test.bal"
+sed -i '/org = /s/".*"/"ballerina_exercism"/' "${slug}/Ballerina.toml"
+
+pushd "${slug}"
+
+mkdir -p .meta/reference
+touch ".meta/reference/${snake_name}.bal"
+
+echo 'create the Dependencies.toml file with `bal test`'
+bal test
+
+popd
+popd
+
+# Sync the exercise
+bin/configlet sync --update --yes --tests include --filepaths --metadata --docs --exercise "${slug}"
+
+echo ''
+echo 'Your next steps are:'
+echo "- Create the test suite in 'exercises/practice/${slug}/tests/${snake_name}_test.bal',"
+echo "  based on the canonical data at https://github.com/exercism/problem-specifications/blob/main/exercises/${slug}/canonical-data.json'"
+echo "- Create the example solution in 'exercises/practice/${slug}/.meta/reference/${snake_name}.bal'"
+echo "- Create the stub solution in 'exercises/practice/${slug}/${snake_name}.bal'"
+echo "- Add your GitHub username to the 'authors' array in the 'exercises/practice/${slug}/.meta/config.json' file"
+echo "- Update the 'difficulty' value for the exercise's entry in the 'config.json' file"

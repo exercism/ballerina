@@ -399,6 +399,22 @@
         "difficulty": 4
       },
       {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "c39b8328-41da-4408-b0eb-7a020a67aa17",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "difference-of-squares",
+        "name": "Difference Of Squares",
+        "uuid": "907fe39e-97e0-4a8f-9fb6-cbdfe4433389",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "5efd28d2-6d3f-44d9-8e55-ce7088de398b",
@@ -448,5 +464,6 @@
     "used_for/backends",
     "used_for/web_development",
     "used_for/cross_platform_development"
-  ]
+  ],
+  "ballerina_version": "2201.5.0"
 }

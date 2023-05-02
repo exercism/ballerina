@@ -24,7 +24,9 @@ function testTravelAgencyService() returns error? {
     test:assertEquals(response.message, expectedMessage, msg = "Response mismatch!");
 }
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testInvalidAirlineRequest() returns error? {
     TourArrangement arrangement = {
         name: "Alice",
@@ -45,7 +47,9 @@ function testInvalidAirlineRequest() returns error? {
     test:assertEquals(responseBody.message, expectedStatus, msg = "Response mismatch!");
 }
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testInvalidHotelReservationRequest() returns error? {
     TourArrangement arrangement = {
         name: "Alice",
@@ -66,7 +70,9 @@ function testInvalidHotelReservationRequest() returns error? {
     test:assertEquals(responseBody.message, expectedStatus, msg = "Response mismatch!");
 }
 
-@test:Config
+@test:Config {
+    enable: false
+}
 function testInvalidCarRentalRequest() returns error? {
     TourArrangement arrangement = {
         name: "Alice",

@@ -64,3 +64,12 @@ popd
 
 # Sync the exercise
 bin/configlet sync --update --yes --tests include --filepaths --metadata --docs --exercise "${slug}"
+
+echo ''
+echo 'Your next steps are:'
+echo "- Create the test suite in 'exercises/practice/${slug}/tests/${snake_name}_test.bal',"
+echo "  based on the canonical data at https://github.com/exercism/problem-specifications/blob/main/exercises/${slug}/canonical-data.json'"
+echo "- Create the example solution in 'exercises/practice/${slug}/.meta/reference/${snake_name}.bal'"
+echo "- Create the stub solution in 'exercises/practice/${slug}/${snake_name}.bal'"
+echo "- Add your GitHub username to the 'authors' array in the 'exercises/practice/${slug}/.meta/config.json' file"
+echo "- Update the 'difficulty' value for the exercise's entry in the 'config.json' file"

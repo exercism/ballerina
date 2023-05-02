@@ -22,7 +22,7 @@ command -v curl >/dev/null 2>&1 || {
     exit 1
 }
 
-balver=$(bal version
+balver=$(bal version)
 supported=$(jq -r '.ballerina_version' config.json)
 if [[ "$balver" != *"$supported"* ]]; then
     echo >&2 "Please develop using the supported Ballerina version $supported"

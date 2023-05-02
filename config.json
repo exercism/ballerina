@@ -391,6 +391,14 @@
         "difficulty": 2
       },
       {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "5efd28d2-6d3f-44d9-8e55-ce7088de398b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "d7e4e426-6426-4edc-8ef3-9a03165b7b7c",

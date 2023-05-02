@@ -397,6 +397,62 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "df56b3d4-6660-4f6e-99e8-a16810a445f7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "c39b8328-41da-4408-b0eb-7a020a67aa17",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "difference-of-squares",
+        "name": "Difference Of Squares",
+        "uuid": "907fe39e-97e0-4a8f-9fb6-cbdfe4433389",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "5efd28d2-6d3f-44d9-8e55-ce7088de398b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "d7e4e426-6426-4edc-8ef3-9a03165b7b7c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "two-fer",
+        "name": "Two Fer",
+        "uuid": "45bacdfd-16bc-4d05-a460-4657213dc946",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "6a9a869d-0205-4dbd-99fc-e7d4e4fee349",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
@@ -416,5 +472,6 @@
     "used_for/backends",
     "used_for/web_development",
     "used_for/cross_platform_development"
-  ]
+  ],
+  "ballerina_version": "2201.5.0"
 }

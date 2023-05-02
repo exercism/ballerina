@@ -448,5 +448,6 @@
     "used_for/backends",
     "used_for/web_development",
     "used_for/cross_platform_development"
-  ]
+  ],
+  "ballerina_version": "2201.5.0"
 }

@@ -397,6 +397,38 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "5efd28d2-6d3f-44d9-8e55-ce7088de398b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "d7e4e426-6426-4edc-8ef3-9a03165b7b7c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "two-fer",
+        "name": "Two Fer",
+        "uuid": "45bacdfd-16bc-4d05-a460-4657213dc946",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "6a9a869d-0205-4dbd-99fc-e7d4e4fee349",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

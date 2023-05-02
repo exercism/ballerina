@@ -1,7 +1,7 @@
 class Bucket {
-    final string name;
-    final int size;
-    int amount;
+    private final string name;
+    private final int size;
+    private int amount;
 
     function init(string name, int size) {
         self.name = name;

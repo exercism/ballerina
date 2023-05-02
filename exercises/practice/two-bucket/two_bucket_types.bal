@@ -3,5 +3,3 @@ public type TwoBucketSolution record {|
     string goalBucket;
     int otherBucket;
 |};
-
-public type TwoBucketResult TwoBucketSolution|error;

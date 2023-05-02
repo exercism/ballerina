@@ -2,6 +2,9 @@
   "authors": [
     "glennj"
   ],
+  "contributors": [
+    "ThisaruGuruge"
+  ],
   "files": {
     "solution": [
       "two_bucket.bal"

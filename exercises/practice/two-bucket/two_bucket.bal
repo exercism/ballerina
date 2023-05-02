@@ -6,6 +6,6 @@
 # + goal - the desired number of litres to reach 
 # + startBucket - the name of the first bucket to fill
 # + return - a TestBucketResult record or an error
-public function measure(int bucketOne, int bucketTwo, int goal, string startBucket) returns TwoBucketResult {
+public function measure(int bucketOne, int bucketTwo, int goal, string startBucket) returns TwoBucketSolution|error {
     // TODO implement this function
 }

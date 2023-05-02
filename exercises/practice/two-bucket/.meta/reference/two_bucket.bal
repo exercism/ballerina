@@ -6,7 +6,7 @@
 # + goal - the desired number of litres to reach 
 # + startBucket - the name of the first bucket to fill
 # + return - a TestBucketResult record or an error
-public function measure(int bucketOne, int bucketTwo, int goal, string startBucket) returns TwoBucketResult {
+public function measure(int bucketOne, int bucketTwo, int goal, string startBucket) returns TwoBucketSolution|error {
     if !validate(bucketOne, bucketTwo, goal) {
         return error("goal is impossible");
     }
@@ -48,10 +48,10 @@ function solve(Bucket a, Bucket b, int goal) returns TwoBucketSolution {
 
     while true {
         if a.getAmount() == goal {
-            return {moves: moves, goalBucket: a.getName(), otherBucket: b.getAmount()};
+            return {moves, goalBucket: a.getName(), otherBucket: b.getAmount()};
         }
         if b.getAmount() == goal {
-            return {moves: moves, goalBucket: b.getName(), otherBucket: a.getAmount()};
+            return {moves, goalBucket: b.getName(), otherBucket: a.getAmount()};
         }
 
         if a.isEmpty() {

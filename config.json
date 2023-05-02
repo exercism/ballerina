@@ -391,6 +391,14 @@
         "difficulty": 2
       },
       {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "df56b3d4-6660-4f6e-99e8-a16810a445f7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "hamming",
         "name": "Hamming",
         "uuid": "c39b8328-41da-4408-b0eb-7a020a67aa17",

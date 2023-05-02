@@ -26,7 +26,11 @@
      ```sh
      bal test --offline
      ```
-   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
+
+    By default, only the first test is enabled.
+    This is intentional as it allows you to focus on just making that one test pass.
+    Once it passes, you can enable the next test by removing `enable: false` from the test's `@test:Config {}` set.
+    When all tests have been enabled ans your implementation makes them all pass, you'll have solved the exercise!
 
 Good luck!  Have fun!
 

@@ -455,6 +455,14 @@
         "difficulty": 2
       },
       {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "9c8d655b-c8c7-49ac-9f1b-36a9ad1bc1ea",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "protein-translation",
         "name": "Protein Translation",
         "uuid": "9274ea9f-966a-4a52-99a1-2fc2f8244ea9",

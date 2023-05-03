@@ -468,7 +468,7 @@
         "uuid": "9274ea9f-966a-4a52-99a1-2fc2f8244ea9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 3
       },
       {
         "slug": "two-bucket",
@@ -477,6 +477,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "887392b9-7ec1-487e-90d2-146a62fcb37d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       }
     ]
   },

@@ -1,0 +1,17 @@
+{
+  "authors": ["glennj"],
+  "files": {
+    "solution": [
+      "binary_search.bal"
+    ],
+    "test": [
+      "tests/binary_search_test.bal"
+    ],
+    "example": [
+      ".meta/reference/binary_search.bal"
+    ]
+  },
+  "blurb": "Implement a binary search algorithm.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+}

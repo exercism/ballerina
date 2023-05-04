@@ -471,6 +471,14 @@
         "difficulty": 3
       },
       {
+        "slug": "etl",
+        "name": "ETL",
+        "uuid": "ca4b58db-4663-45e9-b97e-cfbaae72f483",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "two-bucket",
         "name": "Two Bucket",
         "uuid": "24b57893-39c2-488e-ab53-2f232fb8d0cb",

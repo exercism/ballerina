@@ -2,19 +2,19 @@ import ballerina/test;
 
 @test:Config
 function noNameGiven() {
-    test:assertEquals("One for you, one for me.", speak(()));
+    test:assertEquals(speak(()), "One for you, one for me.");
 }
 
 @test:Config {
     enable: false
 }
 function aNameGiven() {
-    test:assertEquals("One for Alice, one for me.", speak("Alice"));
+    test:assertEquals(speak("Alice"), "One for Alice, one for me.");
 }
 
 @test:Config {
     enable: false
 }
 function anotherNameGiven() {
-    test:assertEquals("One for Bob, one for me.", speak("Bob"));
+    test:assertEquals(speak("Bob"), "One for Bob, one for me.");
 }

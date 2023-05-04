@@ -3,11 +3,12 @@
 [![Configlet Status](https://github.com/exercism/ballerina/workflows/Configlet%20CI/badge.svg)]
 [![Exercise Test Status](https://github.com/exercism/ballerina/workflows/Ballerina%20%2F%20main/badge.svg)]
 
-Exercism exercises in Ballerina. [Ballerina](https://ballerina.io/) is a compiled, transactional, statically and strongly typed programming language with textual and graphical syntaxes. Ballerina incorporates fundamental concepts of distributed system integration into the language and offers a type-safe, concurrent environment to implement microservices with distributed transactions, reliable messaging, stream processing, and workflows. 
+Exercism exercises in Ballerina. [Ballerina](https://ballerina.io/) is a compiled, transactional, statically and strongly typed programming language with textual and graphical syntaxes. Ballerina incorporates fundamental concepts of distributed system integration into the language and offers a type-safe, concurrent environment to implement microservices with distributed transactions, reliable messaging, stream processing, and workflows.
 
 ## Setup
 
-You can install Ballerina by following the Ballerina [installation guide](https://ballerina.io/learn/getting-started/). 
+You can install Ballerina by following the Ballerina [installation guide](https://ballerina.io/learn/getting-started/).
+
 ## Contributing
 
 Thank you so much for contributing! :tada:
@@ -24,32 +25,13 @@ At the most basic level, Exercism is all about the tests. You can read more abou
 
 Test files should use the following format:
 
-``` ballerina
-
+```ballerina
 import ballerina/test;
 
-// This is the mock function which will replace the real function
-string[] outputs = [];
-
-// This is the mock function which will replace the real function
-@test:Mock {
-    moduleName: "ballerina/io",
-    functionName: "println"
-}
-test:MockFunction mock_printLn = new ();
-
-public function mockPrint(any... val) {
-    outputs.push(val.reduce(function(any a, any b) returns string => a.toString() + b.toString(), "").toString());
-}
-
 @test:Config
-function testFunc() {
-    test:when(mock_printLn).call("mockPrint");
-    // Invoking the main function
-    main();
-    test:assertEquals(outputs[0], "Hello, World!");
+function testHello() {
+    test:assertEquals(hello(), "Hello, World!");
 }
-
 ```
 
 ## Opening an Issue
@@ -66,41 +48,50 @@ Please follow the coding standards for Ballerina. (If there is a formatter for t
 
 Before submitting your pull request, you'll want to verify the changes in two ways:
 
-* Run all the tests for the Ballerina exercises
-* Run an Exercism-specific linter to verify the track
+- Run all the tests for the Ballerina exercises against the example implementation:
 
-All the tests for Ballerina exercises can be run from the top level of the repo with
-
+```shell
+bin/verify-exercises
 ```
-sh run_ballerina_tests.sh
+
+Note: you can also verify a single exercise by passing the exercise's slug:
+
+```shell
+bin/verify-exercises anagram
+```
+
+- Run an Exercism-specific linter to verify the track:
+
+```shell
+bin/fetch-configlet
+bin/configlet lint
 ```
 
 For the Exercism-specific linting, please see [the documentation](https://github.com/exercism/docs/blob/master/language-tracks/configuration/linting.md).
 
 ## Contributing a New Exercise
 
-Please see the documentation about [adding new exercises](https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md).
+To add a new exercise, you can run:
+
+```shell
+bin/add-exercise <slug>
+```
+
+This will generate all the files for the exercise.
+Once the script has finished, you then need to:
+
+- Create the test suite in `exercises/practice/<slug>/tests/<snake_name>_test.bal`,
+  based on the canonical data at `https://github.com/exercism/problem-specifications/blob/main/exercises/<slug>/canonical-data.json`
+- Create the example solution in `exercises/practice/<slug>/.meta/reference/<snake_name>.bal`
+- Create the stub solution in `exercises/practice/<slug>/<snake_name>.bal`
+- Add your GitHub username to the `authors` array in the `exercises/practice/<slug>/.meta/config.json` file
+- Update the `difficulty` value for the exercise's entry in the `config.json` file
+- Verify the exercise by running `bin/verify-exercises <slug>`
 
 Note that:
 
-- Each exercise must stand on its own. Do not reference files outside the exercise directory. They will not be included when the user fetches the exercise.
+- Each exercise must stand on its own.
+  Do not reference files outside the exercise directory.
+  They will not be included when the user fetches the exercise.
 - Exercises should use only the Ballerina core libraries.
 - Exercises must conform to the Exercism-wide standards described in [the documentation](https://github.com/exercism/docs/tree/master/language-tracks/exercises).
-- Each exercise should have a test suite, an example solution, a template file for the real implementation and ... (anything else that needs to go with each exercise for this track). The CI build expects files to be named using the following convention: (describe the Ballerina convention for naming the various files that make up an exercise).
-- Please do not commit any configuration files or directories inside the exercise other than ...
-- Be sure to add it to the appropriate place in the `config.json` file.
-
-
-Quick Reference: 
-
-- Create an exercise under ``` ballerina-exercism/exercsises/<exercise-name>```
-- Add the full reference implementation to ```<exercise-name>/.meta/reference ```. 
-- Add the exercise skeleton(incomplete solution) to `` <exercise-name>/``. 
-- Add all test cases under ```<exercise-name>test/ ```.
-- Run all tests using : ``.https://github.com/exercism/v3/blob/main/ballerina-exercism/exercises$ sh run_ballerina_tests.sh`` and make sure all tests are passed. 
-- Add exercise to ``` ballerina-exercism/config.json ```. 
-- Generate an UUID using `configlet uuid` use that as the ID for the exercise.
-- Update ``config.json`` with the metadata for the new exercise. 
-- Run linter : `` configlet lint . --track-id=ballerina`` and make sure you don't have any issues. 
-- Now you are ready to commit and push the exercise. 
-- Once changes are pushed, create a PR. 

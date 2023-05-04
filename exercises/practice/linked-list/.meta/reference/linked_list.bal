@@ -9,6 +9,7 @@ type Node record {|
     Node? prev = ();
 |};
 
+public function newLinkedList() returns LinkedList => {};
 
 # Adds a new value to the tail of a linked list
 #

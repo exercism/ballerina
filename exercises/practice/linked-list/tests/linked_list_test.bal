@@ -2,7 +2,7 @@ import ballerina/test;
 
 @test:Config {}
 function testPopGetsElementFromList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 7);
     test:assertEquals(pop(list), 7);
 }
@@ -11,7 +11,7 @@ function testPopGetsElementFromList() {
     enable: false
 }
 function testPushPopRespectivelyAddRemoveAtEndOfList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 11);
     push(list, 13);
     test:assertEquals(pop(list), 13);
@@ -22,7 +22,7 @@ function testPushPopRespectivelyAddRemoveAtEndOfList() {
     enable: false
 }
 function testShiftGetsElementFromList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 17);
     test:assertEquals(shift(list), 17);
 }
@@ -31,7 +31,7 @@ function testShiftGetsElementFromList() {
     enable: false
 }
 function testShiftGetsFirstElementFromList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 23);
     push(list, 5);
     test:assertEquals(shift(list), 23);
@@ -42,7 +42,7 @@ function testShiftGetsFirstElementFromList() {
     enable: false
 }
 function testUnshiftAddsElementAtStartOfList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     unshift(list, 23);
     unshift(list, 5);
     test:assertEquals(shift(list), 5);
@@ -53,7 +53,7 @@ function testUnshiftAddsElementAtStartOfList() {
     enable: false
 }
 function testPopPushShiftUnshiftCanBeUsedInAnyOrder() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 1);
     push(list, 2);
     test:assertEquals(pop(list), 2);
@@ -70,7 +70,7 @@ function testPopPushShiftUnshiftCanBeUsedInAnyOrder() {
     enable: false
 }
 function testCountAnEmptyList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     test:assertEquals(count(list), 0);
 }
 
@@ -78,7 +78,7 @@ function testCountAnEmptyList() {
     enable: false
 }
 function testCountAListWithItems() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 37);
     push(list, 1);
     test:assertEquals(count(list), 2);
@@ -88,7 +88,7 @@ function testCountAListWithItems() {
     enable: false
 }
 function testCountIsCorrectAfterMutation() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 31);
     test:assertEquals(count(list), 1);
     unshift(list, 43);
@@ -103,7 +103,7 @@ function testCountIsCorrectAfterMutation() {
     enable: false
 }
 function testPoppingToEmptyDoesNotBreakTheList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 41);
     push(list, 59);
     _ = pop(list);
@@ -117,7 +117,7 @@ function testPoppingToEmptyDoesNotBreakTheList() {
     enable: false
 }
 function testShiftingToEmptyDoesNotBreakTheList() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 41);
     push(list, 59);
     _ = shift(list);
@@ -131,7 +131,7 @@ function testShiftingToEmptyDoesNotBreakTheList() {
     enable: false
 }
 function testDeletesTheOnlyElement() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 61);
     delete(list, 61);
     test:assertEquals(count(list), 0);
@@ -141,7 +141,7 @@ function testDeletesTheOnlyElement() {
     enable: false
 }
 function testDeletesTheElementWithTheGivenValue() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 71);
     push(list, 83);
     push(list, 79);
@@ -155,7 +155,7 @@ function testDeletesTheElementWithTheGivenValue() {
     enable: false
 }
 function testDeletesTheElementWithTheGivenValueReassigningTail() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 71);
     push(list, 83);
     push(list, 79);
@@ -169,7 +169,7 @@ function testDeletesTheElementWithTheGivenValueReassigningTail() {
     enable: false
 }
 function testDeletesTheElementWithTheGivenValueReassigningHead() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 71);
     push(list, 83);
     push(list, 79);
@@ -183,7 +183,7 @@ function testDeletesTheElementWithTheGivenValueReassigningHead() {
     enable: false
 }
 function testDeletesTheFirstOfTwoElements() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 97);
     push(list, 101);
     delete(list, 97);
@@ -195,7 +195,7 @@ function testDeletesTheFirstOfTwoElements() {
     enable: false
 }
 function testDeletesTheSecondOfTwoElements() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 97);
     push(list, 101);
     delete(list, 101);
@@ -207,7 +207,7 @@ function testDeletesTheSecondOfTwoElements() {
     enable: false
 }
 function testDoesNotModifyListIfElementNotFound() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 89);
     delete(list, 103);
     test:assertEquals(count(list), 1);
@@ -217,7 +217,7 @@ function testDoesNotModifyListIfElementNotFound() {
     enable: false
 }
 function testDeleteOnlyTheFirstOccurrence() {
-    LinkedList list = {};
+    LinkedList list = newLinkedList();
     push(list, 73);
     push(list, 9);
     push(list, 9);

@@ -1,6 +1,8 @@
-public type LinkedList record {|
-    // TODO define this type
-|};
+// TODO define a LinkedList type or class
+
+public function newLinkedList() returns LinkedList {
+    // TODO implement this function
+}
 
 # Adds a new value to the tail of a linked list
 #

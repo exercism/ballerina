@@ -4,7 +4,7 @@ import ballerina/test;
 function noMatches() {
     var candidates = ["hello", "world", "zombies", "pants"];
     var expected = [];
-    test:assertEquals(expected, anagrams("diaper", candidates));
+    test:assertEquals(anagrams("diaper", candidates), expected);
 }
 
 @test:Config {
@@ -13,7 +13,7 @@ function noMatches() {
 function detectsTwoAnagrams() {
     var candidates = ["lemons", "cherry", "melons"];
     var expected = ["lemons", "melons"];
-    test:assertEquals(expected, anagrams("solemn", candidates));
+    test:assertEquals(anagrams("solemn", candidates), expected);
 }
 
 @test:Config {
@@ -22,7 +22,7 @@ function detectsTwoAnagrams() {
 function doesNotDetectAnagramSubsets() {
     var candidates = ["dog", "goody"];
     var expected = [];
-    test:assertEquals(expected, anagrams("good", candidates));
+    test:assertEquals(anagrams("good", candidates), expected);
 }
 
 @test:Config {
@@ -31,7 +31,7 @@ function doesNotDetectAnagramSubsets() {
 function detectsAnagram() {
     var candidates = ["enlists", "google", "inlets", "banana"];
     var expected = ["inlets"];
-    test:assertEquals(expected, anagrams("listen", candidates));
+    test:assertEquals(anagrams("listen", candidates), expected);
 }
 
 @test:Config {
@@ -40,7 +40,7 @@ function detectsAnagram() {
 function detectsThreeAnagrams() {
     var candidates = ["gallery", "ballerina", "regally", "clergy", "largely", "leading"];
     var expected = ["gallery", "regally", "largely"];
-    test:assertEquals(expected, anagrams("allergy", candidates));
+    test:assertEquals(anagrams("allergy", candidates), expected);
 }
 
 @test:Config {
@@ -49,7 +49,7 @@ function detectsThreeAnagrams() {
 function detectsMultipleAnagramsWithDifferentCase() {
     var candidates = ["Eons", "ONES"];
     var expected = ["Eons", "ONES"];
-    test:assertEquals(expected, anagrams("nose", candidates));
+    test:assertEquals(anagrams("nose", candidates), expected);
 }
 
 @test:Config {
@@ -58,7 +58,7 @@ function detectsMultipleAnagramsWithDifferentCase() {
 function doesNotDetectNonAnagramsWithIdenticalChecksum() {
     var candidates = ["last"];
     var expected = [];
-    test:assertEquals(expected, anagrams("mass", candidates));
+    test:assertEquals(anagrams("mass", candidates), expected);
 }
 
 @test:Config {
@@ -67,7 +67,7 @@ function doesNotDetectNonAnagramsWithIdenticalChecksum() {
 function detectsAnagramsCaseInsensitively() {
     var candidates = ["cashregister", "Carthorse", "radishes"];
     var expected = ["Carthorse"];
-    test:assertEquals(expected, anagrams("Orchestra", candidates));
+    test:assertEquals(anagrams("Orchestra", candidates), expected);
 }
 
 @test:Config {
@@ -76,7 +76,7 @@ function detectsAnagramsCaseInsensitively() {
 function detectsAnagramsUsingCaseInsensitiveSubject() {
     var candidates = ["cashregister", "carthorse", "radishes"];
     var expected = ["carthorse"];
-    test:assertEquals(expected, anagrams("Orchestra", candidates));
+    test:assertEquals(anagrams("Orchestra", candidates), expected);
 }
 
 @test:Config {
@@ -85,7 +85,7 @@ function detectsAnagramsUsingCaseInsensitiveSubject() {
 function detectsAnagramsUsingCaseInsensitivePossibleMatches() {
     var candidates = ["cashregister", "Carthorse", "radishes"];
     var expected = ["Carthorse"];
-    test:assertEquals(expected, anagrams("orchestra", candidates));
+    test:assertEquals(anagrams("orchestra", candidates), expected);
 }
 
 @test:Config {
@@ -94,7 +94,7 @@ function detectsAnagramsUsingCaseInsensitivePossibleMatches() {
 function doesNotDetectAnAnagramIfTheOriginalWordIsRepeated() {
     var candidates = ["go Go GO"];
     var expected = [];
-    test:assertEquals(expected, anagrams("go", candidates));
+    test:assertEquals(anagrams("go", candidates), expected);
 }
 
 @test:Config {
@@ -103,7 +103,7 @@ function doesNotDetectAnAnagramIfTheOriginalWordIsRepeated() {
 function anagramsMustUseAllLettersExactlyOnce() {
     var candidates = ["patter"];
     var expected = [];
-    test:assertEquals(expected, anagrams("tapper", candidates));
+    test:assertEquals(anagrams("tapper", candidates), expected);
 }
 
 @test:Config {
@@ -112,7 +112,7 @@ function anagramsMustUseAllLettersExactlyOnce() {
 function wordsAreNotAnagramsOfThemselves() {
     var candidates = ["BANANA"];
     var expected = [];
-    test:assertEquals(expected, anagrams("BANANA", candidates));
+    test:assertEquals(anagrams("BANANA", candidates), expected);
 }
 
 @test:Config {
@@ -121,7 +121,7 @@ function wordsAreNotAnagramsOfThemselves() {
 function wordsAreNotAnagramsOfThemselvesEvenIfLetterCaseIsPartiallyDifferent() {
     var candidates = ["Banana"];
     var expected = [];
-    test:assertEquals(expected, anagrams("BANANA", candidates));
+    test:assertEquals(anagrams("BANANA", candidates), expected);
 }
 
 @test:Config {
@@ -130,7 +130,7 @@ function wordsAreNotAnagramsOfThemselvesEvenIfLetterCaseIsPartiallyDifferent() {
 function wordsAreNotAnagramsOfThemselvesEvenIfLetterCaseIsCompletelyDifferent() {
     var candidates = ["banana"];
     var expected = [];
-    test:assertEquals(expected, anagrams("BANANA", candidates));
+    test:assertEquals(anagrams("BANANA", candidates), expected);
 }
 
 @test:Config {
@@ -139,5 +139,5 @@ function wordsAreNotAnagramsOfThemselvesEvenIfLetterCaseIsCompletelyDifferent() 
 function wordsOtherThanThemselvesCanBeAnagrams() {
     var candidates = ["LISTEN", "Silent"];
     var expected = ["Silent"];
-    test:assertEquals(expected, anagrams("LISTEN", candidates));
+    test:assertEquals(anagrams("LISTEN", candidates), expected);
 }

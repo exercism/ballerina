@@ -15,7 +15,7 @@
     "example": [
       ".meta/reference/two_bucket.bal"
     ],
-    "editor": {
+    "editor": [
       "two_bucket_types.bal"
     ]
   },

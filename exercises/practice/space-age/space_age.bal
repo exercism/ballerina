@@ -1,4 +1,4 @@
-# Returns the string `Hello` with the input string name.
+# Returns the age on another planet or error if it is not a planet.
 #
 # + planet - planet name as a string
 # + seconds - person's age measured in seconds

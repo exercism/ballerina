@@ -217,7 +217,7 @@ type EmployeeFillUpSummary record {|
 ## Hints
 
 - Use [`ballerina/io` module](https://lib.ballerina.io/ballerina/io/latest) to read/write JSON files.
-- Convert the JSON values to application-specific types to work with data in a type-safe manner. Refer to [Converting to user defined type example](https://ballerina.io/learn/by-example/converting-to-user-defined-type) in Ballerina By Examples (BBE) for information.
+- Convert the JSON values to application-specific types to work with data in a type-safe manner. Refer to [Converting to user defined type example](https://ballerina.io/learn/by-example/convert-from-json-to-user-defined-type) in Ballerina By Examples (BBE) for information.
 
 ```ballerina
    json jsonPayload = {id: "2", title: "Jeru", artist: "Gerry Mulligan", price: 17.99};
@@ -231,7 +231,7 @@ type EmployeeFillUpSummary record {|
    io:println(album2);
 ```
 
-- [Destructuring records](https://ballerina.io/learn/by-example/destructuring-records) can be useful in reducing the verbosity of the code.
+- [Destructuring records](https://ballerina.io/learn/by-example/destructure-records-using-query) can be useful in reducing the verbosity of the code.
 
 ```ballerina
    Album {id, title, artist, price} = album1;

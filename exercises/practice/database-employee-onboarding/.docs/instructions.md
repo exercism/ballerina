@@ -67,5 +67,5 @@ The following tables are already in the sample H2 database with some sample data
 
 * Use the [ballerinax/java.jdbc](https://central.ballerina.io/ballerinax/java.jdbc) module to work with the database
 * Refer to the [Prerequisite](https://lib.ballerina.io/ballerinax/java.jdbc/latest) section for steps to add the JDBC driver as a dependency
-* Use the [execute](https://lib.ballerina.io/ballerinax/java.jdbc/latest/clients/Client#execute) remote method to insert data
-* Refer the [DML and DDL operations](https://ballerina.io/learn/by-example/jdbc-execute-operation) examples
+* Use the [execute](https://lib.ballerina.io/ballerinax/java.jdbc/latest#Client-execute) remote method to insert data
+* Refer the [DML and DDL operations](https://ballerina.io/learn/by-example/mysql-execute-operation/) examples

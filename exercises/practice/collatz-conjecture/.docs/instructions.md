@@ -27,3 +27,5 @@ Starting with n = 12, the steps would be as follows:
 
 Resulting in 9 steps.
 So for input n = 12, the return value would be 9.
+
+For input n = -10, the return value would be error("Only positive integers are allowed").

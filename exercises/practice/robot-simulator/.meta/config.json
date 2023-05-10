@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "glennj"
+  ],
+  "files": {
+    "solution": [
+      "robot_simulator.bal"
+    ],
+    "test": [
+      "tests/robot_simulator_test.bal"
+    ],
+    "example": [
+      ".meta/reference/robot_simulator.bal"
+    ]
+  },
+  "blurb": "Write a robot simulator.",
+  "source": "Inspired by an interview question at a famous company."
+}

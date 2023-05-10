@@ -122,6 +122,6 @@ Sample `payments.json` file data:
 * Use the [ballerinax/java.jdbc](https://central.ballerina.io/ballerinax/java.jdbc) module to work with the database
 * Refer to the [Prerequisite](https://lib.ballerina.io/ballerinax/java.jdbc/latest) section for steps to add the JDBC driver as a dependency
 * Use [io:fileReadJson](https://lib.ballerina.io/ballerina/io/latest/functions#fileReadJson) to read the JSON input file
-* Convert the JSON values to application-specific types to work with data in a type-safe manner. Refer the [Converting to user defined type](https://ballerina.io/learn/by-example/converting-to-user-defined-type) example
-* Use [sql:ParameterizedQuery](https://lib.ballerina.io/ballerina/sql/latest/objectTypes/ParameterizedQuery) and the [batchExecute](https://lib.ballerina.io/ballerinax/java.jdbc/latest/clients/Client#batchExecute) remote method to work with the database
-* Refer the [batch execute](https://ballerina.io/learn/by-example/jdbc-batch-execute-operation) example
+* Convert the JSON values to application-specific types to work with data in a type-safe manner. Refer the [Converting to user defined type](https://ballerina.io/learn/by-example/convert-from-json-to-user-defined-type/) example
+* Use [sql:ParameterizedQuery](https://lib.ballerina.io/ballerina/sql/latest#ParameterizedQuery) and the [batchExecute](https://lib.ballerina.io/ballerinax/java.jdbc/latest#Client-batchExecute) remote method to work with the database
+* Refer the [batch execute](https://ballerina.io/learn/by-example/mysql-batch-execute-operation/) example

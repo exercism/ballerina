@@ -77,7 +77,7 @@ The following tables are already in the sample H2 database with some sample data
 
 * Use the [ballerinax/java.jdbc](https://central.ballerina.io/ballerinax/java.jdbc) module to work with the database
 * Refer to the [Prerequisite](https://lib.ballerina.io/ballerinax/java.jdbc/latest) section for steps to add the JDBC driver as a dependency
-* Use [query](https://lib.ballerina.io/ballerinax/java.jdbc/latest/clients/Client#query)  remote method to query data from DB
-* Refer the [Simple query](https://ballerina.io/learn/by-example/jdbc-query-operation) example
-* Refer the [Table syntax](https://ballerina.io/learn/by-example/table-syntax) example
+* Use [query](https://lib.ballerina.io/ballerinax/java.jdbc/latest#Client-query)  remote method to query data from DB
+* Refer the [Simple query](https://ballerina.io/learn/by-example/mysql-query-operation) example
+* Refer the [Table syntax](https://ballerina.io/learn/by-example/table) example
 * Use [Querying tables](https://ballerina.io/learn/by-example/querying-tables) to find the required data from the Ballerina table

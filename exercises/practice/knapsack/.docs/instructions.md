@@ -26,7 +26,7 @@ Items: [
 
 Knapsack Limit: 10
 
-For the above, the first item has weight 5 and value 10, the second item has weight 4 and value 40, and so on.
+For the above, the first item has a weight of 5 and a value of 10, the second item has a weight of 4 and a value of 40, and so on.
 
-In this example, Bob should take the second and fourth item to maximize his value, which, in this case, is 90.
+In this example, Bob should take the second and fourth items to maximize his value, which, in this case, is 90.
 He cannot get more than 90 as his knapsack has a weight limit of 10.

@@ -14,6 +14,9 @@
     ],
     "example": [
       ".meta/reference/two_bucket.bal"
+    ],
+    "editor": [
+      "two_bucket_types.bal"
     ]
   },
   "blurb": "Given two buckets of different size, demonstrate how to measure an exact number of liters.",

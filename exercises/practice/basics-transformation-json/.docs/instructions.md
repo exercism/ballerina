@@ -245,4 +245,4 @@ type EmployeeFillUpSummary record {|
    function cfr(int deaths, int cases) returns decimal => <decimal>deaths / <decimal>cases * 100;
 ```
 
-- [Ballerina table syntax](https://ballerina.io/learn/by-example/table-syntax)
+- [Ballerina table syntax](https://ballerina.io/learn/by-example/table)

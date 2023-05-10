@@ -27,9 +27,9 @@ public function hey(string input) returns string {
     }
 }
 
-function isSilence(string input) returns boolean => input.length() == 0;
+isolated function isSilence(string input) returns boolean => input.length() == 0;
 
-function isQuestion(string input) returns boolean => input.endsWith("?");
+isolated function isQuestion(string input) returns boolean => input.endsWith("?");
 
 function isYelling(string input) returns boolean {
     // contains an uppercase letter and does not contain a lowercase letter

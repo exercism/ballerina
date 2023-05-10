@@ -503,6 +503,14 @@
         "difficulty": 5
       },
       {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "a8092ef2-01f9-4673-b780-cc9fa97d0b56",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "a6d7ed5c-df22-4869-ba8d-40af5ae01346",

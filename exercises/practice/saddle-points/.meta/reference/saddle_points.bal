@@ -1,8 +1,3 @@
-public type SaddlePoint record {
-    int row;
-    int column;
-};
-
 # Returns the saddle points in the given matrix.
 #
 # A saddle point is an value that is:
@@ -10,8 +5,8 @@ public type SaddlePoint record {
 # - equal to the minimum value in its column.
 #
 # + matrix - an array of int arrays (i.e. two-dimensional matrix)
-# + return - an array of SaddlePoints
-public function saddlePoints(int[][] matrix) returns SaddlePoint[] {
+# + return - an array of maps [{"row": x, "column": y}, ...]
+public function saddlePoints(int[][] matrix) returns map<int>[] {
     int[] rowMax = [];
     foreach int[] row in matrix {
         rowMax.push(int:max(int:MIN_VALUE, ...row));
@@ -23,11 +18,11 @@ public function saddlePoints(int[][] matrix) returns SaddlePoint[] {
         colMin.push(int:min(int:MAX_VALUE, ...column));
     }
 
-    SaddlePoint[] result = [];
+    map<int>[] result = [];
     foreach int r in int:range(0, matrix.length(), 1) {
         foreach int c in int:range(0, matrix[0].length(), 1) {
             if matrix[r][c] == rowMax[r] && matrix[r][c] == colMin[c] {
-                result.push({row: r + 1, column: c + 1});
+                result.push({"row": r + 1, "column": c + 1});
             }
         }
     }

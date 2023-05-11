@@ -8,7 +8,7 @@ function testCanIdentifySingleSaddlePoint() {
         [6, 6, 7]
     ];
 
-    SaddlePoint[] expected = [{row: 2, column: 1}];
+    map<int>[] expected = [{"row": 2, "column": 1}];
     test:assertEquals(saddlePoints(matrix), expected);
 }
 
@@ -19,7 +19,7 @@ function testCanIdentifyThatEmptyMatrixHasNoSaddlePoints() {
     int[][] matrix = [
         []
     ];
-    SaddlePoint[] expected = [];
+    map<int>[] expected = [];
     test:assertEquals(saddlePoints(matrix), expected);
 }
 
@@ -32,7 +32,7 @@ function testCanIdentifyLackOfSaddlePointsWhenThereAreNone() {
         [3, 1, 2],
         [2, 3, 1]
     ];
-    SaddlePoint[] expected = [];
+    map<int>[] expected = [];
     test:assertEquals(saddlePoints(matrix), expected);
 };
 
@@ -45,10 +45,10 @@ function testCanIdentifyMultipleSaddlePointsInAColumn() {
         [3, 5, 5],
         [1, 5, 4]
     ];
-    SaddlePoint[] expected = [
-        {row: 1, column: 2},
-        {row: 2, column: 2},
-        {row: 3, column: 2}
+    map<int>[] expected = [
+        {"row": 1, "column": 2},
+        {"row": 2, "column": 2},
+        {"row": 3, "column": 2}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 };
@@ -62,10 +62,10 @@ function testCanIdentifyMultipleSaddlePointsInARow() {
         [5, 5, 5],
         [7, 5, 6]
     ];
-    SaddlePoint[] expected = [
-        {row: 2, column: 1},
-        {row: 2, column: 2},
-        {row: 2, column: 3}
+    map<int>[] expected = [
+        {"row": 2, "column": 1},
+        {"row": 2, "column": 2},
+        {"row": 2, "column": 3}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 };
@@ -79,8 +79,8 @@ function testCanIdentifySaddlePointInBottomRightCorner() {
         [6, 7, 6],
         [3, 2, 5]
     ];
-    SaddlePoint[] expected = [
-        {row: 3, column: 3}
+    map<int>[] expected = [
+        {"row": 3, "column": 3}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 };
@@ -93,9 +93,9 @@ function testCanIdentifySaddlePointsInANonSquareMatrix() {
         [3, 1, 3],
         [3, 2, 4]
     ];
-    SaddlePoint[] expected = [
-        {row: 1, column: 1},
-        {row: 1, column: 3}
+    map<int>[] expected = [
+        {"row": 1, "column": 1},
+        {"row": 1, "column": 3}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 };
@@ -110,9 +110,9 @@ function testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithTheMini
         [4],
         [1]
     ];
-    SaddlePoint[] expected = [
-        {row: 2, column: 1},
-        {row: 4, column: 1}
+    map<int>[] expected = [
+        {"row": 2, "column": 1},
+        {"row": 4, "column": 1}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 };
@@ -124,9 +124,9 @@ function testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithTheMaximum
     int[][] matrix = [
         [2, 5, 3, 5]
     ];
-    SaddlePoint[] expected = [
-        {row: 1, column: 2},
-        {row: 1, column: 4}
+    map<int>[] expected = [
+        {"row": 1, "column": 2},
+        {"row": 1, "column": 4}
     ];
     test:assertEquals(saddlePoints(matrix), expected);
 }

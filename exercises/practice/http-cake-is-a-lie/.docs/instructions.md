@@ -257,8 +257,8 @@ $ curl -v http://localhost:8080/order -d '{"username": "mary", "order_items": [{
 
 ## Hints
 
-- [Simple HTTP service](https://ballerina.io/learn/by-example/http-absolute-path-and-path)
+- [Simple HTTP service](https://ballerina.io/learn/by-example/http-basic-rest-service/)
 - A [quoted identifier](https://ballerina.io/learn/language-basics/#syntax) (`'order`) can be used to use `order` (which is a keyword) as the path.
-- Using [service data binding](https://ballerina.io/learn/by-example/http-data-binding) will validate that the payload is of the expected structure, and will handle responding with status code 400 (Bad Request) when binding fails.
-- Using [status code records as return types](https://ballerina.io/learn/by-example/http-resource-returns) and returning record values of those types from resource methods will handle setting the relevant status code to the response internally.
+- Using [service data binding](https://ballerina.io/learn/by-example/http-service-data-binding/) will validate that the payload is of the expected structure, and will handle responding with status code 400 (Bad Request) when binding fails.
+- Using [status code records as return types](https://ballerina.io/learn/by-example/http-send-different-status-codes-with-payload/) and returning record values of those types from resource methods will handle setting the relevant status code to the response internally.
 - [Configurable variables](https://ballerina.io/learn/by-example/configurable-variables)

@@ -1,4 +1,4 @@
-map<float> OrbitalPeriod = {
+const map<float> OrbitalPeriod = {
     "Mercury": 0.2408467,
     "Venus": 0.61519726,
     "Earth": 1.0,

@@ -19,5 +19,5 @@
   "icon": "connect",
   "blurb": "A popular bakery that bakes various cakes, has asked you to set up an online order management system for them.",
   "source": "This is an exercise to introduce users to using Ballerina HTTP service data binding",
-  "source_url": "https://ballerina.io/learn/by-example/http-data-binding"
+  "source_url": "https://ballerina.io/learn/by-example/http-service-data-binding/"
 }

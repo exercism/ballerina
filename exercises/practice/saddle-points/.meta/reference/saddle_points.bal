@@ -24,12 +24,11 @@ public function saddlePoints(int[][] matrix) returns SaddlePoint[] {
     }
 
     SaddlePoint[] result = [];
-    foreach int row in int:range(0, matrix.length(), 1) {
-        foreach int col in int:range(0, matrix[0].length(), 1) {
-            if matrix[row][col] == rowMax[row] && matrix[row][col] == colMin[col] {
-                result.push({row: row + 1, column: col + 1});
+    foreach int r in int:range(0, matrix.length(), 1) {
+        foreach int c in int:range(0, matrix[0].length(), 1) {
+            if matrix[r][c] == rowMax[r] && matrix[r][c] == colMin[c] {
+                result.push({row: r + 1, column: c + 1});
             }
-
         }
     }
 

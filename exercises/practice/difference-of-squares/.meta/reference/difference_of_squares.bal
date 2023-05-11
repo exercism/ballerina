@@ -1,5 +1,5 @@
 public function squareOfSum(int n) returns int {
-    var sum = n * (n + 1) / 2;
+    int sum = n * (n + 1) / 2;
     return sum * sum;
 }
 

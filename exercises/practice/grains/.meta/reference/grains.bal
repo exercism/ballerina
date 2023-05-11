@@ -1,5 +1,5 @@
 public function square(int n) returns float|error {
-    if (n <= 0 || n > 64) {
+    if n <= 0 || n > 64 {
         return error("Invalid square");
     }
 

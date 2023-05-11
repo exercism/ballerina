@@ -7,35 +7,36 @@ function testNoPrimesUnderTwo() {
     test:assertEquals(primes('limit), primeNumbers);
 }
 
-@test:Config {}
-function testNoPrimesUnderOne() {
-    int 'limit = 0;
-    int[] primeNumbers = [];
-    test:assertEquals(primes('limit), primeNumbers);
+@test:Config {
+    enable: false
 }
-
-@test:Config {}
 function testFirstPrimes() {
     int 'limit = 2;
     int[] primeNumbers = [2];
     test:assertEquals(primes('limit), primeNumbers);
 }
 
-@test:Config {}
+@test:Config {
+    enable: false
+}
 function testPrimesUpToTen() {
     int 'limit = 10;
     int[] primeNumbers = [2, 3, 5, 7];
     test:assertEquals(primes('limit), primeNumbers);
 }
 
-@test:Config {}
+@test:Config {
+    enable: false
+}
 function testPrimesUpToAPrime() {
     int 'limit = 13;
     int[] primeNumbers = [2, 3, 5, 7, 11, 13];
     test:assertEquals(primes('limit), primeNumbers);
 }
 
-@test:Config {}
+@test:Config {
+    enable: false
+}
 function testPrimesUpTo1000() {
     int 'limit = 1000;
     int[] primeNumbers = [

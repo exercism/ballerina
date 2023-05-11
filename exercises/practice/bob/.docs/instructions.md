@@ -17,11 +17,3 @@ Bob only ever answers one of five things:
   The convention used for silence is nothing, or various combinations of whitespace characters.
 - **"Whatever."**
   This is what he answers to anything else.
-
-## Examples
-
-input - How are you?
-Bob's response - Sure.
-
-input - I am John
-Bob's response - Whatever.

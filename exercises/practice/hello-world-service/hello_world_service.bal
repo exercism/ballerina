@@ -1,10 +1,10 @@
 import ballerina/http;
 
-// Implement a general http service listener on port 9090 with the root path "/"
+// Implement an HTTP service listening on port 9090 with the root path "/"
 service {
 
-    // add a GET resource called "greeting" that returns the "Hello, World!" message
-resource {
+    // Add a GET resource called "greeting" that returns the "Hello, World!" message
+    resource {
 
     }
 }

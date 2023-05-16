@@ -537,7 +537,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+       {
+      "title": "Cloud native",
+      "content": "Network primitives in the language make it simpler to write services and run them in the cloud.",
+      "icon": ""
+       },
+       {
+      "title": "Flexibly typed",
+      "content": "Structural types with support for openness are used both for static typing within a program and for describing service interfaces.",
+      "icon": "fast"
+       },
+       {
+      "title": "Data oriented",
+      "content": "Type-safe, declarative processing of JSON, XML, and tabular data with language-integrated queries.",
+      "icon": "fast"
+      },
+      {
+      "title": "Graphical",
+      "content": "Programs have both a textual syntax and an equivalent graphical form based on sequence diagrams.",
+      "icon": "fast"
+      },
+      {
+        "title": "Concurrent",
+        "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads without the complexity of asynchronous functions.",
+        "icon": "fast"
+      },
+      {
+        "title": "Reliable, maintainable",
+        "content": "Explicit error handling, static types, and concurrency safety, combined with a familiar, readable syntax make programs reliable and maintainable.",
+        "icon": "fast"
+        }
+  ],
   "tags": [
     "paradigm/procedural",
     "paradigm/imperative",

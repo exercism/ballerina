@@ -527,6 +527,22 @@
         "difficulty": 3
       },
       {
+        "slug": "sum-of-multiples",
+        "name": "Sum Of Multiples",
+        "uuid": "43cef38c-1141-4aea-af32-c83b3906cbd1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "secret-handshake",
+        "name": "Secret Handshake",
+        "uuid": "de1d374e-acd3-4d58-b546-7c831c4433fb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "090a2f78-1d9c-4798-92f1-eb9a8ae18f54",

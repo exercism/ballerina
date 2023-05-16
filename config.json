@@ -560,12 +560,12 @@
       },
       {
         "title": "Concurrent",
-        "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads without the complexity of asynchronous functions.",
+        "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads.",
         "icon": "concurrency"
       },
       {
         "title": "Reliable, maintainable",
-        "content": "Explicit error handling, static types, and concurrency safety, combined with a familiar, readable syntax make programs reliable and maintainable.",
+        "content": "Explicit error handling, static types, and concurrency safety combined with a familiar syntax.",
         "icon": "safe"
         }
   ],

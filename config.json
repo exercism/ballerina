@@ -546,12 +546,12 @@
        {
       "title": "Flexibly typed",
       "content": "Structural types with support for openness are used both for static typing within a program and for describing service interfaces.",
-      "icon": "flexible-typing"
+      "icon": "flexibly-typed"
        },
        {
       "title": "Data oriented",
       "content": "Type-safe, declarative processing of JSON, XML, and tabular data with language-integrated queries.",
-      "icon": "data-transformation"
+      "icon": "data-oriented"
       },
       {
       "title": "Graphical",

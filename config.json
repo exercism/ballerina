@@ -527,6 +527,14 @@
         "difficulty": 3
       },
       {
+        "slug": "sum-of-multiples",
+        "name": "Sum Of Multiples",
+        "uuid": "43cef38c-1141-4aea-af32-c83b3906cbd1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "secret-handshake",
         "name": "Secret Handshake",
         "uuid": "de1d374e-acd3-4d58-b546-7c831c4433fb",

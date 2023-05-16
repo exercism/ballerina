@@ -545,7 +545,7 @@
        },
        {
       "title": "Flexibly typed",
-      "content": "Structural types with support for openness are used both for static typing within a program and for describing service interfaces.",
+      "content": "Structural types are used both for static typing within a program and for describing service interfaces.",
       "icon": "dynamically-typed"
        },
        {

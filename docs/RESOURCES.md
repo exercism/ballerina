@@ -1,20 +1,18 @@
 # Resources
 
-To get help if you're having trouble, you can use one of the following resources:
+If you require assistance with anything concerning Ballerina, utilize the resources provided below.
 
-- the Ballerina web site
-    - [Getting Started][getting-started]
-    - [Ballerina Examples][ballerina-examples]
-    - [Join Discord][join-discord]
-- [StackOverflow][stackoverflow]
-- Exercism's resources
-    - get help on [the forum][exercism-forum], or
-    - in the #support channel on [Exercism's discord][exercism-discord].
+- Ballerina official website
+    - [Get Started](https://ballerina.io/learn/get-started/)
+    - [Ballerina By Example](https://ballerina.io/learn/by-example/)
+    - [Learn Ballerina](https://ballerina.io/learn/)
+- Other documentation resources
+    - [Ballerina API Docs](https://lib.ballerina.io/)
+    - [Ballerina specifications](https://ballerina.io/learn/ballerina-specifications/)
+- Community channels    
+    - [Discord channel](https://discord.gg/ballerinalang)
+    - [Stack Overflow](http://stackoverflow.com/questions/tagged/ballerina)
+- Exercism resources
+    - [Exercism forum](https://forum.exercism.org/c/programming/ballerina/232)
+    - [Documentation of the Ballerina track](https://exercism.org/docs/tracks/ballerina)
 
-
-[getting-started]: https://ballerina.io/learn/get-started-with-ballerina/
-[ballerina-examples]: https://ballerina.io/learn/by-example/
-[join-discord]: https://discord.gg/ballerinalang
-[stackoverflow]: http://stackoverflow.com/questions/tagged/ballerina
-[exercism-forum]: https://forum.exercism.org/
-[exercism-discord]: https://exercism.org/r/discord

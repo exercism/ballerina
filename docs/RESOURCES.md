@@ -1,20 +1,14 @@
 # Resources
 
-To get help if you're having trouble, you can use one of the following resources:
-
-- the Ballerina web site
-    - [Getting Started][getting-started]
-    - [Ballerina Examples][ballerina-examples]
-    - [Join Discord][join-discord]
-- [StackOverflow][stackoverflow]
-- Exercism's resources
-    - get help on [the forum][exercism-forum], or
-    - in the #support channel on [Exercism's discord][exercism-discord].
-
-
-[getting-started]: https://ballerina.io/learn/get-started-with-ballerina/
-[ballerina-examples]: https://ballerina.io/learn/by-example/
-[join-discord]: https://discord.gg/ballerinalang
-[stackoverflow]: http://stackoverflow.com/questions/tagged/ballerina
-[exercism-forum]: https://forum.exercism.org/
-[exercism-discord]: https://exercism.org/r/discord
+- Learning resources
+    - [Get Started](https://ballerina.io/learn/get-started/)
+    - [Ballerina By Example](https://ballerina.io/learn/by-example/)
+    - [Ballerina specifications](https://ballerina.io/learn/ballerina-specifications/)
+    - [Ballerina API Docs](https://lib.ballerina.io/)
+    - [Learn Ballerina](https://ballerina.io/learn/)
+- Community channels    
+    - [Discord](https://discord.gg/ballerinalang)
+    - [Stack Overflow](http://stackoverflow.com/questions/tagged/ballerina)
+    - [Twitter](https://twitter.com/ballerinalang)
+    - [LinkedIn](https://www.linkedin.com/company/79080790)
+    

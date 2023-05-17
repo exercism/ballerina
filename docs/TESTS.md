@@ -1,43 +1,70 @@
-# Running the Tests
+# Exercise testing
 
-1. Open a Command Prompt and get the first exercise:
+Follow the steps below to develop a solution for an exercise and test it locally.
+
+## Download the exercise
+
+Open a Command Prompt and execute the command below to download the exercise.
+
+>**Tip:** Replace the value of the `--exercise` property with the name of your preferred exercise.
+
+```sh
+exercism download --track ballerina --exercise hello-world
+```
+
+## Develop your solution
+
+1. Execute the command below to navigate to the directory of the newly downloaded exercise.
+
+     >**Tip:** The directory location in the command below depends on your OS and your configured Exercism workspace. You can find out your workspace location by executing the `exercism configure` command.
 
      ```sh
-     exercism download --track ballerina --exercise hello-world
+     cd ~/exercism/ballerina/hello-world/
      ```
 
-2. Change directory to the newly downloaded exercise
+2. Follow the provided instructions and develop a solution for the exercise.
 
-     ```sh
-     cd ~/exercism/ballerina
-     ```
+## Test your solution
 
-	The directory location depends on your OS and your configured exercism workspace.
-	See `exercism configure` for your workspace location.
+Some Ballerina exercises will have a single test while others will have multiple tests. The tests can be found in the respective test file of the `/tests` directory inside the root directory of the exercise.
 
-3. Initialize the project prior to executing tests:
+### Test exercise with a single test
 
-     ```sh
-     bal init
-     ```
+Execute the command below to run the test of the exercise.
+
+By default, only the first test is enabled. This is intentional as it allows you to focus on just making that one test pass. 
      
-4. Run the tests:
+```sh
+bal test
+```
 
-     ```sh
-     bal test --offline
-     ```
+### Test exercise with multiple tests
 
-    By default, only the first test is enabled.
-    This is intentional as it allows you to focus on just making that one test pass.
-    Once it passes, you can enable the next test by removing `enable: false` from the test's `@test:Config {}` set.
-    When all tests have been enabled ans your implementation makes them all pass, you'll have solved the exercise!
+Follow the steps below to test an exercise with multiple tests.
 
-Good luck!  Have fun!
+1. Once the first test passes, enable the next test by commenting the `enable: false` property from the `@test:Config` annotation below of it as shown in the example below.
 
-If you get stuck, at any point, don't forget to reach out for help:
-- on [the forum][forum],
-- in the #support channel on [Exercism's discord server][discord].
+     ```ballerina
+     @test:Config {
+     // enable: false
+     }
+     function nextTestCase() {
+     }
+     ``` 
 
+2.  Execute the command below to run the enabled test.
 
-[discord]: https://exercism.org/r/discord
-[forum]: https://forum.exercism.org/
+   ```sh
+     bal test
+   ```
+
+3. Repeat the two steps above to enable the remaining tests one by one and run them.
+
+You have solved the exercise when all tests have been enabled and your implementation makes them all pass.
+
+Good luck and have fun solving the exercises!
+
+If you need any help, do not forget to reach out on the channels below.
+- [Ballerina forum](https://forum.exercism.org/c/programming/ballerina/232)
+- [Exercism's Discord channel](https://exercism.org/r/discord)
+- [Ballerina Discord channel](https://discord.gg/ballerinalang)

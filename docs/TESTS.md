@@ -42,11 +42,11 @@ bal test
 
 Follow the steps below to test an exercise with multiple tests.
 
-1. Once the first test passes, enable the next test by commenting the `enable: false` property from the `@test:Config` annotation below of it as shown in the example below.
+1. Once the first test passes, enable the next test by removing the `enable: false` property shown in the example below from the `@test:Config` annotation of it.
 
      ```ballerina
      @test:Config {
-     // enable: false
+     enable: false
      }
      function nextTestCase() {
      }

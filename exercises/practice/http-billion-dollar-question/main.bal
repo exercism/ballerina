@@ -1,12 +1,18 @@
-import ims/billionairehub;
+import ballerina_exercism/http_billion_dollar_question.billionarehub_server as _;
+import ballerina_exercism/http_billion_dollar_question.billionarehub_client as billionarehubClient;
 
-# Client ID and Client Secret to connect to the billionaire API
-configurable string clientId = ?;
-configurable string clientSecret = ?;
+type Billionaire record {
+    string name;
+    float netWorth;
+};
 
+# Returns the top billionares of the given countries.
+#
+# + countries - countries to search for billionares
+# + x - number of billionares to return
+# + return - list of billionares
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    // Create the client connector
-    billionairehub:Client cl = check new ({auth: {clientId, clientSecret}});
+    billionarehubClient:BillionareClient cl = check new();
 
     // TODO Write your logic here
     return [];

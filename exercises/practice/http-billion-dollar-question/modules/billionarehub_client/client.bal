@@ -1,0 +1,20 @@
+import ballerina/http;
+
+type Billionaire record {
+    string name;
+    float netWorth;
+};
+
+const string clientUrl = "http://localhost:9090";
+
+public client class BillionareClient {
+    private final http:Client httpClient;
+
+    public function init() returns error? {
+        self.httpClient = check new (clientUrl);
+    }
+
+    remote function getBillionaires(string country) returns Billionaire[]|error {
+        return self.httpClient->/getBillionaires(country=country);
+    }
+}

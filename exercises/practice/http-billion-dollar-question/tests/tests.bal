@@ -24,22 +24,22 @@ function validData() returns map<[string[], int, string[]]> {
         "case2": [
             ["China", "India"],
             5,
-            ["Mukesh Ambani", "Gautam Adani & family", "Zhong Shanshan", "Zhang Yiming", "Ma Huateng"]
+            ["Mukesh Ambani","Zhong Shanshan","Ma Huateng","Colin Huang","Pony Ma"]
         ],
         "case3": [
             ["China", "India", "Japan", "Hong Kong"],
             10,
-            ["Mukesh Ambani", "Gautam Adani & family", "Zhong Shanshan", "Zhang Yiming", "Robin Zeng", "Ma Huateng", "Li Ka-shing", "Lee Shau Kee", "Shiv Nadar", "He Xiangjian"]
+            ["Mukesh Ambani","Zhong Shanshan","Ma Huateng","Colin Huang","Pony Ma","Gautam Adani & family","Jack Ma","He Xiangjian","Zhang Yiming","Li Ka-shing"]
         ],
         "case4": [
             ["Russia", "Italy", "France", "Germany", "Australia"],
             3,
-            ["Bernard Arnault & family", "Francoise Bettencourt Meyers & family", "Dieter Schwarz"]
+            ["Bernard Arnault & family","Francoise Bettencourt Meyers & family","Francois Pinault & family"]
         ],
         "case5": [
             ["Indonesia", "Japan", "Hong Kong"],
             7,
-            ["Robin Zeng", "Li Ka-shing", "Lee Shau Kee", "Tadashi Yanai & family", "Takemitsu Takizaki", "R. Budi Hartono", "Michael Hartono"]
+            ["Li Ka-shing","Tadashi Yanai & family","Masayoshi Son","Takemitsu Takizaki","Nobutada Saji & family","Takemitsu Takizaki","Takemitsu Takizaki"]
         ],
         "case6": [
             ["India"],
@@ -49,7 +49,7 @@ function validData() returns map<[string[], int, string[]]> {
         "case7": [
             ["Russia"],
             3,
-            ["Vladimir Lisin", "Vladimir Potanin"]
+            ["Vladimir Lisin","Vladimir Potanin","Alexey Mordashov & family"]
         ],
         "case8": [
             ["Mexico"],
@@ -59,7 +59,7 @@ function validData() returns map<[string[], int, string[]]> {
         "case9": [
             ["Canada", "Finland"],
             2,
-            ["Changpeng Zhao", "David Thomson & family"]
+            ["David Thomson & family","Antti Herlin & family"]
         ]
     };
 }

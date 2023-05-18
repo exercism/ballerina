@@ -4,7 +4,7 @@ Follow the steps below to develop a solution for an exercise and test it locally
 
 ## Download the exercise
 
-Open a Command Prompt and execute the command below to download the exercise.
+Open a Command Prompt and execute the command below with the name of the preferred exercise to download it.
 
 >**Tip:** Replace the value of the `--exercise` property with the name of your preferred exercise.
 

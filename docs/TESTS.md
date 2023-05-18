@@ -46,7 +46,7 @@ Follow the steps below to test an exercise with multiple tests.
 
      ```ballerina
      @test:Config {
-     enable: false
+       enable: false
      }
      function nextTestCase() {
      }

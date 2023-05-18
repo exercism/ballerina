@@ -6,10 +6,8 @@ Follow the steps below to develop a solution for an exercise and test it locally
 
 Open a Command Prompt and execute the command below with the name of the preferred exercise to download it.
 
->**Tip:** Replace the value of the `--exercise` property with the name of your preferred exercise.
-
 ```sh
-exercism download --track ballerina --exercise <exercise name>
+exercism download --track ballerina --exercise <exercise-name>
 ```
 
 ## Develop your solution
@@ -42,7 +40,7 @@ bal test
 
 Follow the steps below to test an exercise with multiple tests.
 
-1. Once the first test passes, enable the next test by removing the `enable: false` property shown in the example below from the `@test:Config` annotation of it.
+1. Once the first test passes, enable the next test by removing the `enable: false` property from the `@test:Config` annotation of it.
 
      ```ballerina
      @test:Config {

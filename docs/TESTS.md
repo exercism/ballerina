@@ -26,7 +26,7 @@ exercism download --track ballerina --exercise hello-world
 
 ## Test your solution
 
-Some Ballerina exercises will have a single test while others will have multiple tests. The tests can be found in the respective test file of the `/tests` directory inside the root directory of the exercise.
+Some Ballerina exercises will have a single test, while others will have multiple tests. The tests can be found in the respective test file of the `/tests` directory inside the root directory of the exercise.
 
 ### Test exercise with a single test
 

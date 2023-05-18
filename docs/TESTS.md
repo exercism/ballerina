@@ -40,7 +40,7 @@ bal test
 
 Follow the steps below to test an exercise with multiple tests.
 
-1. Once the first test passes, enable the next test by removing the `enable: false` property from the `@test:Config` annotation of it.
+1. Once the first test passes, enable the next test by removing the `enable: false` property of the `@test:Config` annotation.
 
      ```ballerina
      @test:Config {
@@ -56,7 +56,7 @@ Follow the steps below to test an exercise with multiple tests.
      bal test
    ```
 
-3. Repeat the two steps above to enable the remaining tests one by one and run them.
+3. Repeat the two steps above to enable the remaining tests.
 
 You have successfully completed the exercise by enabling all tests and making sure that your implementation passes each one.
 

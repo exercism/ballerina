@@ -1,5 +1,5 @@
 public function score(float x, float y) returns int {
-    var diff = (x * x + y * y).sqrt();
+    float diff = (x * x + y * y).sqrt();
     if diff <= 1.0 {
         return 10;
     }

@@ -1,5 +1,5 @@
 # Installation
 
-You can install Ballerina by following the Ballerina [installation guide][install].
+For instructions on installing Ballerina, setting up the development environment, and writing a simple Ballerina program, refer [Get started](https://ballerina.io/learn/get-started/).
 
-[install]: https://ballerina.io/learn/install-ballerina/set-up-ballerina/
+Exercism supports Ballerina 2201.5.0 (Swan Lake Update 5) and above.

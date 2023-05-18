@@ -501,11 +501,90 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "a8092ef2-01f9-4673-b780-cc9fa97d0b56",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "a6d7ed5c-df22-4869-ba8d-40af5ae01346",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "saddle-points",
+        "name": "Saddle Points",
+        "uuid": "4c60e22e-b584-4758-bb96-5a55eff155eb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "sum-of-multiples",
+        "name": "Sum Of Multiples",
+        "uuid": "43cef38c-1141-4aea-af32-c83b3906cbd1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "secret-handshake",
+        "name": "Secret Handshake",
+        "uuid": "de1d374e-acd3-4d58-b546-7c831c4433fb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "090a2f78-1d9c-4798-92f1-eb9a8ae18f54",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+       {
+      "title": "Cloud native",
+      "content": "Network primitives in the language make it simpler to write services and run them in the cloud.",
+      "icon": "web"
+       },
+       {
+      "title": "Flexibly typed",
+      "content": "Structural types are used for static typing within a program and describing service interfaces.",
+      "icon": "dynamically-typed"
+       },
+       {
+      "title": "Data oriented",
+      "content": "Type-safe, declarative processing of JSON, XML, and tabular data with language-integrated queries.",
+      "icon": "homoiconic"
+      },
+      {
+      "title": "Graphical",
+      "content": "Programs have both a textual syntax and an equivalent graphical form based on sequence diagrams.",
+      "icon": "interactive"
+      },
+      {
+        "title": "Concurrent",
+        "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads.",
+        "icon": "concurrency"
+      },
+      {
+        "title": "Reliable, maintainable",
+        "content": "Explicit error handling, static types, and concurrency safety combined with a familiar syntax.",
+        "icon": "safe"
+        }
+  ],
   "tags": [
     "paradigm/procedural",
     "paradigm/imperative",

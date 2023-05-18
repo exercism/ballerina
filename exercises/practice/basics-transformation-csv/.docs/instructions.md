@@ -82,4 +82,4 @@ The output file should contain an entry for each employee, sorted in ascending o
 
 - Use [`ballerina/io` module](https://lib.ballerina.io/ballerina/io/latest) to read/write csv files
 - The input and output files will/should not contain headers
-- [Ballerina table syntax](https://ballerina.io/learn/by-example/table-syntax)
+- [Ballerina table syntax](https://ballerina.io/learn/by-example/table)

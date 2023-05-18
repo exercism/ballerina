@@ -34,7 +34,7 @@ service /travel on new http:Listener(9090) {
         // {"message": "Failed to rent car! Provide a valid 'preference' for 'car' and try again"}
 
         // If all three services response positive status, send a successful message to the user
-        // with the payload {"Message":"Congratulations! Your journey is ready!!"}
+        // with the payload {"message":"Congratulations! Your journey is ready!!"}
         // The status code of the response should be 201 Created
     }
 }

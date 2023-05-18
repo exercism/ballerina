@@ -175,4 +175,4 @@ Your task is to transform the XML input to the following XML format and write th
 - Use [XML navigation expressions](https://ballerina.io/learn/by-example/xml-navigation) to extract data from the XML payload.
 - [Combining XML templates and queries](https://ballerina.io/learn/by-example/xml-templates-and-query)
 - [XML namespaces](https://ballerina.io/learn/by-example/xml-namespaces) and [XML namespace declarations](https://ballerina.io/learn/by-example/xmlns-declarations)
-- [Ballerina table syntax](https://ballerina.io/learn/by-example/table-syntax)
+- [Ballerina table syntax](https://ballerina.io/learn/by-example/table)

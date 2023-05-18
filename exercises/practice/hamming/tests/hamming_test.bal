@@ -37,7 +37,7 @@ function longDifferentStrands() {
     enable: false
 }
 function disallowFirstStrandLonger() {
-    var result = distance("AATG", "AAA");
+    int|error result = distance("AATG", "AAA");
     if result is error {
         test:assertEquals(result.message(), "Unequal strand lengths");
     } else {
@@ -49,7 +49,7 @@ function disallowFirstStrandLonger() {
     enable: false
 }
 function disallowSecondStrandLonger() {
-    var result = distance("ATA", "AGTG");
+    int|error result = distance("ATA", "AGTG");
     if result is error {
         test:assertEquals(result.message(), "Unequal strand lengths");
     } else {
@@ -61,7 +61,7 @@ function disallowSecondStrandLonger() {
     enable: false
 }
 function disallowEmptyFirstStrand() {
-    var result = distance("", "G");
+    int|error result = distance("", "G");
     if result is error {
         test:assertEquals(result.message(), "Unequal strand lengths");
     } else {
@@ -73,7 +73,7 @@ function disallowEmptyFirstStrand() {
     enable: false
 }
 function disallowEmptySecondStrand() {
-    var result = distance("G", "");
+    int|error result = distance("G", "");
     if result is error {
         test:assertEquals(result.message(), "Unequal strand lengths");
     } else {

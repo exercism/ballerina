@@ -1,0 +1,17 @@
+{
+  "authors": ["glennj"],
+  "files": {
+    "solution": [
+      "saddle_points.bal"
+    ],
+    "test": [
+      "tests/saddle_points_test.bal"
+    ],
+    "example": [
+      ".meta/reference/saddle_points.bal"
+    ]
+  },
+  "blurb": "Detect saddle points in a matrix.",
+  "source": "J Dalbey's Programming Practice problems",
+  "source_url": "https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html"
+}

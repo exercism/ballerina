@@ -9,7 +9,7 @@ Open a Command Prompt and execute the command below to download the exercise.
 >**Tip:** Replace the value of the `--exercise` property with the name of your preferred exercise.
 
 ```sh
-exercism download --track ballerina --exercise hello-world
+exercism download --track ballerina --exercise <exercise name>
 ```
 
 ## Develop your solution

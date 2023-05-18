@@ -60,7 +60,7 @@ Follow the steps below to test an exercise with multiple tests.
 
 3. Repeat the two steps above to enable the remaining tests one by one and run them.
 
-You have solved the exercise when all tests have been enabled and your implementation makes them all pass.
+You have successfully completed the exercise by enabling all tests and making sure that your implementation passes each one.
 
 Good luck and have fun solving the exercises!
 

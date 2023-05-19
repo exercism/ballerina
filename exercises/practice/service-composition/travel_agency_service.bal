@@ -18,7 +18,7 @@ service /travel on new http:Listener(9090) {
 
         // Extract Travel infomation from the travel reservation request
 
-        // Create the payload skeleton to be sent to the `Airline`` service
+        // Create the payload skeleton to be sent to the `Airline` service
         // Enrich the required fields with the information retrieved from the original travel reservation request.
         // Send a POST request to the /reserve endpoint of the `Airline` service.
         // Airline Reservation request shold be in this format : {"name":"", "arrivalDate":"", "departureDate":"", "preference":""}

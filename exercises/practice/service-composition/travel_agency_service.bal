@@ -28,7 +28,7 @@ service /travel on new http:Listener(9090) {
 
         // Follow the same steps for 'Hotel' and 'Car Rental' services.
         // Send a POST request to the /reserve endpoint of the `Hotel` service.
-        // Send a POST request to the /rent endpoint of the `Car Rental`` service.
+        // Send a POST request to the /rent endpoint of the `Car Rental` service.
         // Both hotel and car rental service requests are in the format of : {"name":"", "arrivalDate":"",
         // "departureDate":"", "preference":""}
         // If the hotel reservation fails, respond with the following payload:

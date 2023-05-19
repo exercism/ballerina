@@ -22,7 +22,7 @@ service /travel on new http:Listener(9090) {
         // Enrich the required fields with the information retrieved from the original travel reservation request.
         // Send a POST request to the /reserve endpoint of the `Airline` service.
         // Airline Reservation request shold be in this format : {"name":"", "arrivalDate":"", "departureDate":"", "preference":""}
-        // If the airline reservation fails, send a the response(http:Response) to the client with the follwing payload:
+        // If the airline reservation fails, send the response(http:Response) to the client with the follwing payload:
         // {"message": "Failed to reserve airline! Provide a valid 'preference' for 'airline' and try again"}
         // In case of a failure, status code of the response should be 400 Bad Request.
 

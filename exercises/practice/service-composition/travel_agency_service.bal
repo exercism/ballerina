@@ -12,20 +12,23 @@ final http:Client carRentalEP = check new ("http://localhost:9093/car");
 // Travel agency service to arrange a complete tour for a user
 service /travel on new http:Listener(9090) {
 
-    // Define a resource method to arrange a tour, that accepts `POST` requests in the path `/arrangeTour`.
+    // First, define a resource method to arrange a tour, that accepts `POST` requests in the path `/arrangeTour`.
     // This resource should accept a value of the type `TourArrangement` that already defined below.
     resource function () {
 
         // Extract Travel infomation from the travel reservation request
 
-        // Create the payload skeleton to be sent to the Airline service
+        // Create the payload skeleton to be sent to the `Airline`` service
         // Enrich the required fields with the information retrieved from the original travel reservation request.
+        // Send a POST request to the /reserve endpoint of the `Airline` service.
         // Airline Reservation request shold be in this format : {"name":"", "arrivalDate":"", "departureDate":"", "preference":""}
-        // If the airline reservation fails, send the response to the client with the follwing payload:
+        // If the airline reservation fails, send a the response(http:Response) to the client with the follwing payload:
         // {"message": "Failed to reserve airline! Provide a valid 'preference' for 'airline' and try again"}
         // In case of a failure, status code of the response should be 400 Bad Request.
 
         // Follow the same steps for 'Hotel' and 'Car Rental' services.
+        // Send a POST request to the /reserve endpoint of the `Hotel` service.
+        // Send a POST request to the /rent endpoint of the `Car Rental`` service.
         // Both hotel and car rental service requests are in the format of : {"name":"", "arrivalDate":"",
         // "departureDate":"", "preference":""}
         // If the hotel reservation fails, respond with the following payload:

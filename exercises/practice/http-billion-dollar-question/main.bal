@@ -1,18 +1,18 @@
-import ballerina_exercism/http_billion_dollar_question.billionarehub_server as _;
-import ballerina_exercism/http_billion_dollar_question.billionarehub_client as billionarehubClient;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_server as _;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_client as billionairehubClient;
 
-type Billionaire record {
+type Billionaire record {|
     string name;
     float netWorth;
-};
+|};
 
-# Returns the top billionares of the given countries.
+# Returns the top billionaires of the given countries.
 #
-# + countries - countries to search for billionares
-# + x - number of billionares to return
-# + return - list of billionares
+# + countries - countries to search for billionaires
+# + x - number of billionaires to return
+# + return - list of billionaires
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    billionarehubClient:BillionareClient cl = check new();
+    billionairehubClient:BillionaireClient cl = check new();
 
     // TODO Write your logic here
     return [];

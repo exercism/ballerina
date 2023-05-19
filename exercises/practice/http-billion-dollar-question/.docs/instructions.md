@@ -8,16 +8,17 @@ To simplify accessing the API, you can use a predefined client connector to conn
 
 
 ```ballerina
-import ballerina_exercism/http_billion_dollar_question.billionarehub_server as _;
-import ballerina_exercism/http_billion_dollar_question.billionarehub_client as billionarehubClient;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_server as _;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_client as billionairehubClient;
 
-type Billionaire record {
+type Billionaire record {|
     string name;
     float netWorth;
-};
+
+|};
 
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    billionarehubClient:BillionareClient cl = check new();
+    billionairehubClient:billionaireClient cl = check new();
 
     // TODO Write your logic here
     return [];
@@ -65,6 +66,6 @@ Output
 
 ## Hints
 
-* `http_billion_dollar_question` package's `billionarehub_client` module can be used to invoke the get billionaires by country API. You can use the `getBillionaires("<country>")` remote method specifically.
+* `http_billion_dollar_question` package's `billionairehub_client` module can be used to invoke the get billionaires by country API. You can use the `getBillionaires("<country>")` remote method specifically.
 * You can find the richest people per country first and then combine them to find the top `x`
 * [Query expressions](https://ballerina.io/learn/by-example/query-expressions/) will be convenient for filtering and sorting

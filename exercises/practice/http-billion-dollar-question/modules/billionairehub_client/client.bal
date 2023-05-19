@@ -1,13 +1,13 @@
 import ballerina/http;
 
-type Billionaire record {
+type Billionaire record {|
     string name;
     float netWorth;
-};
+|};
 
 const string clientUrl = "http://localhost:9090";
 
-public client class BillionareClient {
+public client class BillionaireClient {
     private final http:Client httpClient;
 
     public function init() returns error? {

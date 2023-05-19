@@ -1,10 +1,10 @@
-import ballerina_exercism/http_billion_dollar_question.billionarehub_server as _;
-import ballerina_exercism/http_billion_dollar_question.billionarehub_client as billionarehubClient;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_server as _;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_client as billionairehubClient;
 
-type Billionaire record {
+type Billionaire record {|
     string name;
     float netWorth;
-};
+|};
 
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
     Billionaire[] billionaires = [];
@@ -19,7 +19,7 @@ public function getTopXBillionaires(string[] countries, int x) returns string[]|
 }
 
 function getTopXBillionairesByCountry(string country, int x) returns Billionaire[]|error {
-    billionarehubClient:BillionareClient cl = check new();
+    billionairehubClient:BillionaireClient cl = check new();
     Billionaire[] billionaires = check cl->getBillionaires(country);
     return from var b in billionaires
         order by b.netWorth descending

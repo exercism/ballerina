@@ -36,13 +36,13 @@ type OrderUpdate record {|
     OrderDetail[] order_items;
 |};
 
-map<Order> orders = {};
-map<OrderStatus> orderStatus = {};
+isolated map<Order> orders = {};
+isolated map<OrderStatus> orderStatus = {};
 
 service on new http:Listener(port) {
     resource function get menu() returns MENU => MENU;
 
-    resource function post orders(@http:Payload Order & readonly newOrder) returns http:Created|http:BadRequest|error {
+    resource function post 'order(@http:Payload Order & readonly newOrder) returns http:Created|http:BadRequest|error {
         // Write your code here
         return <http:Created>{
             body: {},
@@ -50,53 +50,29 @@ service on new http:Listener(port) {
         };
     }
 
-    resource function get orders/[string orderId]() returns http:Ok|http:NotFound {
+    resource function get 'order/[string orderId]() returns http:Ok|http:NotFound {
         // Write your code here
         return <http:Ok>{};
     }
 
-    resource function put orders/[string orderId](@http:Payload OrderUpdate & readonly updatedOrder) returns http:Ok|http:BadRequest|http:Forbidden|http:NotFound {
+    resource function put 'order/[string orderId](@http:Payload OrderUpdate & readonly updatedOrder) returns http:Ok|http:BadRequest|http:Forbidden|http:NotFound {
         // Write your code here
         return <http:Ok>{};
     }
 
-    resource function delete orders/[string orderId]() returns http:Ok|http:Forbidden|http:NotFound {
+    resource function delete 'order/[string orderId]() returns http:Ok|http:Forbidden|http:NotFound {
         // Write your code here
         return <http:Ok>{};
     }
 }
 
+//Implement the following function to generate a random orderId
 function generateOrderId() returns string|error {
-    lock {
-        while true {
-            string orderId = (check random:createIntInRange(1, 100)).toString();
-
-            if !orders.hasKey(orderId) {
-                return orderId;
-            }
-        }
-    }
+    return "";
 }
 
+//Implement the following function to validate order items and calulate the total
 function computeSum(OrderDetail[] items) returns int|(http:BadRequest & readonly) {
-    if items.length() == 0 {
-        return {};
-    }
-
     int total = 0;
-
-    string[] cakeTypes = MENU.keys();
-
-    foreach OrderDetail {item, quantity} in items {
-        int? index = cakeTypes.indexOf(item);
-        if quantity < 1 || index is () {
-            return {};
-        }
-
-        _ = cakeTypes.remove(index);
-
-        total += MENU.get(item) * quantity;
-    }
-
     return total;
 }

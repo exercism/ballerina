@@ -11,9 +11,9 @@ enum CakeKind {
 }
 
 const map<int> MENU = {
-    "Butter Cake" : 15,
-    "Chocolate Cake" : 20,
-    "Tres Leches" : 25
+    "Butter Cake": 15,
+    "Chocolate Cake": 20,
+    "Tres Leches": 25
 };
 
 enum OrderStatus {
@@ -36,8 +36,8 @@ type OrderUpdate record {|
     OrderDetail[] order_items;
 |};
 
-map<Order> orders = {};
-map<OrderStatus> orderStatus = {};
+isolated map<Order> orders = {};
+isolated map<OrderStatus> orderStatus = {};
 
 service on new http:Listener(port) {
     resource function get menu() returns MENU => MENU;
@@ -87,21 +87,24 @@ service on new http:Listener(port) {
         final int total;
 
         lock {
-            if !orderStatus.hasKey(orderId) {
+            if !orders.hasKey(orderId) {
                 return <http:NotFound>{};
             }
-
+        }
+        lock {
             if orderStatus.get(orderId) != PENDING {
                 return <http:Forbidden>{};
             }
+        }
 
-            orderItems = updatedOrder.order_items;
-            int|(http:BadRequest & readonly) sumRes = computeSum(orderItems);
+        orderItems = updatedOrder.order_items;
+        int|(http:BadRequest & readonly) sumRes = computeSum(orderItems);
 
-            if sumRes is http:BadRequest {
-                return sumRes;
-            }
+        if sumRes is http:BadRequest {
+            return sumRes;
+        }
 
+        lock {
             _ = orderStatus.remove(orderId);
             total = sumRes;
         }
@@ -150,7 +153,7 @@ function generateOrderId() returns string|error {
     lock {
         while true {
             string orderId = (check random:createIntInRange(1, 100)).toString();
-        
+
             if !orders.hasKey(orderId) {
                 return orderId;
             }

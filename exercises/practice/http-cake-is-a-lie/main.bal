@@ -1,6 +1,5 @@
 import ballerina/http;
 import ballerina/mime;
-import ballerina/random;
 
 configurable int port = 8080;
 

@@ -35,8 +35,8 @@ type OrderUpdate record {|
     OrderDetail[] order_items;
 |};
 
-isolated map<Order> orders = {};
-isolated map<OrderStatus> orderStatus = {};
+map<Order> orders = {};
+map<OrderStatus> orderStatus = {};
 
 service on new http:Listener(port) {
     resource function get menu() returns MENU => MENU;

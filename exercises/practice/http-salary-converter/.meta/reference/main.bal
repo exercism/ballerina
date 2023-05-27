@@ -1,4 +1,6 @@
 import ballerina/http;
+import http_salary_converter.backend as _;
+
 # The exchange rate API base URL
 configurable string apiUrl = "http://localhost:8080";
 

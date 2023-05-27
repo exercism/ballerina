@@ -1,4 +1,5 @@
 import ballerina/test;
+import ballerina_exercism/http_salary_converter.backend as _;
 
 @test:Config {
     dataProvider: validData,

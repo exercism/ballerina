@@ -298,6 +298,20 @@
         ]
       },
       {
+        "slug": "http-salary-converter",
+        "name": "PaySwitch - Salary Converter",
+        "uuid": "d9320709-b45b-43f4-ab23-2d22552b768f",
+        "status": "active",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "http",
+          "services",
+          "json"
+        ]
+      },
+      {
         "slug": "order-management",
         "name": "Order Management",
         "uuid": "d28068df-bccd-4aa1-b2eb-47b16d26221d",

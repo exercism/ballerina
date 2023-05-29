@@ -86,6 +86,11 @@ GET http://localhost:8080/rates/USD
 You have to write your code inside the following function.
 
 ```ballerina
+import ballerina_exercism/http_salary_converter.backend as _;
+
+# The exchange rate API base URL
+configurable string apiUrl = "http://localhost:8080";
+
 # Convert provided salary to local currency
 #
 # + salary - Salary in source currency

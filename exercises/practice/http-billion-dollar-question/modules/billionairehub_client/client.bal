@@ -5,13 +5,13 @@ type Billionaire record {|
     float netWorth;
 |};
 
-const string clientUrl = "http://localhost:9090";
+const CLIENT_URL = "http://localhost:9090";
 
 public client class BillionaireClient {
     private final http:Client httpClient;
 
     public function init() returns error? {
-        self.httpClient = check new (clientUrl);
+        self.httpClient = check new (CLIENT_URL);
     }
 
     remote function getBillionaires(string country) returns Billionaire[]|error {

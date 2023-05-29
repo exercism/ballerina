@@ -12,7 +12,7 @@ type Billionaire record {|
 # + x - number of billionaires to return
 # + return - list of billionaires
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    billionairehubClient:BillionaireClient cl = check new();
+    billionairehubClient:BillionaireClient cl = check new;
 
     // TODO Write your logic here
     return [];

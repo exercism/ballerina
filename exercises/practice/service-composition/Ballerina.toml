@@ -2,4 +2,4 @@
 org = "ballerina_exercism"
 name = "service_composition"
 version = "0.1.0"
-distribution = "2201.1.2"
+distribution = "2201.5.0"

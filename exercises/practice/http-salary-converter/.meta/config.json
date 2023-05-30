@@ -1,0 +1,23 @@
+{
+    "authors": [
+      "LakshanWeerasinghe"
+    ],
+    "contributors": [
+      "LakshanWeerasinghe"
+    ],
+    "files": {
+      "solution": [
+        "main.bal"
+      ],
+      "test": [
+        "tests/tests.bal"
+      ],
+      "example": [
+        ".meta/reference/main.bal"
+      ]
+    },
+    "icon": "connect",
+    "blurb": "A company needs to convert salaries in foreign currencies to the corresponding local currency using an external API.",
+    "source": "This is an exercise to introduce users to using Ballerina HTTP service data binding",
+    "source_url": "https://ballerina.io/learn/by-example/http-service-data-binding/"
+}

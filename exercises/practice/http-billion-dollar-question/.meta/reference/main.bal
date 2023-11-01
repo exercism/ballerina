@@ -1,24 +1,13 @@
-import ballerina/io;
-import ims/billionairehub;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_server as _;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_client as billionairehubClient;
 
-configurable string clientId = ?;
-configurable string clientSecret = ?;
-
-public function main() returns error? {
-    billionairehub:Client cl = check new ({auth: {clientId, clientSecret}});
-    billionairehub:Billionaire[] billionaires = check cl->getBillionaires("France");
-    io:println(billionaires);
-
-    map<boolean> industries = {};
-    check from var b in billionaires
-        do {
-            industries[b.industry] = true;
-        };
-    io:println(industries.keys());
-}
+type Billionaire record {|
+    string name;
+    float netWorth;
+|};
 
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    billionairehub:Billionaire[] billionaires = [];
+    Billionaire[] billionaires = [];
     foreach string country in countries {
         billionaires.push(...check getTopXBillionairesByCountry(country, x));
     }
@@ -29,9 +18,9 @@ public function getTopXBillionaires(string[] countries, int x) returns string[]|
         select b.name;
 }
 
-function getTopXBillionairesByCountry(string country, int x) returns billionairehub:Billionaire[]|error {
-    billionairehub:Client cl = check new ({auth: {clientId, clientSecret}});
-    billionairehub:Billionaire[] billionaires = check cl->getBillionaires(country);
+function getTopXBillionairesByCountry(string country, int x) returns Billionaire[]|error {
+    billionairehubClient:BillionaireClient cl = check new();
+    Billionaire[] billionaires = check cl->getBillionaires(country);
     return from var b in billionaires
         order by b.netWorth descending
         limit x

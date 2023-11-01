@@ -4,19 +4,19 @@
 
 You have been asked to find the top `x` billionaires by net worth in a given set of countries (number of countries = `N`). To implement that, you have been given access to an API that returns the details of the billionaires by country.
 
-To simplify accessing the API, you can use the [`ims/billionairehub` client](https://lib.ballerina.io/ims/billionairehub/1.0.0/clients/Client) connector to connect to the API which returns details of the billionaires by country.
+To simplify accessing the API, you can use a predefined client connector to connect to the API which returns details of the billionaires by country.
 
 
 ```ballerina
-import ims/billionairehub;
+import ballerina_exercism/http_billion_dollar_question.billionairehub_client as billionairehubClient;
 
-# Client ID and Client Secret to connect to the billionaire API
-configurable string clientId = ?;
-configurable string clientSecret = ?;
+type Billionaire record {|
+    string name;
+    float netWorth;
+|};
 
 public function getTopXBillionaires(string[] countries, int x) returns string[]|error {
-    // Create the client connector
-    billionairehub:Client cl = check new ({auth: {clientId, clientSecret}});
+    billionairehubClient:billionaireClient cl = check new;
 
     // TODO Write your logic here
     return [];
@@ -55,16 +55,15 @@ Limit: 5
 Output
 
 ```
-["Mukesh Ambani", "Gautam Adani & family", "Zhong Shanshan", "Zhang Yiming", "Ma Huateng"]
+["Mukesh Ambani","Zhong Shanshan","Ma Huateng","Colin Huang","Pony Ma"]
 ```
 
 ## Test Environment
 
-* Client ID and Client Secret to connect to the billionaire API have been provided to you in the `tests/Config.toml`. You can use them to initialize the client.
 * Use `bal test` to run and test your implementation.
 
 ## Hints
 
-* `ims/billionairehub` package's [client](https://lib.ballerina.io/ims/billionairehub/1.0.0/clients/Client) can be used to invoke the get billionaires by country API. You can use the `getBillionaires("<country>")` remote method specifically.
-* You can find the richest people per country first and then combine them to find the top `x`
-* [Query expressions](https://ballerina.io/learn/by-example/query-expressions/) will be convenient for filtering and sorting
+* Use the `getBillionaires` remote method defined in the `billionairehub_client ` module.
+* You can find the richest people per country first and then combine them to find the top `x`.
+* [Query expressions](https://ballerina.io/learn/by-example/query-expressions/) will be convenient for filtering and sorting.

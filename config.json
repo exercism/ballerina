@@ -271,7 +271,7 @@
         "slug": "http-billion-dollar-question",
         "name": "Billion Dollar Question",
         "uuid": "b04ddc58-04e3-49d5-a4c0-59728af04503",
-        "status": "wip",
+        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,

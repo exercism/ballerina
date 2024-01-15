@@ -1,7 +1,7 @@
 # Exercism Ballerina Track
 
-[![Configlet Status](https://github.com/exercism/ballerina/workflows/Configlet%20CI/badge.svg)]
-[![Exercise Test Status](https://github.com/exercism/ballerina/workflows/Ballerina%20%2F%20main/badge.svg)]
+[![Configlet Status](https://github.com/exercism/ballerina/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/ballerina/actions/workflows/configlet.yml)
+[![Exercise Test Status](https://github.com/exercism/ballerina/actions/workflows/ci.yml/badge.svg)](https://github.com/exercism/ballerina/actions/workflows/ci.yml)
 
 Exercism exercises in Ballerina. [Ballerina](https://ballerina.io/) is a compiled, transactional, statically and strongly typed programming language with textual and graphical syntaxes. Ballerina incorporates fundamental concepts of distributed system integration into the language and offers a type-safe, concurrent environment to implement microservices with distributed transactions, reliable messaging, stream processing, and workflows.
 

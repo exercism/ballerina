@@ -1,5 +1,4 @@
 {
-  "track_id": "ballerina",
   "language": "Ballerina",
   "slug": "ballerina",
   "active": true,
@@ -34,16 +33,15 @@
     ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "calculator-service",
         "name": "Calculator Service",
         "uuid": "259fa5f6-1baf-4def-90a4-c45aa321564a",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "active",
         "topics": [
           "http",
           "json",
@@ -55,10 +53,10 @@
         "slug": "echo-service",
         "name": "Echo Service",
         "uuid": "19dbfc2c-3e23-4a23-b7b6-cac5dec6690c",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "status": "active",
         "topics": [
           "http",
           "services",
@@ -69,10 +67,10 @@
         "slug": "error-handling",
         "name": "Service Error Handling",
         "uuid": "cd34c28c-3ad9-4379-b4dd-8e4122ab9cbe",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "active",
         "topics": [
           "error_handling",
           "http",
@@ -84,10 +82,10 @@
         "slug": "greeting-service",
         "name": "Greeting Service",
         "uuid": "000f851f-08ad-4e44-9ede-ccc817221076",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "status": "active",
         "topics": [
           "http",
           "services",
@@ -98,10 +96,10 @@
         "slug": "hello-world",
         "name": "Hello World",
         "uuid": "91441035-67fa-40e3-a4d5-39476801172a",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "status": "active",
         "topics": [
           "strings"
         ]
@@ -110,10 +108,10 @@
         "slug": "hello-world-service",
         "name": "Hello World Service",
         "uuid": "fceb7721-3d30-4aac-b4dd-573b601f6e1e",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "status": "active",
         "topics": [
           "http",
           "services",
@@ -124,10 +122,10 @@
         "slug": "service-composition",
         "name": "Service Composition",
         "uuid": "ef4dc26f-137c-4f76-9b4b-d25d6251c515",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 7,
+        "status": "active",
         "topics": [
           "endpoints",
           "error_handling",
@@ -140,11 +138,11 @@
       {
         "slug": "service-invocation",
         "name": "Service Invocation",
-        "status": "active",
         "uuid": "90925a7d-e840-4e50-bb16-5ad8d55c90ee",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "status": "active",
         "topics": [
           "http",
           "log",
@@ -156,10 +154,10 @@
         "slug": "basics-transformation-csv",
         "name": "CSV Fuel Allowance",
         "uuid": "2db20b1d-b4b2-49eb-b6e1-0d914636df7b",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "log",
           "csv",
@@ -170,10 +168,10 @@
         "slug": "basics-transformation-json",
         "name": "JSON Fuel Allowance",
         "uuid": "5f380070-ed12-4edf-8df5-d60d5c17919e",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "log",
           "json",
@@ -184,10 +182,10 @@
         "slug": "basics-transformation-xml",
         "name": "XML Fuel Allowance",
         "uuid": "40416c8c-cbc7-4a9d-96e3-ba0f7b02199b",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "log",
           "xml",
@@ -198,10 +196,10 @@
         "slug": "basics-monitor-rush",
         "name": "Monitor Rush",
         "uuid": "a8bafdf1-0f51-4f5d-b653-4c42a1dacd29",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "log",
           "strings"
@@ -211,10 +209,10 @@
         "slug": "database-employee-onboarding",
         "name": "Employee Onboarding",
         "uuid": "08022f6c-322e-4a23-a7c2-02c88910a531",
-        "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "wip",
         "topics": [
           "jdbc",
           "log",
@@ -226,10 +224,10 @@
         "slug": "database-large-expenses",
         "name": "Large Expenses",
         "uuid": "f7af3266-87e8-44e1-9073-6531bb23e9ff",
-        "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "wip",
         "topics": [
           "jdbc",
           "log",
@@ -241,10 +239,10 @@
         "slug": "database-payment-audit",
         "name": "Payment Audit",
         "uuid": "fbbea444-b1ea-4a5f-9353-ea725561efad",
-        "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "wip",
         "topics": [
           "jdbc",
           "log",
@@ -256,10 +254,10 @@
         "slug": "database-payment-batches",
         "name": "Payment Batches",
         "uuid": "0286c998-0ce2-438b-91eb-5535ce91d99d",
-        "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "wip",
         "topics": [
           "jdbc",
           "log",
@@ -271,10 +269,10 @@
         "slug": "http-billion-dollar-question",
         "name": "Billion Dollar Question",
         "uuid": "b04ddc58-04e3-49d5-a4c0-59728af04503",
-        "status": "wip",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "wip",
         "topics": [
           "http",
           "log",
@@ -286,10 +284,10 @@
         "slug": "http-cake-is-a-lie",
         "name": "The Cake is a Lie",
         "uuid": "69b12315-8e75-4933-a6a1-fd9ac6b18688",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "http",
           "log",
@@ -301,10 +299,10 @@
         "slug": "http-salary-converter",
         "name": "PaySwitch - Salary Converter",
         "uuid": "d9320709-b45b-43f4-ab23-2d22552b768f",
-        "status": "active",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
+        "status": "active",
         "topics": [
           "http",
           "services",
@@ -315,10 +313,10 @@
         "slug": "order-management",
         "name": "Order Management",
         "uuid": "d28068df-bccd-4aa1-b2eb-47b16d26221d",
-        "status": "deprecated",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
+        "status": "deprecated",
         "topics": [
           "http",
           "json",
@@ -329,10 +327,10 @@
         "slug": "legacy-service-client",
         "name": "Legacy Service Client",
         "uuid": "8c8cafdd-7cd6-46fd-9c9e-033dc9631c80",
-        "status": "deprecated",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "deprecated",
         "topics": [
           "error_handling",
           "http",
@@ -384,9 +382,9 @@
         "slug": "sieve",
         "name": "Sieve",
         "uuid": "6f7841e3-1602-40e5-bf53-e89e05a6493d",
-        "difficulty": 4,
         "practices": [],
-        "prerequisites": []
+        "prerequisites": [],
+        "difficulty": 4
       },
       {
         "slug": "bob",
@@ -574,53 +572,51 @@
       }
     ]
   },
-  "concepts": [],
   "key_features": [
-       {
+    {
       "title": "Cloud native",
       "content": "Network primitives in the language make it simpler to write services and run them in the cloud.",
       "icon": "web"
-       },
-       {
+    },
+    {
       "title": "Flexibly typed",
       "content": "Structural types are used for static typing within a program and describing service interfaces.",
       "icon": "dynamically-typed"
-       },
-       {
+    },
+    {
       "title": "Data oriented",
       "content": "Type-safe, declarative processing of JSON, XML, and tabular data with language-integrated queries.",
       "icon": "homoiconic"
-      },
-      {
+    },
+    {
       "title": "Graphical",
       "content": "Programs have both a textual syntax and an equivalent graphical form based on sequence diagrams.",
       "icon": "interactive"
-      },
-      {
-        "title": "Concurrent",
-        "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads.",
-        "icon": "concurrency"
-      },
-      {
-        "title": "Reliable, maintainable",
-        "content": "Explicit error handling, static types, and concurrency safety combined with a familiar syntax.",
-        "icon": "safe"
-        }
+    },
+    {
+      "title": "Concurrent",
+      "content": "Easy and efficient concurrency with sequence diagrams and language-managed threads.",
+      "icon": "concurrency"
+    },
+    {
+      "title": "Reliable, maintainable",
+      "content": "Explicit error handling, static types, and concurrency safety combined with a familiar syntax.",
+      "icon": "safe"
+    }
   ],
   "tags": [
-    "paradigm/procedural",
+    "execution_mode/compiled",
     "paradigm/imperative",
     "paradigm/object_oriented",
+    "paradigm/procedural",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
+    "runtime/jvm",
     "typing/static",
     "typing/strong",
-    "execution_mode/compiled",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
-    "runtime/jvm",
     "used_for/backends",
-    "used_for/web_development",
-    "used_for/cross_platform_development"
-  ],
-  "ballerina_version": "2201.5.0"
+    "used_for/cross_platform_development",
+    "used_for/web_development"
+  ]
 }

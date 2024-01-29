@@ -569,6 +569,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "scrabble-score",
+        "name": "scrabble score",
+        "uuid": "a2551202-8959-43c9-aa83-8ae38db43bec",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
@@ -618,5 +626,6 @@
     "used_for/backends",
     "used_for/cross_platform_development",
     "used_for/web_development"
-  ]
+  ],
+  "ballerina_version": "2201.5.0"
 }

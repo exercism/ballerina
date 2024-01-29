@@ -1,0 +1,5 @@
+[package]
+org = "anagy"
+name = "scrabble_score"
+version = "0.1.0"
+distribution = "2201.5.0"

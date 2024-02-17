@@ -1,27 +1,27 @@
 import ballerina/test;
 
 @test:Config
-function zeroEggs() {
+function testZeroEggs() {
     test:assertEquals(eggCount(0), 0);
 }
 
 @test:Config {
     enable: false
 }
-function oneEgg() {
+function testOneEgg() {
     test:assertEquals(eggCount(16), 1);
 }
 
 @test:Config {
     enable: false
 }
-function fourEggs() {
+function testFourEggs() {
     test:assertEquals(eggCount(89), 4);
 }
 
 @test:Config {
     enable: false
 }
-function thirteenEggs() {
+function testThirteenEggs() {
     test:assertEquals(eggCount(2000000000), 13);
 }

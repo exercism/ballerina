@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "list_ops.bal"
+    ],
+    "test": [
+      "tests/list_ops_test.bal"
+    ],
+    "example": [
+      ".meta/reference/list_ops.bal"
+    ]
+  },
+  "blurb": "Implement basic list operations."
+}

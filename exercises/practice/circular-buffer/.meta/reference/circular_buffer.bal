@@ -1,4 +1,3 @@
-import ballerina/lang.array;
 
 class CircularBuffer {
     final int capacity;

@@ -18,7 +18,7 @@ class CircularBuffer {
     }
 
     function read() returns int|error {
-        if (self.size == 0) {
+        if self.size == 0 {
             return error("Empty buffer");
         }
 
@@ -30,7 +30,7 @@ class CircularBuffer {
     }
 
     function write(int value) returns error? {
-        if (self.size >= self.capacity) {
+        if self.size >= self.capacity {
             return error("Full buffer");
         }
 
@@ -40,7 +40,7 @@ class CircularBuffer {
     }
 
     function overwrite(int value) returns error? {
-        if (self.size == self.capacity) {
+        if self.size == self.capacity {
             int|error result = self.read();
             if result is error {
                 return result;
@@ -49,6 +49,7 @@ class CircularBuffer {
 
         return self.write(value);
     }
+
     function clear() {
         self.size = 0;
         int[] data = [];

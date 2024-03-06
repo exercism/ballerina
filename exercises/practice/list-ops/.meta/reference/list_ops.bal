@@ -10,19 +10,15 @@ public function append(int[] list1, int[] list2) returns int[] {
 public function concatenate(int[][]|int[][][] lists) returns int[]|int[][] {
     if lists is int[][] {
         int[] results = [];
-        foreach var list in lists {
-            foreach var elt in list {
-                results.push(elt);
-            }
+        foreach int[] list in lists {
+            results.push(...list);
         }
         return results;
     }
     if lists is int[][][] {
         int[][] results = [];
-        foreach var list in lists {
-            foreach var elt in list {
-                results.push(elt);
-            }
+        foreach int[][] list in lists {
+            results.push(...list);
         }
         return results;
     }
@@ -41,7 +37,7 @@ public function filter(int[] list, IntFilter fn) returns int[] {
 }
 
 public function length(int[] list) returns int {
-    var fn = function (int acc, int elt) returns int => acc + 1;
+    IntAccumulator fn = function (int acc, int elt) returns int => acc + 1;
     return foldl(list, fn, 0);
 }
 
@@ -65,10 +61,10 @@ public function foldl(int[] list, IntAccumulator fn, int initial) returns int {
 public function foldr(int[] list, IntAccumulator fn, int initial) returns int {
     if list.length() == 0 {
         return initial;
-    } else {
-        int last = list.pop();
-        return foldr(list, fn, fn(initial, last));
     }
+
+    int last = list.pop();
+    return foldr(list, fn, fn(initial, last));
 }
 
 public function reverse(int[]|int[][] list) returns int[]|int[][] {
@@ -77,14 +73,14 @@ public function reverse(int[]|int[][] list) returns int[]|int[][] {
         foreach int i in int:range(len, -1, -1) {
             results.push(list[i]);
         }
-        return results;  
+        return results;
     };
 
-    if list is int[] {
-        int[] results = [];
-        return doReverse(results);
-    } else {
+    if list is int[][] {
         int[][] results = [];
         return doReverse(results);
     }
+
+    int[] results = [];
+    return doReverse(results);
 }

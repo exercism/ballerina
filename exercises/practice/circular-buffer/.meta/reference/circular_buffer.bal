@@ -11,7 +11,7 @@ class CircularBuffer {
         self.capacity = capacity;
         self.size = 0;
         int[] data = [];
-        array:setLength(data, self.capacity);
+        data.setLength(self.capacity);
         self.data = data;
         self.readIndex = 0;
         self.writeIndex = 0;
@@ -41,10 +41,7 @@ class CircularBuffer {
 
     function overwrite(int value) returns error? {
         if self.size == self.capacity {
-            int|error result = self.read();
-            if result is error {
-                return result;
-            }
+            _ = check self.read();
         }
 
         return self.write(value);
@@ -53,7 +50,7 @@ class CircularBuffer {
     function clear() {
         self.size = 0;
         int[] data = [];
-        array:setLength(data, self.capacity);
+        data.setLength(self.capacity);
         self.data = data;
         self.readIndex = 0;
         self.writeIndex = 0;

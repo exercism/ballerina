@@ -23,7 +23,7 @@ class Allergies {
     function list() returns string[] {
         string[] results = [];
         foreach [int, string] [i, allergen] in self.allergens.enumerate() {
-            if ((self.score & 1 << i) != 0) {
+            if (self.score & 1 << i) != 0 {
                 results.push(allergen);
             }
         }

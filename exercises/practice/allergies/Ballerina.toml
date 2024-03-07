@@ -1,0 +1,4 @@
+[package]
+org = "ballerina_exercism"
+name = "allergies"
+version = "0.1.0"

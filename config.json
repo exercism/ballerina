@@ -571,6 +571,14 @@
         "difficulty": 2
       },
       {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "d461af8e-f536-4e31-b0d5-792d64fd1f57",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "scrabble-score",
         "name": "scrabble score",
         "uuid": "a2551202-8959-43c9-aa83-8ae38db43bec",

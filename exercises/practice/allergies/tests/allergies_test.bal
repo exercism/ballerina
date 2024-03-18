@@ -1,14 +1,13 @@
 import ballerina/test;
 
-@test:Config {groups: ["eggs"]}
+@test:Config
 function testNotAllergicToAnythingIncludingEggs() {
     Allergies allergies = new(0);
     test:assertFalse(allergies.allergicTo("eggs"));
 }
 
 @test:Config {
-    enable: false,
-    groups: ["eggs"]
+    enable: false
 }
 function testAllergicOnlyToEggs() {
     Allergies allergies = new(1);
@@ -16,8 +15,7 @@ function testAllergicOnlyToEggs() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["eggs"]
+    enable: false
 }
 function testAllergicToEggsAndSomethingElse() {
     Allergies allergies = new(3);
@@ -25,8 +23,7 @@ function testAllergicToEggsAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["eggs"]
+    enable: false
 }
 function testAllergicToSomethingBesidesEggs() {
     Allergies allergies = new(2);
@@ -34,8 +31,7 @@ function testAllergicToSomethingBesidesEggs() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["eggs"]
+    enable: false
 }
 function testAllergicToEverythingIncludingEggs() {
     Allergies allergies = new(255);
@@ -43,8 +39,7 @@ function testAllergicToEverythingIncludingEggs() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["peanuts"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingPeanuts() {
     Allergies allergies = new(0);
@@ -52,8 +47,7 @@ function testNotAllergicToAnythingIncludingPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["peanuts"]
+    enable: false
 }
 function testAllergicOnlyToPeanuts() {
     Allergies allergies = new(2);
@@ -61,8 +55,7 @@ function testAllergicOnlyToPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["peanuts"]
+    enable: false
 }
 function testAllergicToPeanutsAndSomethingElse() {
     Allergies allergies = new(7);
@@ -70,8 +63,7 @@ function testAllergicToPeanutsAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["peanuts"]
+    enable: false
 }
 function testAllergicToSomethingBesidesPeanuts() {
     Allergies allergies = new(5);
@@ -79,8 +71,7 @@ function testAllergicToSomethingBesidesPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["peanuts"]
+    enable: false
 }
 function testAllergicToEverythingIncludingPeanuts() {
     Allergies allergies = new(255);
@@ -88,8 +79,7 @@ function testAllergicToEverythingIncludingPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["shellfish"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingShellfish() {
     Allergies allergies = new(0);
@@ -97,8 +87,7 @@ function testNotAllergicToAnythingIncludingShellfish() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["shellfish"]
+    enable: false
 }
 function testAllergicOnlyToShellfish() {
     Allergies allergies = new(4);
@@ -106,8 +95,7 @@ function testAllergicOnlyToShellfish() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["shellfish"]
+    enable: false
 }
 function testAllergicToShellfishAndSomethingElse() {
     Allergies allergies = new(14);
@@ -115,8 +103,7 @@ function testAllergicToShellfishAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["shellfish"]
+    enable: false
 }
 function testAllergicToSomethingBesidesShellfish() {
     Allergies allergies = new(10);
@@ -124,8 +111,7 @@ function testAllergicToSomethingBesidesShellfish() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["shellfish"]
+    enable: false
 }
 function testAllergicToEverythingIncludingShellfish() {
     Allergies allergies = new(255);
@@ -133,8 +119,7 @@ function testAllergicToEverythingIncludingShellfish() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["strawberries"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingStrawberries() {
     Allergies allergies = new(0);
@@ -142,8 +127,7 @@ function testNotAllergicToAnythingIncludingStrawberries() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["strawberries"]
+    enable: false
 }
 function testAllergicOnlyToStrawberries() {
     Allergies allergies = new(8);
@@ -151,8 +135,7 @@ function testAllergicOnlyToStrawberries() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["strawberries"]
+    enable: false
 }
 function testAllergicToStrawberriesAndSomethingElse() {
     Allergies allergies = new(28);
@@ -160,8 +143,7 @@ function testAllergicToStrawberriesAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["strawberries"]
+    enable: false
 }
 function testAllergicToSomethingBesidesStrawberries() {
     Allergies allergies = new(20);
@@ -169,8 +151,7 @@ function testAllergicToSomethingBesidesStrawberries() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["strawberries"]
+    enable: false
 }
 function testAllergicToEverythingIncludingStrawberries() {
     Allergies allergies = new(255);
@@ -178,8 +159,7 @@ function testAllergicToEverythingIncludingStrawberries() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["tomatoes"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingTomatoes() {
     Allergies allergies = new(0);
@@ -187,8 +167,7 @@ function testNotAllergicToAnythingIncludingTomatoes() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["tomatoes"]
+    enable: false
 }
 function testAllergicOnlyToTomatoes() {
     Allergies allergies = new(16);
@@ -196,8 +175,7 @@ function testAllergicOnlyToTomatoes() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["tomatoes"]
+    enable: false
 }
 function testAllergicToTomatoesAndSomethingElse() {
     Allergies allergies = new(56);
@@ -205,8 +183,7 @@ function testAllergicToTomatoesAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["tomatoes"]
+    enable: false
 }
 function testAllergicToSomethingBesidesTomatoes() {
     Allergies allergies = new(40);
@@ -214,8 +191,7 @@ function testAllergicToSomethingBesidesTomatoes() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["tomatoes"]
+    enable: false
 }
 function testAllergicToEverythingIncludingTomatoes() {
     Allergies allergies = new(255);
@@ -223,8 +199,7 @@ function testAllergicToEverythingIncludingTomatoes() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["chocolate"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingChocolate() {
     Allergies allergies = new(0);
@@ -232,8 +207,7 @@ function testNotAllergicToAnythingIncludingChocolate() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["chocolate"]
+    enable: false
 }
 function testAllergicOnlyToChocolate() {
     Allergies allergies = new(32);
@@ -241,8 +215,7 @@ function testAllergicOnlyToChocolate() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["chocolate"]
+    enable: false
 }
 function testAllergicToChocolateAndSomethingElse() {
     Allergies allergies = new(112);
@@ -250,8 +223,7 @@ function testAllergicToChocolateAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["chocolate"]
+    enable: false
 }
 function testAllergicToSomethingBesidesChocolate() {
     Allergies allergies = new(80);
@@ -259,8 +231,7 @@ function testAllergicToSomethingBesidesChocolate() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["chocolate"]
+    enable: false
 }
 function testAllergicToEverythingIncludingChocolate() {
     Allergies allergies = new(255);
@@ -268,8 +239,7 @@ function testAllergicToEverythingIncludingChocolate() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["pollen"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingPollen() {
     Allergies allergies = new(0);
@@ -277,8 +247,7 @@ function testNotAllergicToAnythingIncludingPollen() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["pollen"]
+    enable: false
 }
 function testAllergicOnlyToPollen() {
     Allergies allergies = new(64);
@@ -286,8 +255,7 @@ function testAllergicOnlyToPollen() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["pollen"]
+    enable: false
 }
 function testAllergicToPollenAndSomethingElse() {
     Allergies allergies = new(224);
@@ -295,8 +263,7 @@ function testAllergicToPollenAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["pollen"]
+    enable: false
 }
 function testAllergicToSomethingBesidesPollen() {
     Allergies allergies = new(160);
@@ -304,8 +271,7 @@ function testAllergicToSomethingBesidesPollen() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["pollen"]
+    enable: false
 }
 function testAllergicToEverythingIncludingPollen() {
     Allergies allergies = new(255);
@@ -313,8 +279,7 @@ function testAllergicToEverythingIncludingPollen() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["cats"]
+    enable: false
 }
 function testNotAllergicToAnythingIncludingCats() {
     Allergies allergies = new(0);
@@ -322,8 +287,7 @@ function testNotAllergicToAnythingIncludingCats() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["cats"]
+    enable: false
 }
 function testAllergicOnlyToCats() {
     Allergies allergies = new(128);
@@ -331,8 +295,7 @@ function testAllergicOnlyToCats() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["cats"]
+    enable: false
 }
 function testAllergicToCatsAndSomethingElse() {
     Allergies allergies = new(192);
@@ -340,8 +303,7 @@ function testAllergicToCatsAndSomethingElse() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["cats"]
+    enable: false
 }
 function testAllergicToSomethingBesidesCats() {
     Allergies allergies = new(64);
@@ -349,8 +311,7 @@ function testAllergicToSomethingBesidesCats() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["cats"]
+    enable: false
 }
 function testAllergicToEverythingIncludingCats() {
     Allergies allergies = new(255);
@@ -358,8 +319,7 @@ function testAllergicToEverythingIncludingCats() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAlergicToNothing() {
     Allergies allergies = new(0);
@@ -368,8 +328,7 @@ function testListWhenAlergicToNothing() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToJustEggs() {
     Allergies allergies = new(1);
@@ -378,8 +337,7 @@ function testListWhenAllergicToJustEggs() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToJustPeanuts() {
     Allergies allergies = new(2);
@@ -388,8 +346,7 @@ function testListWhenAllergicToJustPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToJustStrawberries() {
     Allergies allergies = new(8);
@@ -398,8 +355,7 @@ function testListWhenAllergicToJustStrawberries() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToEggsAndPeanuts() {
     Allergies allergies = new(3);
@@ -408,8 +364,7 @@ function testListWhenAllergicToEggsAndPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToMoreThanEggsButNotPeanuts() {
     Allergies allergies = new(5);
@@ -418,8 +373,7 @@ function testListWhenAllergicToMoreThanEggsButNotPeanuts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToLotsOfStuff() {
     Allergies allergies = new(248);
@@ -434,8 +388,7 @@ function testListWhenAllergicToLotsOfStuff() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenAllergicToEverything() {
     Allergies allergies = new(255);
@@ -453,8 +406,7 @@ function testListWhenAllergicToEverything() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenNoAllergenScoreParts() {
     Allergies allergies = new(509);
@@ -471,8 +423,7 @@ function testListWhenNoAllergenScoreParts() {
 }
 
 @test:Config {
-    enable: false,
-    groups: ["list"]
+    enable: false
 }
 function testListWhenNoAllergenScorePartsWithoutHighestValidScore() {
     Allergies allergies = new(257);

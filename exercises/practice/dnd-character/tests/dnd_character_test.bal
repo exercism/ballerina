@@ -186,7 +186,7 @@ function testCharacterIsRandomlyGenerate() {
                         && current.getCharisma() == previous.getWisdom()
                         && current.getHitpoints() == previous.getHitpoints();
 
-        if (sameScores) {
+        if sameScores {
             isRandomlyGenerated = false;
             break;
         }

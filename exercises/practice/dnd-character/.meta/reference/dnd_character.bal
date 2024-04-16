@@ -25,33 +25,19 @@ class DndCharacter {
         self.hitpoints = modifier(self.constitution) + 10;
     }
 
-    public function getStrength() returns int {
-        return self.strength;
-    }
+    public function getStrength() returns int => self.strength;
 
-    public function getDexterity() returns int {
-        return self.dexterity;
-    }
+    public function getDexterity() returns int => self.dexterity;
 
-    public function getConstitution() returns int {
-        return self.constitution;
-    }
+    public function getConstitution() returns int => self.constitution;
 
-    public function getIntelligence() returns int {
-        return self.intelligence;
-    }
+    public function getIntelligence() returns int => self.intelligence;
 
-    public function getWisdom() returns int {
-        return self.wisdom;
-    }
+    public function getWisdom() returns int => self.wisdom;
 
-    public function getCharisma() returns int {
-        return self.charisma;
-    }
+    public function getCharisma() returns int => self.charisma;
 
-    public function getHitpoints() returns int {
-        return self.hitpoints;
-    }
+    public function getHitpoints() returns int => self.hitpoints;
 }
 
 public function ability() returns int {

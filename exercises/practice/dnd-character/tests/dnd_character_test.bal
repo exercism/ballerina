@@ -1,4 +1,3 @@
-
 import ballerina/test;
 
 function inRange(int n) returns boolean {

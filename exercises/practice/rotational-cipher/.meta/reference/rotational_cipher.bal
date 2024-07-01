@@ -9,7 +9,7 @@ function rotate(string text, int shiftKey) returns string {
         int codePoint = string:'toCodePointInt(chr);
         int newCodePoint = codePoint;
 
-        if (codePoint >= 65 && codePoint <= 90) {
+        if codePoint >= 65 && codePoint <= 90 {
             newCodePoint = 65 + (codePoint - 65 + shiftKey) % 26;
         }
         else if (codePoint >= 97 && codePoint <= 122) {

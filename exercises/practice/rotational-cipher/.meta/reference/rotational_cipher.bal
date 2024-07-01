@@ -17,7 +17,7 @@ function rotate(string text, int shiftKey) returns string {
         }
 
         string|error rotated = string:'fromCodePointInt(newCodePoint);
-        if (rotated is string) {
+        if rotated is string {
             result += rotated;
         }
     }

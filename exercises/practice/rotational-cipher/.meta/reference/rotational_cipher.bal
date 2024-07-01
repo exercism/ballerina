@@ -12,7 +12,7 @@ function rotate(string text, int shiftKey) returns string {
         if codePoint >= 65 && codePoint <= 90 {
             newCodePoint = 65 + (codePoint - 65 + shiftKey) % 26;
         }
-        else if (codePoint >= 97 && codePoint <= 122) {
+        else if codePoint >= 97 && codePoint <= 122 {
             newCodePoint = 97 + (codePoint - 97 + shiftKey) % 26;
         }
 

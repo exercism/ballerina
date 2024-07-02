@@ -5,8 +5,8 @@
 # + return - the encoded text
 function rotate(string text, int shiftKey) returns string {
     string result = "";
-    foreach string chr in text {
-        int codePoint = string:'toCodePointInt(chr);
+    foreach string:Char chr in text {
+        int codePoint = chr.toCodePointInt();
         int newCodePoint = codePoint;
 
         if codePoint >= 65 && codePoint <= 90 {
@@ -16,10 +16,9 @@ function rotate(string text, int shiftKey) returns string {
             newCodePoint = 97 + (codePoint - 97 + shiftKey) % 26;
         }
 
-        string|error rotated = string:'fromCodePointInt(newCodePoint);
-        if rotated is string {
-            result += rotated;
-        }
+        // Checkpanic since this shouldn't return an error
+        string rotated = checkpanic string:'fromCodePointInt(newCodePoint);
+        result += rotated;
     }
 
     return result;

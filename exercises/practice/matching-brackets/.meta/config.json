@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "matching_brackets.bal"
+    ],
+    "test": [
+      "tests/matching_brackets_test.bal"
+    ],
+    "example": [
+      ".meta/reference/matching_brackets.bal"
+    ]
+  },
+  "blurb": "Make sure the brackets and braces all match.",
+  "source": "Ginna Baker"
+}

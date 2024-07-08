@@ -523,6 +523,14 @@
         "difficulty": 3
       },
       {
+        "slug": "matching-brackets",
+        "name": "matching brackets",
+        "uuid": "c3fe6f2a-cb23-4f1e-8e80-67c36b387d15",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "a6d7ed5c-df22-4869-ba8d-40af5ae01346",

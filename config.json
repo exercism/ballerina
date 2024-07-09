@@ -563,6 +563,14 @@
         "difficulty": 3
       },
       {
+        "slug": "kindergarten-garden",
+        "name": "kindergarten garden",
+        "uuid": "a0448934-a369-4795-9406-bf83a06d986f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "090a2f78-1d9c-4798-92f1-eb9a8ae18f54",

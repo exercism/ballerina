@@ -491,6 +491,14 @@
         "difficulty": 3
       },
       {
+        "slug": "pascals-triangle",
+        "name": "Pascals Triangle",
+        "uuid": "9aa4a72d-4c55-4b5c-bf8e-590ab8d89a7d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "two-bucket",
         "name": "Two Bucket",
         "uuid": "24b57893-39c2-488e-ab53-2f232fb8d0cb",

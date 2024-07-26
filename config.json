@@ -532,7 +532,7 @@
       },
       {
         "slug": "matching-brackets",
-        "name": "matching brackets",
+        "name": "Matching Brackets",
         "uuid": "c3fe6f2a-cb23-4f1e-8e80-67c36b387d15",
         "practices": [],
         "prerequisites": [],
@@ -572,7 +572,7 @@
       },
       {
         "slug": "kindergarten-garden",
-        "name": "kindergarten garden",
+        "name": "Kindergarten Garden",
         "uuid": "a0448934-a369-4795-9406-bf83a06d986f",
         "practices": [],
         "prerequisites": [],
@@ -652,7 +652,7 @@
       },
       {
         "slug": "rotational-cipher",
-        "name": "rotational cipher",
+        "name": "Rotational Cipher",
         "uuid": "14c90535-2be7-438b-b3af-80fc84336e89",
         "practices": [],
         "prerequisites": [],

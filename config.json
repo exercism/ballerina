@@ -627,6 +627,14 @@
         "difficulty": 1
       },
       {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "b72f816f-8d3a-48c1-b3e7-ad313354a8ca",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "eliuds-eggs",
         "name": "Eliud's Eggs",
         "uuid": "489c82ae-1f3e-431f-9018-fce653d298fc",

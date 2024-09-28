@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "atbash_cipher.bal"
+    ],
+    "test": [
+      "tests/atbash_cipher_test.bal"
+    ],
+    "example": [
+      ".meta/reference/atbash_cipher.bal"
+    ]
+  },
+  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Atbash"
+}

@@ -324,6 +324,14 @@
         ]
       },
       {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "a78ccf72-e16d-441f-b2b0-6374e69a77c4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "legacy-service-client",
         "name": "Legacy Service Client",
         "uuid": "8c8cafdd-7cd6-46fd-9c9e-033dc9631c80",

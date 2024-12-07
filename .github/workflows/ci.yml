@@ -16,32 +16,16 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-22.04, macos-14]
-        java-version: [11]
         ballerina-version: [2201.5.0]
 
     steps:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
-      - name: Setup Java
-        uses: actions/setup-java@8df1039502a15bceb9433410b1a100fbe190c53b
+      - uses: ballerina-platform/setup-ballerina@v1
+        name: Install Ballerina
         with:
-          distribution: microsoft
-          java-version: ${{ matrix.java-version }}
-
-      - name: Install project dependencies
-        shell: bash
-        env:
-          BALLERINA_VERSION: ballerina-${{ matrix.ballerina-version }}-swan-lake
-        run: |
-          # Download Ballerina dist
-          curl -fsSL https://dist.ballerina.io/downloads/${{ matrix.ballerina-version }}/$BALLERINA_VERSION.zip --output $BALLERINA_VERSION.zip
-
-          # Unzip the zip file
-          unzip -q $BALLERINA_VERSION.zip
-
-          # Add Ballerina to system path
-          echo "$(pwd)/$BALLERINA_VERSION/bin" >> $GITHUB_PATH
+          version: ${{ matrix.ballerina-version }}
 
       - name: Verify all exercises
         run: ./bin/verify-exercises

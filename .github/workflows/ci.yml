@@ -22,7 +22,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
-      - uses: ballerina-platform/setup-ballerina@v1
+      - uses: ballerina-platform/setup-ballerina@7f21a19064107a8c9624a9d552e408965f0835a9
         name: Install Ballerina
         with:
           version: ${{ matrix.ballerina-version }}

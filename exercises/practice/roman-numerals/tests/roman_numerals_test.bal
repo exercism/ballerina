@@ -176,6 +176,13 @@ function test3001isMMMI() {
 @test:Config {
     enable: false
 }
+function test3888isMMMI() {
+    test:assertEquals(roman(3888), "MMMDCCCLXXXVIII");
+}
+
+@test:Config {
+    enable: false
+}
 function test3999isMMMCMXCIX() {
     test:assertEquals(roman(3999), "MMMCMXCIX");
 }

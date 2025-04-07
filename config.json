@@ -332,6 +332,14 @@
         "difficulty": 2
       },
       {
+        "slug": "game-of-life",
+        "name": "Game Of Life",
+        "uuid": "170fbe36-f2fc-4327-b9be-34d5fd3238f3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "legacy-service-client",
         "name": "Legacy Service Client",
         "uuid": "8c8cafdd-7cd6-46fd-9c9e-033dc9631c80",

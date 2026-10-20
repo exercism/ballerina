@@ -2,9 +2,9 @@
 org = "ballerina_exercism"
 name = "database_payment_batches"
 version = "0.1.0"
-distribution = "2201.5.0"
+distribution = "2201.13.3"
 
 [[platform.java11.dependency]]
 artifactId = "h2"
-version = "2.0.206"
+version = "2.5.252"
 groupId = "com.h2database"

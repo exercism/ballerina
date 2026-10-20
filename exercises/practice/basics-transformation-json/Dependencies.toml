@@ -5,19 +5,17 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.5.0"
+distribution-version = "2201.9.0"
 
 [[package]]
 org = "ballerina"
 name = "file"
-version = "1.7.0"
+version = "1.9.0"
 scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "log"},
 	{org = "ballerina", name = "os"},
-	{org = "ballerina", name = "regex"},
 	{org = "ballerina", name = "time"}
 ]
 modules = [
@@ -27,7 +25,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "io"
-version = "1.4.0"
+version = "1.6.3"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
@@ -43,7 +41,27 @@ version = "0.0.0"
 
 [[package]]
 org = "ballerina"
-name = "lang.regexp"
+name = "lang.__internal"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.object"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.array"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.__internal"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.error"
 version = "0.0.0"
 scope = "testOnly"
 dependencies = [
@@ -52,13 +70,9 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
-name = "lang.string"
+name = "lang.object"
 version = "0.0.0"
 scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.regexp"}
-]
 
 [[package]]
 org = "ballerina"
@@ -70,43 +84,12 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
-name = "log"
-version = "2.7.0"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.value"},
-	{org = "ballerina", name = "observe"}
-]
-
-[[package]]
-org = "ballerina"
-name = "observe"
-version = "1.0.7"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
-]
-
-[[package]]
-org = "ballerina"
 name = "os"
-version = "1.6.0"
+version = "1.8.0"
 scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "jballerina.java"}
-]
-
-[[package]]
-org = "ballerina"
-name = "regex"
-version = "1.4.2"
-scope = "testOnly"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "lang.string"}
 ]
 
 [[package]]
@@ -115,7 +98,9 @@ name = "test"
 version = "0.0.0"
 scope = "testOnly"
 dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.error"}
 ]
 modules = [
 	{org = "ballerina", packageName = "test", moduleName = "test"}
@@ -124,7 +109,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "time"
-version = "2.2.4"
+version = "2.4.0"
 scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"}

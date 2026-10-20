@@ -5,17 +5,19 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.5.0"
+distribution-version = "2201.9.0"
 
 [[package]]
 org = "ballerina"
 name = "jballerina.java"
 version = "0.0.0"
+scope = "testOnly"
 
 [[package]]
 org = "ballerina"
 name = "lang.__internal"
 version = "0.0.0"
+scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.object"}
@@ -25,18 +27,26 @@ dependencies = [
 org = "ballerina"
 name = "lang.array"
 version = "0.0.0"
+scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.__internal"}
 ]
-modules = [
-	{org = "ballerina", packageName = "lang.array", moduleName = "lang.array"}
+
+[[package]]
+org = "ballerina"
+name = "lang.error"
+version = "0.0.0"
+scope = "testOnly"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"}
 ]
 
 [[package]]
 org = "ballerina"
 name = "lang.object"
 version = "0.0.0"
+scope = "testOnly"
 
 [[package]]
 org = "ballerina"
@@ -44,7 +54,9 @@ name = "test"
 version = "0.0.0"
 scope = "testOnly"
 dependencies = [
-	{org = "ballerina", name = "jballerina.java"}
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.error"}
 ]
 modules = [
 	{org = "ballerina", packageName = "test", moduleName = "test"}
@@ -55,7 +67,6 @@ org = "ballerina_exercism"
 name = "circular_buffer"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "lang.array"},
 	{org = "ballerina", name = "test"}
 ]
 modules = [

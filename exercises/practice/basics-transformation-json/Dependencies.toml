@@ -5,12 +5,12 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.13.0"
+distribution-version = "2201.13.3"
 
 [[package]]
 org = "ballerina"
 name = "file"
-version = "1.14.0"
+version = "1.13.0"
 scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "io"},
@@ -85,7 +85,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "os"
-version = "1.10.3"
+version = "1.10.1"
 scope = "testOnly"
 dependencies = [
 	{org = "ballerina", name = "io"},

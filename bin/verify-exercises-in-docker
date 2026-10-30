@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Usage:
+#   bin/verify-one-exercise "$exercise_slug" [...]
+
+# During CI, this scripts runs with MacOS bash, version 3.2.
+
+shopt -s nullglob
+unset CDPATH
+
+die() {
+    echo "$*" >&2
+    exit 1
+}
+
+test_exercise() {
+    local dir=${1%/}
+    local exercise=./${dir##*/}
+
+    [[ -d $exercise ]] || die "not an exercise: $dir"
+
+    echo "================================"
+    echo "Executing : ${exercise#./}"
+
+    cp -r $exercise/.meta/reference/* "$exercise"
+    find "$exercise/tests" -name '*.bal' -exec perl -i -pe 's/\benable:\s*false\b//g' '{}' ';'
+
+    cd "$exercise"
+    docker run --rm --network none -v $PWD:/solution -v /tmp/out:/output exercism/ballerina-test-runner $exercise /solution /output
+    rc=$?
+
+    cd -  >/dev/null
+    return "$rc"
+}
+
+main() {
+    cd ./exercises/practice || die "cannot cd to ./exercises/practice"
+
+    # if no arguments, look in config.json for the exercises to test
+    if (($# == 0)); then
+        # this is unclean, but we're running in old bash
+        set -- $(
+            jq -r '
+                .exercises.practice[]
+                | select( (has("status") and (.status | IN("wip","deprecated"))) | not)
+                | .slug
+            ' ../../config.json
+        )
+    fi
+
+    echo "Testing: $*"
+
+    failed=()
+    for slug in "$@"; do
+        test_exercise "$slug" || failed+=("$slug")
+    done
+    if (( ${#failed[@]} == 0 )); then
+        echo "All exercises pass"
+    else
+        printf "%d exercises failed: %s\n" "${#failed[@]}" "${failed[*}"
+    fi
+}
+
+main "$@"

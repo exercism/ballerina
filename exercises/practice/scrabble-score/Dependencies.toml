@@ -8,17 +8,6 @@ dependencies-toml-version = "2"
 distribution-version = "2201.13.3"
 
 [[package]]
-org = "anagy"
-name = "scrabble_score"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "test"}
-]
-modules = [
-	{org = "anagy", packageName = "scrabble_score", moduleName = "scrabble_score"}
-]
-
-[[package]]
 org = "ballerina"
 name = "jballerina.java"
 version = "0.0.0"
@@ -71,5 +60,16 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerina", packageName = "test", moduleName = "test"}
+]
+
+[[package]]
+org = "ballerina_exercism"
+name = "scrabble_score"
+version = "0.1.0"
+dependencies = [
+	{org = "ballerina", name = "test"}
+]
+modules = [
+	{org = "ballerina_exercism", packageName = "scrabble_score", moduleName = "scrabble_score"}
 ]
 

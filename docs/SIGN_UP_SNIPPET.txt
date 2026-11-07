@@ -1,0 +1,14 @@
+function mostCommonWord(string text) returns string {
+    map<int> counts = {};
+    string best = "";
+    int bestCount = 0;
+    foreach string word in re ` `.split(text.toLowerAscii()) {
+        int count = (counts[word] ?: 0) + 1;
+        counts[word] = count;
+        if count > bestCount {
+            best = word;
+            bestCount = count;
+        }
+    }
+    return string `"${best}" appears ${bestCount} times`;
+}
